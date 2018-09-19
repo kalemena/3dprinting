@@ -1,5 +1,9 @@
 # 3dprinting
 
+[![Build Status](https://travis-ci.org/kalemena/cura.svg?branch=master)](https://travis-ci.org/kalemena/cura)
+[![Docker Version](https://images.microbadger.com/badges/version/kalemena/cura.svg)](https://microbadger.com/images/kalemena/cura)
+[![Docker Hub](https://images.microbadger.com/badges/image/kalemena/cura.svg)](https://hub.docker.com/r/kalemena/cura/tags)
+
 Tooling &amp; Tips for 3d printing
 
 ## Printer model
