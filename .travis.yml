@@ -30,6 +30,6 @@ before_deploy:
 
 deploy:
   provider: script
-  script: docker push ${IMAGE}; docker push ${IMAGE}:latest
+  script: docker push ${IMAGE}:${VERSION}; docker push ${IMAGE}:latest
   on:
     branch: master
