@@ -16,8 +16,6 @@ duploRaster = 16;
 dr = duploRaster;
 duploHeight=duploRaster * 0.6;
 
-
-
 // nibble radius: a square brick with size (dr x dr) turned by 45° on a neighbor nibble fits exactly:
 duploNibbleRadius = dr * (1-1/1.41421) +0.1; // = 4.686+0.1,  dr*(1-1/sqrt(2))
 duploBottomNibbleRadius = dr*(1.41421-1); //= dr * 1.41421 / 2  - duploNibbleRadius = 6.6277
@@ -30,24 +28,19 @@ firstLayerGapHeight = 0.3;
 
 quality = 60; // quality: low/fast (e.g. 10) for design, high/slow (e.g. 50) for final rendering 
 
-
 // if some pieces are missing: "Edit"->"Preferences"->"Advanced"->"Turn off rendering at: " [1000000] "elements"
-
 
 //duplo(2,2,1,true,false);
 
-
-
 module duplo(width,length,height,topNibbles,bottomHoles) 
-{
+{   
    //size definitions
-   
    ns = duploRaster / 2;  //nibble start offset
    nbo = duploRaster;  // nibble bottom offset
    effWidth = width * duploRaster-gapBetweenBricks;
    effLength = length*duploRaster-gapBetweenBricks;
-   littleWallThickness = 2.35; // 1.35 is standard but bigger is better for printing
-
+   littleWallThickness = 2.35; // 1.35 is standard but bigger is better for printing 
+    
    //the cube
    difference() {
       cube([effWidth,effLength,height*duploHeight],true);
