@@ -11,14 +11,14 @@
 include <duplo-block-lib.scad>
 include <duplo-marblerun.scad>
 
-quality = 10; // quality: low/fast (e.g. 10) for design, high/slow (e.g. 50) for final rendering 
+quality = 20; // quality: low/fast (e.g. 10) for design, high/slow (e.g. 50) for final rendering 
 innerRadius=14*dr/16;
 
 // wires
 wireRadius=3/2;
 wireTX=7;
 wireTZ=-2;
-clipTX=1.65;
+clipTX=1.45;
 
 // straightPieceWires(2);
 // ramp2PieceWires();
@@ -27,21 +27,22 @@ wireClip();
 module wireClip() {
  difference() {  
    union() {
-     translate([wireTX+clipTX,-clipTX,0]) cylinder(4,wireRadius,wireRadius,$fn = quality*2);
-     translate([-wireTX-clipTX,-clipTX,0]) cylinder(4,wireRadius,wireRadius,$fn = quality*2);
-     translate([wireTX,0,0]) cylinder(4,wireRadius*1.5,wireRadius*1.5,$fn = quality*2);
-     translate([-wireTX,0,0]) cylinder(4,wireRadius*1.5,wireRadius*1.5,$fn = quality*2);
+     translate([wireTX+clipTX,-clipTX,0]) cylinder(4,r=wireRadius*1.2,$fn = quality*2);
+     translate([-wireTX-clipTX,-clipTX,0]) cylinder(4,r=wireRadius*1.2,$fn = quality*2);
+     translate([wireTX,0,0]) cylinder(4,r=wireRadius*1.8,$fn = quality*2);
+     translate([-wireTX,0,0]) cylinder(4,r=wireRadius*1.8,$fn = quality*2);
      
      difference() {  
-       translate([0,12,0]) cylinder(2,innerRadius*1.1,innerRadius*1.1,$fn = quality*2);
-       translate([-20,-0.4,0]) cube([40,40,10]);
+       translate([0,5,0]) cylinder(2,r=innerRadius*0.7,$fn = quality*2);
+       translate([-20,-0.5,0]) cube([40,40,10]);
      }
    }
    translate([wireTX+clipTX,-clipTX,0]) cylinder(4,wireRadius*0.6,wireRadius*0.6,$fn = quality*2);
    translate([-wireTX-clipTX,-clipTX,0]) cylinder(4,wireRadius*0.6,wireRadius*0.6,$fn = quality*2);
-   translate([wireTX,0,0]) cylinder(4,wireRadius,wireRadius,$fn = quality*2);
-   translate([-wireTX,0,0]) cylinder(4,wireRadius,wireRadius,$fn = quality*2);
-   translate([0,6.6,0]) cylinder(4,innerRadius*0.6,innerRadius*0.6,$fn = quality*2);
+   translate([wireTX,0,0]) cylinder(4,r=wireRadius*0.95,$fn = quality*2);
+   translate([-wireTX,0,0]) cylinder(4,r=wireRadius*0.95,$fn = quality*2);
+   translate([0,4.4,0]) cylinder(4,r=innerRadius*0.5,$fn = quality*2);
+   translate([0,6.4,0]) cylinder(4,r=innerRadius*0.6,$fn = quality*2);
  }
 }
 
