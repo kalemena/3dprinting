@@ -9,41 +9,39 @@ t = 4;
 e = 0.02; 
 
 slotZ=-0.1;
-holeZ=1.5;
+holeZ=2;
 
-quality = 20;
+quality = 50;
 
 duploBearing();
-duploPropelers(topHoles=true, bottomSlots=true);
-translate([0,0,2.7]) rotate([0,0,90]) duploPropelers(topHoles=false, bottomSlots=true);
+duploPropelers(topHoles=false, bottomSlots=false, nbPropelers=4);
 
-module duploPropelers(topHoles=true, bottomSlots=true) {
-  translate([0,0,20]) {
+module duploPropelers(topHoles=true, bottomSlots=true, nbPropelers=3) {
+  translate([0,0,21]) {
     difference() {
       union() {
-        hull() {
-          translate([0,0,-0.5]) cylinder(h=2.5, r=ir, $fn = quality*2);
-          translate([90,0,0]) cylinder(h=2, r=10, $fn = quality*2);
+        for(rot=[1:nbPropelers]) {
+          rotate([0,0,360 - rot * 360/nbPropelers])
+          hull() {
+            translate([0,0,-0.5]) cylinder(h=2.5, r=ir, $fn = quality*2);
+            translate([90,0,0]) cylinder(h=2, r=10, $fn = quality*2);
+          }
+          if(bottomSlots == true) {
+            rotate([0,0,360 - rot * 360/nbPropelers]) translate([8,0,slotZ]) sphere(r=1, $fn = quality*2);
+          }
         }
-        hull() {
-          translate([0,0,-0.5]) cylinder(h=2.5, r=ir, $fn = quality*2);
-          translate([-90,0,0]) cylinder(h=2, r=10, $fn = quality*2);
-        }
-        cylinder(h=2, r=br, $fn = quality*2);
         
-        if(bottomSlots == true) {
-         translate([8,0,slotZ]) sphere(r=1, $fn = quality*2);
-         translate([-8,0,slotZ]) sphere(r=1, $fn = quality*2);
-         translate([0,8,slotZ]) sphere(r=1, $fn = quality*2);
-         translate([0,-8,slotZ]) sphere(r=1, $fn = quality*2);
-        }
+        cylinder(h=2, r=br, $fn = quality*2);
+        translate([0,0,-2]) cylinder(r=t-e*5, h=bh+1, center=true, $fn = quality*2);
+        translate([0,0,-1]) cylinder(r=t+1-e*5, h=1, center=true, $fn = quality*2);
       }
-      cylinder(r=2.6, h=bh+e, center=true, $fn = quality*2);
+      
+      cylinder(r=3.1, h=bh*2, center=true, $fn = quality*2);
+      
       if(topHoles == true) {
-          translate([8,0,holeZ]) sphere(r=1, $fn = quality*2);
-          translate([-8,0,holeZ]) sphere(r=1, $fn = quality*2);
-          translate([0,8,holeZ]) sphere(r=1, $fn = quality*2);
-          translate([0,-8,holeZ]) sphere(r=1, $fn = quality*2);
+        for(rot=[1:nbPropelers]) {
+          rotate([0,0,360 - rot * 360/nbPropelers]) translate([8,0,holeZ]) sphere(r=1.5, $fn = quality*2);
+        }
       }      
     }
   }
