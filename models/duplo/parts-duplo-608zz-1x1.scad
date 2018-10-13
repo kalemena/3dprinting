@@ -10,10 +10,11 @@ e = 0.02;
 
 slotZ=-0.1;
 holeZ=2;
+screwD=5.2; // 6mm (+0.2) or 5mm (+0.2)
 
 quality = 50;
 
-duploBearing();
+//duploBearing();
 duploPropelers(topHoles=false, bottomSlots=false, nbPropelers=4);
 
 module duploPropelers(topHoles=true, bottomSlots=true, nbPropelers=3) {
@@ -36,7 +37,7 @@ module duploPropelers(topHoles=true, bottomSlots=true, nbPropelers=3) {
         translate([0,0,-1]) cylinder(r=t+1-e*5, h=1, center=true, $fn = quality*2);
       }
       
-      cylinder(r=3.1, h=bh*2, center=true, $fn = quality*2);
+      cylinder(r=screwD/2, h=bh*2, center=true, $fn = quality*2);
       
       if(topHoles == true) {
         for(rot=[1:nbPropelers]) {
