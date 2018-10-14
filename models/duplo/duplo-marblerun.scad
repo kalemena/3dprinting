@@ -10,12 +10,11 @@
 // The duplo-block-lib is derived from http://www.thingiverse.com/thing:1778
 include <duplo-block-lib.scad>
 
-quality = 30; // quality: low/fast (e.g. 10) for design, high/slow (e.g. 50) for final rendering 
+quality = 50; // quality: low/fast (e.g. 10) for design, high/slow (e.g. 50) for final rendering 
 innerRadius=14*dr/16;
 
-//straightPiece(2);
-//longStraightPiece();
-//straightHolePiece(); 
+//straightPiece(4);
+//straightHolePiece(3); 
 //crossingPiece();
 //endPiece();
 //cornerPiece();
@@ -33,10 +32,9 @@ innerRadius=14*dr/16;
 //zigZaglongRampPiece3(steps=quality);
 //ramp2HolePiece(steps=quality);
 //longRampPiece3(steps=quality);
-//conePiece3(5,support=0); // can be 3, 4 or 5
+//conePiece3(3,support=0); // can be 3, 4 or 5
 
-module duploMarbleRunBase(width,length,height,topNibbles,bottomHoles)
-{
+module duploMarbleRunBase(width,length,height,topNibbles,bottomHoles) {
    union() {
       duplo(width,length,height,topNibbles,bottomHoles);
       translate([0,0,3])
@@ -44,26 +42,23 @@ module duploMarbleRunBase(width,length,height,topNibbles,bottomHoles)
    }
 }
 
-module straightPiece(length=2)
-{
+module straightPiece(length=2) {
    difference() {
       duploMarbleRunBase(2,length,2,false);
-      translate([0,dr * length+1, duploHeight+2]) rotate([90,0,0])
+      translate([0,dr*length+1, duploHeight+2]) rotate([90,0,0])
          cylinder( duploRaster*2 * length, innerRadius, innerRadius,$fn = quality*2 );
    }
 }
 
-module straightHolePiece()
-{
+module straightHolePiece(length=2) {
    difference() {
-     duploMarbleRunBase(2,2,4,true);
-      translate([0,dr+1, 0*duploHeight+2]) rotate([90,0,0])
-         cylinder( duploRaster*4, innerRadius, innerRadius,$fn = quality*2 );
+     duploMarbleRunBase(2,length,4,true);
+     translate([0,dr*length+1, 0*duploHeight+2]) rotate([90,0,0])
+       cylinder( duploRaster*2 * length, innerRadius, innerRadius,$fn = quality*2 );
    }
 }
 
-module crossingPiece()
-{
+module crossingPiece() {
    difference() {
       duploMarbleRunBase(2,2,2,false);
       translate([0,dr+1, duploHeight+2]) rotate([90,0,0])
@@ -73,8 +68,7 @@ module crossingPiece()
    }
 }
 
-module endPiece()
-{
+module endPiece() {
    difference() {
       duploMarbleRunBase(2,2,2,false);
       union() {
@@ -86,8 +80,7 @@ module endPiece()
    }
 }
 
-module cornerPiece()
-{
+module cornerPiece() {
    difference() {
       duploMarbleRunBase(2,2,2,false);
       translate([-dr,-dr,duploHeight+2])rotate_extrude(convexity = 10, $fn = quality*2)
@@ -95,8 +88,7 @@ module cornerPiece()
    }
 }
 
-module cornerHolePiece()
-{
+module cornerHolePiece() {
    difference() {
       duploMarbleRunBase(2,2,4,true);
         translate([-dr,-dr,0*duploHeight+2])rotate_extrude(convexity = 10, $fn = quality + 2)
@@ -104,8 +96,7 @@ module cornerHolePiece()
    }
 }
 
-module rampPiece()
-{
+module rampPiece() {
    angle = 30.964; // 180 / 3.14159 * atan(duploHeight/duploRaster);
    vscale = 0.8575; // cos(angle);
    difference() {
@@ -120,8 +111,7 @@ module rampPiece()
    }
 }
 
-module ramp2Piece()
-{
+module ramp2Piece() {
    angle = 16.699; // 180 / 3.14159 * atan(0.5*duploHeight/duploRaster);
    vscale = 0.9578; // cos(angle);
    difference() {
@@ -135,8 +125,7 @@ module ramp2Piece()
    }
 }
 
-module longRampPiece()
-{
+module longRampPiece() {
    angle = 16.699; // 180 / 3.14159 * atan(0.5*duploHeight/duploRaster);
    vscale = 0.9578; // cos(angle);
    difference() {
@@ -150,14 +139,14 @@ module longRampPiece()
    }
 }
 
-module cosinusSlopedRampPiece()
-{
+module cosinusSlopedRampPiece() {
    difference() {
       duploMarbleRunBase(2,4,4,false);
       cosinusSlopedRamp(quality);      
    }
 }
 
+// internal
 module cosinusSlopedRamp(steps) // nr of steps: e.g. coarse=10, fine=90
 {
    translate([0,-2*dr,duploHeight])
@@ -172,30 +161,27 @@ module cosinusSlopedRamp(steps) // nr of steps: e.g. coarse=10, fine=90
    }
 }
 
-module rampCornerPiece(steps)
-{
+module rampCornerPiece(steps) {
    difference() {
       duploMarbleRunBase(2,2,4,true);
       cornerRamp(steps);      
    }
 }
 
-module halfRampCornerPiece(steps)
-{
+module halfRampCornerPiece(steps) {
    difference() {
       duploMarbleRunBase(2,2,4,false);
       cornerHalfRamp(steps);      
    }
 }
 
-module rampTurnPiece(steps)
-{
+module rampTurnPiece(steps) {
    difference() {
       duploMarbleRunBase(4,2,4,false);
 //      cornerHalfRamp(steps);      
       turnRamp(steps);      
    }
-//      trunRamp(steps);      
+//      trunRamp(steps);
 }
 
 // internal
