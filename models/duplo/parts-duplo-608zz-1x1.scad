@@ -14,7 +14,7 @@ screwD=5.2; // 6mm (+0.2) or 5mm (+0.2)
 
 quality = 50;
 
-//duploBearing();
+duploBearing();
 duploPropelers(topHoles=false, bottomSlots=false, nbPropelers=4);
 
 module duploPropelers(topHoles=true, bottomSlots=true, nbPropelers=3) {
