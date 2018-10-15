@@ -44,7 +44,7 @@ module duplo(width,length,height,topNibbles,bottomHoles) {
    difference() {
       cube([effWidth,effLength,height*duploHeight],true);
       translate([0,0,-height*duploHeight/2])    
-        cube([width*duploRaster - 2*duploWall,length*duploRaster-2*duploWall,duploHeight],true);
+        cube([width*duploRaster - 2*duploWall,length*duploRaster-2*duploWall,duploHeight*2-2*duploWall],true);
    }
 
    if(topNibbles) {

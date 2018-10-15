@@ -9,11 +9,11 @@
 // The duplo-marblerun is derived from https://www.thingiverse.com/thing:159219
 include <duplo-marblerun.scad>
 
-innerRadius=14*dr/20;
-quality = 20;
+innerRadius=14*dr/16;
+quality = 50;
 
-verticalHolePiece(height=8);
-//verticalHoleStartPiece();
+//verticalHolePiece(height=4);
+verticalHoleStartPiece();
 //verticalHoleEndPiece();
 
 module verticalHolePiece(height=4) {
