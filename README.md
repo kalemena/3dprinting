@@ -14,7 +14,9 @@ Ender-3 is easy to mount, with ~1h effort.
 
 There are no specific configuration after, because Cura can use "CR-10" defaults, with only changing printer XYZ size.
 
-### Enhancement
+### Enhancements
+
+* link:https://www.thingiverse.com/thing:3052488[Roller Guide]
 
 * Motors
 
