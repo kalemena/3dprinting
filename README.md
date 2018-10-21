@@ -37,6 +37,15 @@ https://www.thingiverse.com/thing:3092044
 https://www.amazon.fr/gp/product/B0119SLG18/ref=as_li_ss_tl?smid=A1X6FK5RDHNB96&psc=1&linkCode=sl1&tag=wish052-21&linkId=498c18dfc84c318d4be02d8940303ac7
 
 
+## Material
+
+Up to now, I use only SUNLU wires (from Amazon), so it is not clear is other wires are better or not.
+
+This wire is good.
+
+* PLA+ Gray: Nozzle 210°C, Plate 40°C
+* PLA+ Carbon Fiber: Nozzle 225°C, Plate 60°C
+* PETG+ White: TBD
 
 ## Software
 
