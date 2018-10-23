@@ -17,7 +17,7 @@ innerRadius=13*dr/16;
 outerRadius=15*dr/16;
 center=innerRadius+6.25-duploHeight;
 
-translate([0,80,6*duploHeight/2]) duplo(2,2,6,false,true);
+translate([0,80,6*duploHeight/2]) duplo(2,2,6,false,false);
 cosinusSlopedRampPiece(3,4);
 
 module cosinusSlopedRampPiece(height=4, length=4)
