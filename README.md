@@ -16,15 +16,14 @@ There are no specific configuration after, because Cura can use "CR-10" defaults
 
 ### Enhancements
 
-* link:https://www.thingiverse.com/thing:3052488[Roller Guide]
+* Filament
+** [X] link:https://www.thingiverse.com/thing:3052488[Roller Guide]
 
-* Motors
+icon:comment[2x] MUST HAVE for noise reduction: Noise goes from "noisy dental care room" to "tower PC loud FAN"
+* Noise and smoothness
+** [X] link:https://letsprint3d.net/2018/07/07/how-to-install-stepper-motor-dampers-ender-3/[Motors Dampers]
 
-https://letsprint3d.net/2018/07/07/how-to-install-stepper-motor-dampers-ender-3/
-
-* Head
-
-https://www.amazon.fr/dp/B06ZYG3K2Z/ref=psdc_2908498031_t1_B01MV40Z0L?th=1
+* link:https://www.amazon.fr/dp/B06ZYG3K2Z/ref=psdc_2908498031_t1_B01MV40Z0L?th=1[Head]
 
 * Head Fan
 
