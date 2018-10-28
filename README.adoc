@@ -21,7 +21,8 @@ There are no specific configuration after, because Cura can use "CR-10" defaults
 * Filament
 ** [X] link:https://www.thingiverse.com/thing:3052488[Roller Guide]
 
-icon:comment[2x] MUST HAVE for noise reduction: Noise goes from "noisy dental care room" to "tower PC loud FAN"
+IMPORTANT: MUST HAVE for noise reduction: Noise goes from "noisy dental care room" to "tower PC loud FAN"
+
 * Noise and smoothness
 ** [X] link:https://letsprint3d.net/2018/07/07/how-to-install-stepper-motor-dampers-ender-3/[Motors Dampers]
 
@@ -44,9 +45,19 @@ Up to now, I use only SUNLU wires (from Amazon), so it is not clear is other wir
 
 This wire is good.
 
-* PLA+ Gray: Nozzle 210°C, Plate 40°C
-* PLA+ Carbon Fiber: Nozzle 225°C, Plate 60°C
-* PETG+ White: TBD
+* PLA+ Gray: *EASY*
+** Nozzle 210°C
+** Plate 40°C
+
+* PLA+ Carbon Fiber: *DIFFICULT*
+** Nozzle 225°C
+** Plate 60°C
+
+* PETG+ White: *VERY GOOD FINISH, difficult INFILL*
+** Nozzle 250°C 
+** Plate 80°C
+** Enable "coarsing"
+** Reduced "infill speed"
 
 ## Software
 
