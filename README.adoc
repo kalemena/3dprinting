@@ -1,8 +1,10 @@
-# 3dprinting
+:toc:
 
-[![Build Status](https://travis-ci.org/kalemena/3dprinting.svg?branch=master)](https://travis-ci.org/kalemena/cura)
-[![Docker Version](https://images.microbadger.com/badges/version/kalemena/cura.svg)](https://microbadger.com/images/kalemena/cura)
-[![Docker Hub](https://images.microbadger.com/badges/image/kalemena/cura.svg)](https://hub.docker.com/r/kalemena/cura/tags)
+ifdef::env-github[]
+image:https://travis-ci.org/kalemena/3dprinting.svg[Travis build status, link=https://travis-ci.org/kalemena/cura]
+image:https://images.microbadger.com/badges/version/kalemena/cura.svg[Docker Version, link=https://microbadger.com/images/kalemena/cura]
+image:https://images.microbadger.com/badges/image/kalemena/cura.svg[Docker Hub, link=https://hub.docker.com/r/kalemena/cura/tags]
+endif::[]
 
 Tooling &amp; Tips for 3d printing
 
