@@ -56,7 +56,7 @@ This wire is good.
 * PETG+ White: *VERY GOOD FINISH, difficult INFILL*
 ** Nozzle 250°C 
 ** Plate 80°C
-** Enable "coarsing"
+** Enable "coasting"
 ** Reduced "infill speed"
 
 ## Software
@@ -118,3 +118,6 @@ Best place to find model is Thingiverse.
 Find few of my models under [sub-folder models](models)
 
 
+# Resources
+
+link:https://www.simplify3d.com/support/print-quality-troubleshooting
