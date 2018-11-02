@@ -53,11 +53,11 @@ This wire is good.
 ** Nozzle 225°C
 ** Plate 60°C
 
-* PETG+ White: *VERY GOOD FINISH, difficult INFILL*
-** Nozzle 250°C 
-** Plate 80°C
-** Enable "coasting"
-** Reduced "infill speed"
+* PETG+ White: *VERY GOOD FINISH, watch out INFILL*
+** Nozzle 230°C 
+** Plate 50°C
+** Enable "coasting" if needed
+** Reduced "infill speed" if needed
 
 ## Software
 
