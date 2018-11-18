@@ -49,9 +49,9 @@ This wire is good.
 ** Nozzle 210°C
 ** Plate 40°C
 
-* PLA+ Carbon Fiber: *DIFFICULT*
-** Nozzle 225°C
-** Plate 60°C
+* PLA+ Carbon Fiber: *GOOD FINISH, not STRONG*
+** Nozzle 215°C
+** Plate 40°C
 
 * PETG+ White: *VERY GOOD FINISH, watch out INFILL*
 ** Nozzle 230°C 
