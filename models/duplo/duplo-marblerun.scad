@@ -13,15 +13,13 @@ include <duplo-block-lib.scad>
 quality = 50; // quality: low/fast (e.g. 10) for design, high/slow (e.g. 50) for final rendering 
 innerRadius=14*dr/16;
 
-//straightPiece(4);
+//straightPiece(2);
 //straightHolePiece(3); 
 //crossingPiece();
 //endPiece();
 //cornerPiece();
 //cornerHolePiece(); 
-//rampPiece();
-//ramp2Piece();
-//longRampPiece();
+//ramp(2,4);
 //cosinusSlopedRampPiece();
 //rampCornerPiece(steps=quality);
 //halfRampCornerPiece(steps=quality);
@@ -111,30 +109,17 @@ module rampPiece() {
    }
 }
 
-module ramp2Piece() {
+module ramp(length=2, height=4) {
    angle = 16.699; // 180 / 3.14159 * atan(0.5*duploHeight/duploRaster);
    vscale = 0.9578; // cos(angle);
+   wireDiam = 3;
    difference() {
-      duploMarbleRunBase(2,2,4,false);      
+      duploMarbleRunBase(2,length,height,false,false);      
       union() {
-         translate([0,dr+1, duploHeight+2]) rotate([90+angle,0,0]) scale([1,vscale,1])
+         translate([0,((4-length)/2)*dr+1, duploHeight+2]) rotate([90+angle,0,0]) scale([1,vscale,1])
                   cylinder( duploRaster*6, innerRadius, innerRadius,, center=true, $fn = quality*2 );     
-         translate([-2*dr,2*dr+0, 1.5*duploHeight+0]) rotate([90+angle,0,0])
-                  cube( [duploRaster*4,duploRaster*4,duploRaster*4] );       
-      }
-   }
-}
-
-module longRampPiece() {
-   angle = 16.699; // 180 / 3.14159 * atan(0.5*duploHeight/duploRaster);
-   vscale = 0.9578; // cos(angle);
-   difference() {
-      duploMarbleRunBase(2,4,4,false);      
-      union() {
-         translate([0,0*dr+1, duploHeight+2]) rotate([90+angle,0,0]) scale([1,vscale,1])
-                  cylinder( duploRaster*6, innerRadius, innerRadius,, center=true, $fn = quality*2 );     
-         translate([-2*dr,4*dr+0, 3*duploHeight+0]) rotate([90+angle,0,0])
-                  cube( [duploRaster*4,duploRaster*4,duploRaster*8] );       
+         translate([-2*dr,length*dr+0, (length/2) * 1.5*duploHeight+0]) rotate([90+angle,0,0])
+                  cube( [duploRaster*4,duploRaster*4,duploRaster*2*length] );
       }
    }
 }
