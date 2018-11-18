@@ -15,13 +15,13 @@ quality = 20; // quality: low/fast (e.g. 10) for design, high/slow (e.g. 50) for
 innerRadius=14*dr/16;
 
 // wires
-wireRadius=3/2;
+wireRadius=3.2/2;
 wireTX=7;
 wireTZ=-2;
 clipTX=1.45;
 
 // straightPieceWires(2);
-// ramp2PieceWires();
+//ramp(2,4, true);
 wireClip();
 
 module wireClip() {
@@ -46,52 +46,28 @@ module wireClip() {
  }
 }
 
-module straightPieceWires(length=2)
-{
-  difference() {
-    union() {  
-      duploMarbleRunBase(2,length,2,false);
-        
-      // wire holes
-      translate([wireTX,0,0])  
-        translate([0,dr,wireTZ]) rotate([90,0,0]) cylinder(dr*2,wireRadius*1.5,wireRadius*1.5,$fn = quality*2);
-      translate([-wireTX,0,0])
-        translate([0,dr,wireTZ]) rotate([90,0,0]) cylinder(dr*2,wireRadius*1.5,wireRadius*1.5,$fn = quality*2);  
-    }
-    
-    translate([0,dr * length+1, duploHeight+2]) rotate([90,0,0])
-      cylinder( duploRaster*2 * length, innerRadius, innerRadius,$fn = quality*2 );
-    
-    // wire holes 
-    translate([wireTX,0,0])  
-      translate([0,dr,wireTZ]) rotate([90,0,0]) cylinder(dr*2,wireRadius,wireRadius,$fn = quality*2);
-    translate([-wireTX,0,0])
-      translate([0,dr,wireTZ]) rotate([90,0,0]) cylinder(dr*2,wireRadius,wireRadius,$fn = quality*2);
-  } 
-}
-
-module ramp2PieceWires()
-{
+module ramp(length=2, height=4, wires=false) {
    angle = 16.699; // 180 / 3.14159 * atan(0.5*duploHeight/duploRaster);
    vscale = 0.9578; // cos(angle);
+   
    difference() {
-       
+      duploMarbleRunBase(2,length,height,false,false);      
       union() {
-        duploMarbleRunBase(2,2,4,false);
-        // wire holes
-        translate([wireTX,0,0]) translate([0,dr-1,wireTZ]) rotate([90+angle,0,0]) cylinder(dr*2-2,wireRadius*1.5,wireRadius*1.5,$fn = quality*2);
-        translate([-wireTX,0,0]) translate([0,dr-1,wireTZ]) rotate([90+angle,0,0]) cylinder(dr*2-2,wireRadius*1.5,wireRadius*1.5,$fn = quality*2);  
-      }
-      union() {
-         translate([0,dr+1, duploHeight+2]) rotate([90+angle,0,0]) scale([1,vscale,1])
+         translate([0,((4-length)/2)*dr+1, duploHeight+2]) rotate([90+angle,0,0]) scale([1,vscale,1])
                   cylinder( duploRaster*6, innerRadius, innerRadius,, center=true, $fn = quality*2 );     
-         translate([-2*dr,2*dr+0, 1.5*duploHeight+0]) rotate([90+angle,0,0])
-                  cube( [duploRaster*4,duploRaster*4,duploRaster*4] );       
+         translate([-2*dr,length*dr+0, (length/2) * 1.5*duploHeight+0]) rotate([90+angle,0,0])
+                  cube( [duploRaster*4,duploRaster*4,duploRaster*2*length] );
+         if(wires) {
+             translate([wireTX,((4-length)/2)*dr+1, duploHeight-8]) rotate([90+angle+15,0,0]) scale([1,vscale,1])
+                cylinder(duploRaster+5, r=wireRadius, $fn = quality*2);
+             translate([-wireTX,((4-length)/2)*dr+1, duploHeight-8]) rotate([90+angle+15,0,0]) scale([1,vscale,1])
+                cylinder(duploRaster+5, r=wireRadius, $fn = quality*2);
+             translate([wireTX,-((4-length)/2)*dr-1, duploHeight-20]) rotate([90,0,180]) scale([1,vscale,1])
+                cylinder(duploRaster, r=wireRadius, $fn = quality*2);
+             translate([-wireTX,-((4-length)/2)*dr-1, duploHeight-20]) rotate([90,0,180]) scale([1,vscale,1])
+                cylinder(duploRaster, r=wireRadius, $fn = quality*2);
+         }
       }
-      // wire holes 
-      translate([wireTX,0,0])  
-        translate([0,dr+1,wireTZ]) rotate([90+angle,0,0]) cylinder(dr*2+4,wireRadius,wireRadius,$fn = quality*2);
-      translate([-wireTX,0,0])
-        translate([0,dr+1,wireTZ]) rotate([90+angle,0,0]) cylinder(dr*2+4,wireRadius,wireRadius,$fn = quality*2);
    }
 }
+
