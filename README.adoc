@@ -48,16 +48,23 @@ This wire is good.
 * PLA+ Gray: *EASY*
 ** Nozzle 210°C
 ** Plate 40°C
+** Speed 60
 
-* PLA+ Carbon Fiber: *GOOD FINISH, not STRONG*
+* PLA+ Carbon Fiber: *GOOD FINISH, not so STRONG*
 ** Nozzle 215°C
 ** Plate 40°C
+** Speed 60 (default)
 
 * PETG+ White: *VERY GOOD FINISH, watch out INFILL*
 ** Nozzle 230°C 
 ** Plate 50°C
 ** Enable "coasting" if needed
 ** Reduced "infill speed" if needed
+
+* TPU Transparent:
+** Nozzle 210°C
+** Plate 40°C
+** Speed 25 (half default)
 
 ## Software
 
