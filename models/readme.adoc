@@ -22,8 +22,6 @@
 
 * link:https://www.thingiverse.com/thing:3177276[]
 
-
-
 == Paint
 
 * link:https://www.thingiverse.com/thing:2000340[]
@@ -31,3 +29,9 @@
 == Marble run
 
 https://www.thingiverse.com/thing:3484759
+
+== GoPro Mount
+
+image:ender3-addon/ender3-gopro-hero-5-session-mount.png[]
+
+See link:ender3-addon/ender3-gopro-hero-5-session-mount.scad[OpenSCAD] or link:ender3-addon/ender3-gopro-hero-5-session-mount.stl[STL]
