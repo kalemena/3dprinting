@@ -25,24 +25,40 @@ image:images/ender3.jpg[]
 |=========================================================
 |Category |Tested |Notes
 
-|Filament |[X] |
-* link:https://www.thingiverse.com/thing:3052488[Roller Guide]
+|Filament |[x] |
+link:https://www.thingiverse.com/thing:3052488[Roller Guide]
 
-|Noise and smoothness |[X] |
-* link:https://letsprint3d.net/2018/07/07/how-to-install-stepper-motor-dampers-ender-3/[Motors Dampers]
-* link:https://www.amazon.fr/dp/B06ZYG3K2Z/ref=psdc_2908498031_t1_B01MV40Z0L?th=1[Head]
+|Noise and smoothness |[x] |
+
 IMPORTANT: MUST HAVE for noise reduction: Noise goes from "noisy dental care room" to "tower PC loud FAN"
 
+link:https://letsprint3d.net/2018/07/07/how-to-install-stepper-motor-dampers-ender-3/[Motors Dampers]
+
+|Nozzle |[x] |
+
+link:https://www.amazon.fr/dp/B06ZYG3K2Z/ref=psdc_2908498031_t1_B01MV40Z0L?th=1[Head]
+
 |Head Fan | | 
-* link:https://www.thingiverse.com/thing:2759439[]
-* link:https://www.thingiverse.com/thing:2879538[]
-* link:https://www.thingiverse.com/thing:3092044[]
 
-|Fan | | 
-* link:https://www.amazon.fr/gp/product/B0119SLG18/ref=as_li_ss_tl?smid=A1X6FK5RDHNB96&psc=1&linkCode=sl1&tag=wish052-21&linkId=498c18dfc84c318d4be02d8940303ac7[]
+link:https://www.thingiverse.com/thing:2683629/[40x40 fan cooler]
 
-|Camera Mount | [X] | 
-* link:models/ender3-addon[]
+link:https://www.thingiverse.com/thing:21112[Fan resize adaptors 60 to 40]
+
+|Fan | [x] | 
+
+link:https://www.amazon.fr/dp/B071J8CZP9/ref=twister_B077VX8JXM?_encoding=UTF8&th=1[Noctua 40x10]
+
+|Camera Mount | [x] | 
+
+link:models[Basic model]
+
+link:https://www.thingiverse.com/thing:2491366[Arm model]
+
+link:https://www.thingiverse.com/thing:3147899[Flexible model]
+
+| Nuts | |
+
+link:https://www.thingiverse.com/thing:3050607[Nuts]
 
 |=========================================================
 
@@ -52,26 +68,20 @@ Up to now, I use only SUNLU wires (from Amazon), so it is not clear is other wir
 
 This wire is good.
 
-* PLA+ Gray: *EASY*
-** Nozzle 210°C
-** Plate 40°C
-** Speed 60
+.Materials
+[width="80%",cols="5,^2,10",options="header"]
+|=========================================================
+|Type |Nozzle |Plate |Speed | Options | Comments
 
-* PLA+ Carbon Fiber: *GOOD FINISH, not so STRONG*
-** Nozzle 215°C
-** Plate 40°C
-** Speed 60 (default)
+|PLA+ Gray | 210°C | 40°C | 60mm/s | |*EASY*
 
-* PETG+ White: *VERY GOOD FINISH, watch out INFILL*
-** Nozzle 230°C 
-** Plate 50°C
-** Enable "coasting" if needed
-** Reduced "infill speed" if needed
+|PLA+ Carbon Fiber | 215°C | 40°C | 60mm/s | |*GOOD FINISH, not so STRONG*
 
-* TPU Transparent:
-** Nozzle 210°C
-** Plate 40°C
-** Speed 25 (half default)
+|PETG+ White | 230°C | 50°C | 60mm/s | Enable "coasting" and reduced "infill speed" | *VERY GOOD FINISH, watch out INFILL*
+
+|TPU Transparent | 210°C | 40°C | 25mm/s | |*Flexible!*
+
+|=========================================================
 
 ## Software
 
