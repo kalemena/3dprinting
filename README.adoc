@@ -69,7 +69,7 @@ Up to now, I use only SUNLU wires (from Amazon), so it is not clear is other wir
 This wire is good.
 
 .Materials
-[width="80%",cols="5,^2,10",options="header"]
+[width="80%",options="header"]
 |=========================================================
 |Type |Nozzle |Plate |Speed | Options | Comments
 
