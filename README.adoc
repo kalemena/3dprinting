@@ -96,33 +96,7 @@ $ sudo apt-get install openscad
 
 Cura engine is probably best tool for slicing.
 
-* link:https://download.ultimaker.com/current/Cura-3.5.0.AppImage[]
-* link:https://download.ultimaker.com/current[]
-
-To run CuraEngine:
-
-```bash
-$ sudo apt-get install cura
-$ sudo cura &
-```
-
-Using docker:
-
-```bash
-#!/bin/sh
-XSOCK=/tmp/.X11-unix
-XAUTH=/tmp/.docker.xauth
-sudo docker run -ti \
-    -v /etc/passwd:/etc/passwd:ro \
-    -v /etc/group:/etc/group:ro \
-    -v $HOME:$HOME \
-    -v $XSOCK:$XSOCK \
-    -v $XAUTH:$XAUTH \
-    -e XAUTHORITY=$XAUTH \
-    -e DISPLAY \
-    --user $UID:$GROUPS \
-    kalemena/cura
-```
+* link:https://download.ultimaker.com[Ultimaker Cura]
 
 ### Repetier
 
@@ -131,8 +105,12 @@ Repetier Host is nice, includes Cura (although it looks using Cura directly give
 ### OctoPrint
 
 Find link here:
-* link:https://github.com/OctoPrint/docker[]
-* link:https://hub.docker.com/r/rbartl/docker-octoprint/[]
+
+* link:https://github.com/OctoPrint/docker[Octoprint]
+
+* link:https://hub.docker.com/r/rbartl/docker-octoprint/[Other Octoprint]
+
+* link:https://raspbian-france.fr/octoprint-raspberry/[Raspbian Octoprint]
 
 ## Model
 
