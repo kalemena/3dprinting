@@ -44,6 +44,10 @@ link:https://www.thingiverse.com/thing:2683629/[40x40 fan cooler]
 
 link:https://www.thingiverse.com/thing:21112[Fan resize adaptors 60 to 40]
 
+link:https://www.thingiverse.com/thing:3048856[Silence & Quality Mod]
+
+link:https://www.thingiverse.com/thing:2718960[High Clearance Fang Mod]
+
 |Fan | [x] | 
 
 link:https://www.amazon.fr/dp/B071J8CZP9/ref=twister_B077VX8JXM?_encoding=UTF8&th=1[Noctua 40x10]
@@ -116,7 +120,7 @@ Find link here:
 
 Best place to find model is Thingiverse.
 
-Find few of my models under [sub-folder models](models)
+Find few of my models under link:models[sub-folder models]
 
 # Resources
 

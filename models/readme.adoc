@@ -1,36 +1,28 @@
 
 = Drill
 
-== Holders
+* link:https://www.thingiverse.com/thing:1119032[vacuum cleaner drill aid]
+* link:https://www.thingiverse.com/thing:2757933[Drill Dust Collector]
+* link:https://www.thingiverse.com/thing:3023372[Drill dust collector]
+* link:https://www.thingiverse.com/thing:3238030[Gabarit de perçage]
+* link:https://www.thingiverse.com/thing:3013962[Drillguide for straight/perpendicular holes]
+* link:https://www.thingiverse.com/thing:2964598[Dowel, screw and marking jig]
+* link:https://www.thingiverse.com/thing:3177276[Collet Drill Stop]
+* link:https://www.thingiverse.com/thing:2000340[Drill Mixer Attachment]
 
-* link:https://www.thingiverse.com/thing:1119032[]
-* link:https://www.thingiverse.com/thing:1119032[]
+= Tooling
 
-== Vaccum drill
+link:https://www.thingiverse.com/thing:2957550[Corner Brackets]
 
-* link:https://www.thingiverse.com/thing:1119032[]
-* link:https://www.thingiverse.com/thing:2757933[]
+= Marble run
 
-== Drilling guides
+link:https://www.thingiverse.com/thing:3484759[Marble run]
 
-* link:https://www.thingiverse.com/thing:3238030[]
-* link:https://www.thingiverse.com/thing:3023372[]
-* link:https://www.thingiverse.com/thing:3013962[]
-* link:https://www.thingiverse.com/thing:2964598[]
+= Meccano Junior
 
-== Drill stop
+link:https://www.thingiverse.com/thing:2367964[Meccano Jr parts]
 
-* link:https://www.thingiverse.com/thing:3177276[]
-
-== Paint
-
-* link:https://www.thingiverse.com/thing:2000340[]
-
-== Marble run
-
-https://www.thingiverse.com/thing:3484759
-
-== GoPro Mount
+= GoPro Mount
 
 image:ender3-addon/ender3-gopro-hero-5-session-mount.png[]
 
