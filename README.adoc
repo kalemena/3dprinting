@@ -75,13 +75,17 @@ This wire is good.
 .Materials
 [width="80%",options="header"]
 |=========================================================
-|Type |Nozzle |Plate |Speed | Options | Comments
+|Type |T°C Nozzle |T°C Plate |Speed | Options | Comments
 
 |PLA+ Gray | 210°C | 40°C | 60mm/s | |*EASY*
 
 |PLA+ Carbon Fiber | 215°C | 40°C | 60mm/s | |*GOOD FINISH, not so STRONG*
 
-|PETG+ White | 230°C | 50°C | 60mm/s | Enable "coasting" and reduced "infill speed" | *VERY GOOD FINISH, watch out INFILL*
+|PETG+ White | 240°C | 50°C | 60mm/s | 
+
+Enable *coasting*
+
+Reduced *infill speed* to 40mm/s | *VERY GOOD FINISH*
 
 |TPU Transparent | 210°C | 40°C | 25mm/s | |*Flexible!*
 
