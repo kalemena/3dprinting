@@ -1,0 +1,43 @@
+.Enhancements
+[width="80%",cols="5,^2,10",options="header"]
+|=========================================================
+|Category |Tested |Notes
+
+|Filament | x |
+link:https://www.thingiverse.com/thing:3052488[Roller Guide]
+
+|Noise and smoothness | x |
+
+IMPORTANT: MUST HAVE for noise reduction: Noise goes from "noisy dental care room" to "tower PC loud FAN"
+
+link:https://letsprint3d.net/2018/07/07/how-to-install-stepper-motor-dampers-ender-3/[Motors Dampers]
+
+|Nozzle | x |
+
+link:https://www.amazon.fr/dp/B06ZYG3K2Z/ref=psdc_2908498031_t1_B01MV40Z0L?th=1[Head]
+
+|Head Fan | | 
+
+link:https://www.thingiverse.com/thing:2683629/[40x40 fan cooler]
+
+link:https://www.thingiverse.com/thing:21112[Fan resize adaptors 60 to 40]
+
+link:https://www.thingiverse.com/thing:3048856[Silence & Quality Mod]
+
+|Fan | x | 
+
+link:https://www.amazon.fr/dp/B071J8CZP9/ref=twister_B077VX8JXM?_encoding=UTF8&th=1[Noctua 40x10]
+
+|Camera Mount | / | 
+
+link:models[Basic model]
+
+link:https://www.thingiverse.com/thing:2491366[Arm model]
+
+link:https://www.thingiverse.com/thing:3147899[Flexible model]
+
+| Nuts | / |
+
+link:https://www.thingiverse.com/thing:3050607[Nuts]
+
+|=========================================================
