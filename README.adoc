@@ -18,9 +18,13 @@ There are no specific configuration after, because Cura can use "CR-10" defaults
 
 image:images/ender3.jpg[Ender3,480,640]
 
-## Enhancements
+## Tips
 
-link:enhancements.adoc[Enhancements]
+* link:enhancements.adoc[Enhancements]
+
+* link:software.adoc[Software]
+
+* link:https://www.simplify3d.com/support/print-quality-troubleshooting[Troubleshooting General Guides]
 
 ## Material
 
@@ -46,35 +50,6 @@ Reduced *infill speed* to 40mm/s | *VERY GOOD FINISH*
 |TPU Transparent | 210°C | 40°C | 25mm/s | |*Flexible!*
 
 |=========================================================
-
-## Software
-
-### OpenSCAD
-
-```bash
-$ sudo add-apt-repository ppa:openscad/releases
-$ sudo apt-get install openscad
-```
-
-### Cura
-
-Cura engine is probably best tool for slicing.
-
-* link:https://download.ultimaker.com[Ultimaker Cura]
-
-### Repetier
-
-Repetier Host is nice, includes Cura (although it looks using Cura directly gives better results).
-
-### OctoPrint
-
-Find link here:
-
-* link:https://github.com/OctoPrint/docker[Octoprint]
-
-* link:https://hub.docker.com/r/rbartl/docker-octoprint/[Other Octoprint]
-
-* link:https://raspbian-france.fr/octoprint-raspberry/[Raspbian Octoprint]
 
 ## How-to
 
@@ -114,7 +89,3 @@ Although Cura can plug and print directly, it seems Repetier gave more stability
 Best place to find model is Thingiverse.
 
 Find few of my models under link:models[sub-folder models]
-
-# Resources
-
-link:https://www.simplify3d.com/support/print-quality-troubleshooting[Troubleshooting General Guides]
