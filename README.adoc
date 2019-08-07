@@ -16,7 +16,7 @@ Ender-3 is easy to mount, with ~1h effort.
 
 There are no specific configuration after, because Cura can use "CR-10" defaults, with only changing printer XYZ size.
 
-image:images/ender3.jpg[Ender3,480,640]
+image:images/ender3.jpg[Ender3,600,600]
 
 ## Tips
 
