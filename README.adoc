@@ -37,11 +37,11 @@ Sunlu wire is good in all flavors tested below.
 |=========================================================
 |Type |T°C Nozzle |T°C Plate |Speed | Options | Comments
 
-|PLA+ Gray | 210°C | 40°C | 60mm/s | |*EASY*
+|PLA+ Gray/Green | 210°C | 40°C | 60mm/s | |*EASY*
 
 |PLA+ Carbon Fiber | 215°C | 40°C | 60mm/s | |*GOOD FINISH, not so STRONG*
 
-|PETG+ White | 240°C | 50°C | 60mm/s | 
+|PETG+ White/Red | 240°C | 50°C | 60mm/s | 
 
 Enable *coasting*
 
