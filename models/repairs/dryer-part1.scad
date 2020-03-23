@@ -1,6 +1,6 @@
 $fn=80;
 
-radius = 4.8/2;
+radius = 5.2/2;
 inner_radius = 0;
 bend_radius = 5/2;
 angle_1 = 0;
@@ -60,10 +60,10 @@ module left() {
     difference() {
         union() {
             translate([2.2,-10,0])
-                cube([10,22,7], center=true);
+                cube([10,22,8], center=true);
             translate([5-0.3,0,0]) 
             hull() {
-                translate([0,4,0]) cube([10/2,7,7], center=true);
+                translate([0,4,0]) cube([10/2,7,8], center=true);
                 translate([0,5,5]) rotate([0,90,0]) cylinder(d=8.5, h=10/2, center=true);
             }
         }
@@ -79,7 +79,6 @@ difference() {
     translate([0,5,5]) rotate([0,90,0]) cylinder(d=4,h=50, center=true);
 }
 
-/*
 translate([4.3,10,0]) {
     rotate([0,0,180]) {
         difference() {
@@ -92,4 +91,3 @@ translate([4.3,10,0]) {
         }
     }
 }
-*/
