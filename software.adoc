@@ -6,6 +6,9 @@ $ sudo add-apt-repository ppa:openscad/releases
 $ sudo apt-get install openscad
 ```
 
+* link:http://edutechwiki.unige.ch/fr/Tutoriel_OpenSCAD[Tutoriel]
+* link:https://github.com/openscad/list-comprehension-demos[Demos]
+
 ### Cura
 
 Cura engine is probably best tool for slicing.
