@@ -88,4 +88,7 @@ Although Cura can plug and print directly, it seems Repetier gave more stability
 
 Best place to find model is Thingiverse.
 
-Find few of my models under link:models[sub-folder models]
+Find few of my models under:
+
+* link:models[sub-folder models]
+** link:models/repairs[Repairing models]
