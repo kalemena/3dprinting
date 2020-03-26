@@ -7,5 +7,8 @@ image:rack-hinge-parts.png[Rack Hinge repair]
 
 link:rack-hinge-parts.scad[rack-hinge-parts.scad]
 
+== Kitchen sink
 
+// image:kitchen-fix-sink-plug.png[Kitchen sink plug repair]
 
+link:kitchen-fix-sink-plug.scad[kitchen-fix-sink-plug.scad]
