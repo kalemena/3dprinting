@@ -1,45 +1,72 @@
-$fn=100;
+$fn=80;
 
 high=4;
 
+module clipX(sizeX, cornerD) {
+    hull() {
+         translate([-(sizeX-cornerD)/2,0,0]) sphere(d=cornerD);
+         translate([(sizeX-cornerD)/2,0,0]) sphere(d=cornerD);
+    }
+}
+
+module clipFace(sizeX, sizeY, cornerD) {
+    hull() {
+         translate([0,-(sizeY-cornerD)/2,0]) clipX(sizeX,cornerD);
+         translate([0,(sizeY-cornerD)/2,0]) clipX(sizeX,cornerD);
+    }
+}
+
+module clipCube(sizeX,sizeY,sizeZ,cornerD) {
+    hull() {
+         translate([0,0,-(sizeZ-cornerD)/2]) clipFace(sizeX,sizeY,cornerD);
+         translate([0,0,(sizeZ-cornerD)/2]) clipFace(sizeX,sizeY,cornerD);
+    }
+}
+
+module clip() {
+    clipCube(5,2,high,1);
+    translate([0,2.5,0]) clipCube(2,5,high,1);
+}
+
 difference() {
     union() {
-        difference() {
-            hull() {
-                translate([0,5,0]) cylinder(d=100,h=high);
-                translate([0,70,0]) cylinder(d=10,h=high);
-            }
-            hull() {
-                translate([0,4,-0.05]) cylinder(d=95,h=high+0.1);
-                translate([0,68,-0.05]) cylinder(d=10,h=high+0.1);
-            }
-            translate([0,80,0]) rotate([0,0,-45]) cube([20,20,20], center=true);
+        // int
+        translate([0,10,0]) 
+            rotate([0,0,210+45-90]) 
+                rotate_extrude(angle=210, convexity=10) translate([48, 0]) square([3,high]);
+        
+        // ext
+        translate([0,-5,0]) 
+            rotate([0,0,230-45-30]) 
+                rotate_extrude(angle=230, convexity=10) translate([55, 0]) square([3,high]);
+        
+        // film
+        translate([0,21,0]) {
+            rotate([0,0,-120-30]) 
+                rotate_extrude(angle=120, convexity=10) translate([80, 0]) square([3,high]);
+            rotate([0,0,-20]) translate([0,-86,high/2]) clip();
+            rotate([0,0,20]) translate([0,-86,high/2]) clip();
+            rotate([0,0,-55]) translate([0,-86,high/2]) clip();
+            rotate([0,0,55]) translate([0,-86,high/2]) clip();
         }
 
-        difference() {
-            hull() {
-                translate([0,-10,0]) cylinder(d=120,h=high);
-                translate([0,70,0]) cylinder(d=10,h=high);
+        // tiges gauche
+        translate([47,21,0])
+            rotate([0,0,20]) {
+                cube([3,50,high]);
+                translate([2,-4,0]) rotate([0,0,3]) cube([3,40,high]);
+                translate([0,49,4]) rotate([0,90,0]) cylinder(d=8,h=3);
             }
-            hull() {
-                translate([0,-10,-0.05]) cylinder(d=116,h=high+0.1);
-                translate([0,66,-0.05]) cylinder(d=10,h=high+0.1);
+        // tiges gauche
+        translate([-47-3,21,0])
+            rotate([0,0,-20]) {
+                cube([3,50,high]);
+                translate([2-4,-4,0]) rotate([0,0,-3]) cube([3,40,high]);
+                translate([0,50,4]) rotate([0,90,0]) cylinder(d=8,h=3);
             }
-            translate([0,80,0]) rotate([0,0,-45]) cube([20,20,20], center=true);
-        }
-        
-        //translate([10,80,0]) rotate([0,0,0]) 
-        //    rotate_extrude(angle=270, convexity=10) translate([3, 0]) square(3);
-
-        translate([-7,70,4]) rotate([90,0,45]) 
-            cylinder(d=8,h=3);
-        translate([7,70,4]) rotate([90,0,-45]) 
-            cylinder(d=8,h=3);
-        
-        // translate([20,-66,5/2]) rotate([90,0,25]) cylinder(d1=5,d2=1,h=3);
-    }
-    translate([-7,70,4]) rotate([90,0,45])
-            cylinder(d=3,h=high);
-    translate([7,70,4]) rotate([90,0,-45]) 
-            cylinder(d=3,h=high);
-}
+     }
+     
+     // elastique
+     translate([34,68.5,4]) rotate([0,90,20]) cylinder(d=3,h=10,center=true);
+     translate([-33,68,4]) rotate([0,90,-20]) cylinder(d=3,h=10,center=true);
+ }
