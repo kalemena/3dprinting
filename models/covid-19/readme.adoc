@@ -1,0 +1,30 @@
+= COVID-19
+
+These parts are meant to be created using OpenSCAD, from human-readable primitives like spheres, cubes or cylinders.
+
+== Parts
+
+image:face-shield-model-1.png[]
+
+link:face-shield-model-1.scad[face-shield-model-1.scad]
+
+image:face-shield-model-2.png[]
+
+link:face-shield-model-2.scad[face-shield-model-2.scad]
+
+image:face-shield-model-3.png[]
+
+link:face-shield-model-3.scad[face-shield-model-3.scad]
+
+image:face-shield-model-4.png[]
+
+link:face-shield-model-4.scad[face-shield-model-4.scad]
+
+== References
+
+* link:https://smartairfilters.com/en/blog/best-materials-make-diy-face-mask-virus/[Mask materials]
+
+=== Masks
+
+* link:https://www.thingiverse.com/thing:4225667[Mask]
+* link:https://www.thingiverse.com/thing:4224482[Mask]
