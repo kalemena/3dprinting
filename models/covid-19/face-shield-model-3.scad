@@ -1,4 +1,4 @@
-$fn=80;
+$fn=50;
 
 high=4;
 
@@ -28,51 +28,39 @@ module clip() {
     translate([0,2.5,0]) clipCube(2,5,high,1);
 }
 
+module arc() {
+    translate([0,-62,0])
+        rotate([0,0,180]) {
+            rotate_extrude(angle=180, convexity=10) translate([25, 0]) square([3,high]);
+            rotate([0,0,180]) translate([0,-30,high/2]) clip(); 
+        }
+}
+
 union() {
     // int
-    translate([0,10,0]) 
+    translate([0,10,0]) {
         rotate([0,0,210+45-90]) 
-            rotate_extrude(angle=210, convexity=10) translate([48, 0]) square([3,high]);
-    
-    // face right
-    translate([-38,-5,0]) {
-        rotate([0,0,180-60]) {
-            rotate_extrude(angle=170, convexity=10) translate([25, 0]) square([3,high]);
-            rotate([0,0,175]) translate([0,-30,high/2]) clip();          
-        }
-    }
-    
-    // face left
-    translate([38,-5,0]) {
-        rotate([0,0,-60-48]) {
-            rotate_extrude(angle=170, convexity=10) translate([25, 0]) square([3,high]);
-            rotate([0,0,175]) translate([0,-30,high/2]) clip();          
-        }
-    }
-    
-    // face center
-    translate([0,-30,0]) {
-        rotate([0,0,185]) {
-            rotate_extrude(angle=170, convexity=10) translate([25, 0]) square([3,high]);
-            rotate([0,0,175]) translate([0,-30,high/2]) clip();           
-        }
+            rotate_extrude(angle=210, convexity=10) translate([65, 0]) square([3,high]);
+        
+        rotate([0,0,68])  arc();
+        rotate([0,0,-68]) arc();
+        rotate([0,0,25])  arc();
+        rotate([0,0,-25]) arc();
     }
 
-    // tiges gauche
-    translate([47,21,0])
-        rotate([0,0,20]) {
+    // right
+    translate([63,25,0])
+        rotate([0,0,15]) {
             cube([3,50,high]);
-            translate([2,-4,0]) rotate([0,0,3]) cube([3,40,high]);
-            //translate([0,49,4]) rotate([0,90,0]) cylinder(d=8,h=3);
+            //translate([2,-4,0]) rotate([0,0,3]) cube([3,40,high]);
         }
-    // tiges gauche
-    translate([-47-3,21,0])
-        rotate([0,0,-20]) {
-            cube([3,50,high]);
-            translate([2-4,-4,0]) rotate([0,0,-3]) cube([3,40,high]);
-            //translate([0,50,4]) rotate([0,90,0]) cylinder(d=8,h=3);
-        }
+    translate([57,72,high/2]) rotate([0,0,20+90]) clip();
         
-    translate([-36,67,high/2]) rotate([0,0,-20-90]) clip();
-    translate([36,67,high/2]) rotate([0,0,20+90]) clip();
- }
+    // left
+    translate([-63-3,25,0])
+        rotate([0,0,-15]) {
+            cube([3,50,high]);
+            //translate([2-4,-4,0]) rotate([0,0,-3]) cube([3,40,high]);
+        }
+    translate([-57,72,high/2]) rotate([0,0,-20-90]) clip();
+}
