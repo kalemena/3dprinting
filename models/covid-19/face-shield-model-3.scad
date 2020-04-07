@@ -42,10 +42,9 @@ union() {
         rotate([0,0,210+45-90]) 
             rotate_extrude(angle=210, convexity=10) translate([65, 0]) square([3,high]);
         
-        rotate([0,0,68])  arc();
+        rotate([0,0,0])  arc();
         rotate([0,0,-68]) arc();
-        rotate([0,0,25])  arc();
-        rotate([0,0,-25]) arc();
+        rotate([0,0,68])  arc();
     }
 
     // right
