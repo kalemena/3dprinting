@@ -1,72 +1,29 @@
-$fn=80;
+include <face-shield-lib.scad>
 
+$fn=50;
 high=4;
 
-module clipX(sizeX, cornerD) {
-    hull() {
-         translate([-(sizeX-cornerD)/2,0,0]) sphere(d=cornerD);
-         translate([(sizeX-cornerD)/2,0,0]) sphere(d=cornerD);
-    }
-}
-
-module clipFace(sizeX, sizeY, cornerD) {
-    hull() {
-         translate([0,-(sizeY-cornerD)/2,0]) clipX(sizeX,cornerD);
-         translate([0,(sizeY-cornerD)/2,0]) clipX(sizeX,cornerD);
-    }
-}
-
-module clipCube(sizeX,sizeY,sizeZ,cornerD) {
-    hull() {
-         translate([0,0,-(sizeZ-cornerD)/2]) clipFace(sizeX,sizeY,cornerD);
-         translate([0,0,(sizeZ-cornerD)/2]) clipFace(sizeX,sizeY,cornerD);
-    }
-}
-
-module clip() {
-    clipCube(5,2,high,1);
-    translate([0,2.5,0]) clipCube(2,5,high,1);
-}
-
-difference() {
-    union() {
-        // int
-        translate([0,10,0]) 
-            rotate([0,0,210+45-90]) 
-                rotate_extrude(angle=210, convexity=10) translate([48, 0]) square([3,high]);
-        
-        // ext
-        translate([0,-5,0]) 
-            rotate([0,0,230-45-30]) 
-                rotate_extrude(angle=230, convexity=10) translate([55, 0]) square([3,high]);
-        
-        // film
-        translate([0,21,0]) {
-            rotate([0,0,-120-30]) 
-                rotate_extrude(angle=120, convexity=10) translate([80, 0]) square([3,high]);
-            rotate([0,0,-20]) translate([0,-86,high/2]) clip();
-            rotate([0,0,20]) translate([0,-86,high/2]) clip();
-            rotate([0,0,-55]) translate([0,-86,high/2]) clip();
-            rotate([0,0,55]) translate([0,-86,high/2]) clip();
+module arc() {
+    translate([0,-22,0])
+        rotate([0,0,180-25]) {
+            rotate_extrude(angle=230, convexity=10) translate([71.5, 0]) square([3,high]);
         }
+        
+    translate([0,30,0])
+        rotate([0,0,-100-40]) {
+            rotate_extrude(angle=100, convexity=10) translate([125, 0]) square([3,high]);
+            rotate([0,0,100+40+48]) translate([0,-130,high/2]) clip();
+            rotate([0,0,100+40-48]) translate([0,-130,high/2]) clip();
+            rotate([0,0,100+40+20]) translate([0,-130,high/2]) clip();
+            rotate([0,0,100+40-20]) translate([0,-130,high/2]) clip();
+        }
+}
 
-        // tiges gauche
-        translate([47,21,0])
-            rotate([0,0,20]) {
-                cube([3,50,high]);
-                translate([2,-4,0]) rotate([0,0,3]) cube([3,40,high]);
-                translate([0,49,4]) rotate([0,90,0]) cylinder(d=8,h=3);
-            }
-        // tiges gauche
-        translate([-47-3,21,0])
-            rotate([0,0,-20]) {
-                cube([3,50,high]);
-                translate([2-4,-4,0]) rotate([0,0,-3]) cube([3,40,high]);
-                translate([0,50,4]) rotate([0,90,0]) cylinder(d=8,h=3);
-            }
-     }
-     
-     // elastique
-     translate([34,68.5,4]) rotate([0,90,20]) cylinder(d=3,h=10,center=true);
-     translate([-33,68,4]) rotate([0,90,-20]) cylinder(d=3,h=10,center=true);
- }
+union() {
+    faceShieldBase();
+    
+    translate([0,10,0]) {
+        rotate([0,0,0])  arc();
+    }
+}
+
