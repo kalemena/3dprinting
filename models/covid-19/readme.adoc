@@ -2,22 +2,22 @@
 
 These parts are meant to be created using OpenSCAD, from human-readable primitives like spheres, cubes or cylinders.
 
-== Parts
 
-image:face-shield-model-1.png[]
-
-link:face-shield-model-1.scad[face-shield-model-1.scad]
-
-image:face-shield-model-2.png[]
-
+image:face-shield-model-2-proto.png[Prototype,320,240]
+image:face-shield-model-2-build.png[Build,320,240]
+image:face-shield-model-2.png[Model #2,320,240]
 link:face-shield-model-2.scad[face-shield-model-2.scad]
 
-image:face-shield-model-3.png[]
 
+== Other Parts
+
+image:face-shield-model-1.png[Model #1,320,240]
+link:face-shield-model-1.scad[face-shield-model-1.scad]
+
+image:face-shield-model-3.png[Model #3,320,240]
 link:face-shield-model-3.scad[face-shield-model-3.scad]
 
-image:face-shield-model-4.png[]
-
+image:face-shield-model-4.png[Model #4,320,240]
 link:face-shield-model-4.scad[face-shield-model-4.scad]
 
 == References
