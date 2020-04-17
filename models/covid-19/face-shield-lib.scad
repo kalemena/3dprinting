@@ -32,19 +32,24 @@ module faceShieldBase() {
         }
         
         // right
-        translate([63,25,0])
-            rotate([0,0,15]) {
+        translate([63+0.2,25,0])
+            rotate([0,0,12]) {
                 cube([3,50,high]);
                 //translate([2,-4,0]) rotate([0,0,3]) cube([3,40,high]);
             }
-        translate([57,72,high/2]) rotate([0,0,20+90]) clip();
+        translate([59,72,high/2]) rotate([0,0,12+90]) clip();
             
         // left
-        translate([-63-3,25,0])
-            rotate([0,0,-15]) {
+        translate([-63-3.25,25,0])
+            rotate([0,0,-12]) {
                 cube([3,50,high]);
                 //translate([2-4,-4,0]) rotate([0,0,-3]) cube([3,40,high]);
             }
-        translate([-57,72,high/2]) rotate([0,0,-20-90]) clip();
+        translate([-59,72,high/2]) rotate([0,0,-12-90]) clip();
     }
 }
+
+$fn=80;
+high=6;
+
+faceShieldBase();
