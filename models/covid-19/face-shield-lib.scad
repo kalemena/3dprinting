@@ -28,21 +28,21 @@ module faceShieldBase() {
     union() {
         translate([0,10,0]) {
             rotate([0,0,210+45-90]) 
-                rotate_extrude(angle=210, convexity=10) translate([65, 0]) square([3,high]);
+                rotate_extrude(angle=210, convexity=10) translate([65, 0]) square([3.5,high]);
         }
         
         // right
         translate([63+0.2,25,0])
             rotate([0,0,12]) {
-                cube([3,65,high]);
+                cube([3.5,65,high]);
                 //translate([2,-4,0]) rotate([0,0,3]) cube([3,40,high]);
             }
         translate([56,86,high/2]) rotate([0,0,12+90]) clip();
             
         // left
-        translate([-63-3.25,25,0])
+        translate([-63-3.75,25,0])
             rotate([0,0,-12]) {
-                cube([3,65,high]);
+                cube([3.5,65,high]);
                 //translate([2-4,-4,0]) rotate([0,0,-3]) cube([3,40,high]);
             }
         translate([-56,86,high/2]) rotate([0,0,-12-90]) clip();
