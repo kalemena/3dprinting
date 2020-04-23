@@ -19,37 +19,37 @@ module clipCube(sizeX,sizeY,sizeZ,cornerD) {
     }
 }
 
-module clip() {
+module clip(high) {
     clipCube(5,2,high,1);
     translate([0,2.5,0]) clipCube(2,5,high,1);
 }
 
-module faceShieldBase() {
+module faceShieldBase(high,width) {
     union() {
         translate([0,10,0]) {
             rotate([0,0,210+45-90]) 
-                rotate_extrude(angle=210, convexity=10) translate([65, 0]) square([3.5,high]);
+                rotate_extrude(angle=210, convexity=10) translate([65, 0]) 
+                    square([width,high]);
         }
         
         // right
         translate([63+0.2,25,0])
             rotate([0,0,12]) {
-                cube([3.5,65,high]);
+                cube([width,65,high]);
                 //translate([2,-4,0]) rotate([0,0,3]) cube([3,40,high]);
             }
-        translate([56,86,high/2]) rotate([0,0,12+90]) clip();
+        translate([56,86,high/2]) rotate([0,0,12+90]) clip(high);
             
         // left
         translate([-63-3.75,25,0])
             rotate([0,0,-12]) {
-                cube([3.5,65,high]);
+                cube([width,65,high]);
                 //translate([2-4,-4,0]) rotate([0,0,-3]) cube([3,40,high]);
             }
-        translate([-56,86,high/2]) rotate([0,0,-12-90]) clip();
+        translate([-56,86,high/2]) rotate([0,0,-12-90]) clip(high);
     }
 }
 
 $fn=80;
-high=6;
 
-faceShieldBase();
+faceShieldBase(6,3.5);
