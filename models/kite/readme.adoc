@@ -1,0 +1,4 @@
+= Kite Wind Part
+
+image:kite-attach.png[Kite Attach,320,240]
+link:kite-attach.scad[kite-attach.scad]
