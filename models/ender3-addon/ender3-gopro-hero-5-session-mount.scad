@@ -4,11 +4,13 @@ thickness=4;
 widthMid=7;
 wide=25;
 
+//#translate([0,0,4]) cube([10,30,7]);
+
 difference() {
     union() {
-        cube([wide,70/2,thickness]);
+        cube([wide,35,thickness]);
         translate([0,0,thickness+widthMid]) {
-            cube([wide,55,thickness]);
+            translate([0,0,-0.4]) rotate([1,0,0]) cube([wide,55,thickness]);
             translate([0,35,25-thickness])
                 cube([wide,20,thickness]);
         }
