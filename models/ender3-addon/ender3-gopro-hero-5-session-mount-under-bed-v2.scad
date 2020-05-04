@@ -11,7 +11,7 @@ lenthPart2=65;
 high=thickness*2+thicknessPlate;
 
 screwDiam=4;
-/*
+
 // part #1 : fix under bed
 difference() {    
     hull() {
@@ -25,7 +25,8 @@ difference() {
 }
 
 // part #2 : arm onto fix under bed
-translate([0,lenthPartUnderBed-5.5,0])
+translate([0,lenthPartUnderBed-5.5+6,-2])
+rotate([45,0,0])
 difference() {
     union() {
         hull() {
@@ -41,9 +42,10 @@ difference() {
     translate([-20,5.5,high/2]) rotate([0,90,0]) cylinder(d=screwDiam, h=50);
     translate([0,lenthPart2,high/2]) rotate([0,90,0]) cylinder(d=screwDiam, h=width);
 }
-*/
+
 // part #3 : gopro fix
-translate([0,104,0])
+translate([22,86,43])
+rotate([90,0,180])
 difference() {
     hull() {
         translate([-3,10,0]) cube([width+3*2,27,22]);
