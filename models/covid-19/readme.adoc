@@ -26,9 +26,9 @@ link:face-shield-model-4.scad[face-shield-model-4.scad]
 
 == Face Mask
 
-image:face-mask-buckle.png[Face Mask Buckle,320,240]
+image:face-mask-buckle.png[Face Mask Buckle,400,240]
 
-link:face-mask-buckle.png[face-mask-buckle.scad]
+link:face-mask-buckle.scad[face-mask-buckle.scad]
 
 == References
 
