@@ -3,12 +3,12 @@
 
 == Rack Hinge
 
-image:rack-hinge-parts.png[Rack Hinge repair]
+image:rack-hinge-parts.png[Rack Hinge repair, 320, 240]
 
 link:rack-hinge-parts.scad[rack-hinge-parts.scad]
 
 == Kitchen sink
 
-// image:kitchen-fix-sink-plug.png[Kitchen sink plug repair]
+image:kitchen-fix-sink-plug.png[Kitchen sink plug repair, 320, 240]
 
 link:kitchen-fix-sink-plug.scad[kitchen-fix-sink-plug.scad]
