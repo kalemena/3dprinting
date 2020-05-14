@@ -30,6 +30,10 @@ image:face-mask-buckle.png[Face Mask Buckle,400,240]
 
 link:face-mask-buckle.scad[face-mask-buckle.scad]
 
+image:face-mask-buckle-v2.png[Face Mask Buckle With Angle,400,240]
+
+link:face-mask-buckle-v2.scad[face-mask-buckle-v2.scad]
+
 == References
 
 * link:https://smartairfilters.com/en/blog/best-materials-make-diy-face-mask-virus/[Mask materials]
