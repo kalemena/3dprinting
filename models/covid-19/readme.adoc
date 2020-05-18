@@ -40,24 +40,24 @@ This is a funny project to create a very randomized COVID figure.
 
 Each refresh in OpenSCAD will generate a distinct figure such as below:
 
-image:keychain-covid-19-nb01.png[Keychain COVID, 150,150]
-image:keychain-covid-19-nb02.png[Keychain COVID, 150,150]
+image:keychain-covid/keychain-covid-19-nb01.png[Keychain COVID, 180,150]
+image:keychain-covid/keychain-covid-19-nb02.png[Keychain COVID, 180,150]
 
-image:keychain-covid-19-nb03.png[Keychain COVID, 150,150]
-image:keychain-covid-19-nb04.png[Keychain COVID, 150,150]
+image:keychain-covid/keychain-covid-19-nb03.png[Keychain COVID, 180,150]
+image:keychain-covid/keychain-covid-19-nb04.png[Keychain COVID, 180,150]
 
-image:keychain-covid-19-nb05.png[Keychain COVID, 150,150]
-image:keychain-covid-19-nb06.png[Keychain COVID, 150,150]
+image:keychain-covid/keychain-covid-19-nb05.png[Keychain COVID, 180,150]
+image:keychain-covid/keychain-covid-19-nb06.png[Keychain COVID, 180,150]
 
-image:keychain-covid-19-nb07.png[Keychain COVID, 150,150]
-image:keychain-covid-19-nb08.png[Keychain COVID, 150,150]
+image:keychain-covid/keychain-covid-19-nb07.png[Keychain COVID, 180,150]
+image:keychain-covid/keychain-covid-19-nb08.png[Keychain COVID, 180,150]
 
-image:keychain-covid-19-nb09.png[Keychain COVID, 150,150]
-image:keychain-covid-19-nb10.png[Keychain COVID, 150,150]
+image:keychain-covid/keychain-covid-19-nb09.png[Keychain COVID, 180,150]
+image:keychain-covid/keychain-covid-19-nb10.png[Keychain COVID, 180,150]
 
-image:keychain-covid-19-nb11.png[Keychain COVID, 150,150]
+image:keychain-covid/keychain-covid-19-nb11.png[Keychain COVID, 180,150]
 
-link:keychain-covid.scad[keychain-covid.scad]
+link:keychain-covid/keychain-covid.scad[keychain-covid.scad]
 
 == References
 
