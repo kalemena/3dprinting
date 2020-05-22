@@ -1,5 +1,5 @@
 
-$fn = 60;
+$fn = 100;
 
 dropSize=4;
 size=35;
@@ -32,40 +32,10 @@ module viscosphere(size,viscosity,step,quality) {
                             square(320,center=true);
             }
 }
-/*
-module eye() {
-    hull() {
-        rdScale = rands(0.5,1.5,2);
-        circle(d=2*rdScale[0],center=true);
-        translate([4,0,0]) circle(d=4*rdScale[1],center=true);
-    }
-}
 
-module mouth() {
-    hull() {
-        rdScale = rands(1,2,2);
-        translate([-4,0,0]) circle(d=2*rdScale[0],center=true);
-        translate([4,0,0]) circle(d=4*rdScale[1],center=true);
-    }
-}
-
-module face() {
-    rdRotate = rands(-30,30,2);
-    
-    // eyes
-    translate([size/7,size/7,0]) rotate([0,0,rdRotate[0]]) eye();
-    translate([-size/7,size/7,0]) rotate([0,0,rdRotate[1]]) mirror([1,0,0]) eye();
-    
-    // mouth
-    translate([0,-size/5,0]) mouth();
-}
-*/
-
-rndColor=rands(0,1,3);
-color(rndColor) {
+module virus() {
     sphere(d=size,center=true);
 
-    //for(rotY=[-80,-60,-40,-20,0,20,40,60,80]) {
     color([1,0,0])
     for(rotY=[-80:20:80]) {
         nbPics = (90-abs(rotY))/5;
@@ -86,4 +56,20 @@ color(rndColor) {
             }
         }
     }
+}
+
+for(z=[0:80:400]) {
+for(x=[0:80:640]) {
+    
+    rndXGlitch = rands(-10,10,1)[0];
+    rndYGlitch = rands(-25,25,1)[0];
+    rndZGlitch = rands(-25,25,1)[0];
+    rndColor = rands(0.1,0.9,3);
+    rdScale = rands(0.7,1.5,1)[0];
+    
+    translate([x+rndXGlitch,rndYGlitch,z+rndZGlitch])
+    color(rndColor)
+    scale(rdScale)
+        virus();
+}
 }
