@@ -4,35 +4,29 @@
 
 These parts are meant to be created using OpenSCAD, from human-readable primitives like spheres, cubes or cylinders.
 
-image:face-shield-model-2-proto.png[Prototype,320,240]
-image:face-shield-model-2-build.png[Build,320,240]
-image:face-shield-model-2.png[Model #2,320,240]
+image:face-shield/face-shield-model-2-proto.png[Prototype,320,240]
+image:face-shield/face-shield-model-2-build.png[Build,320,240]
+image:face-shield/face-shield-model-2.png[Model #2,320,240]
 
-link:face-shield-model-2.scad[face-shield-model-2.scad]
+link:face-shield/face-shield-model-2.scad[face-shield-model-2.scad]
 
 === Other Parts
 
-image:face-shield-model-1.png[Model #1,320,240]
+image:face-shield/face-shield-model-1.png[Model #1,320,240]
+image:face-shield/face-shield-model-3.png[Model #3,320,240]
+image:face-shield/face-shield-model-4.png[Model #4,320,240]
 
-link:face-shield-model-1.scad[face-shield-model-1.scad]
-
-image:face-shield-model-3.png[Model #3,320,240]
-
-link:face-shield-model-3.scad[face-shield-model-3.scad]
-
-image:face-shield-model-4.png[Model #4,320,240]
-
-link:face-shield-model-4.scad[face-shield-model-4.scad]
+* link:face-shield/face-shield-model-1.scad[face-shield-model-1.scad]
+* link:face-shield/face-shield-model-3.scad[face-shield-model-3.scad]
+* link:face-shield/face-shield-model-4.scad[face-shield-model-4.scad]
 
 == Face Mask
 
-image:face-mask-buckle.png[Face Mask Buckle,400,240]
+image:face-mask/face-mask-buckle.png[Face Mask Buckle,400,240]
+image:face-mask/face-mask-buckle-v2.png[Face Mask Buckle With Angle,400,240]
 
-link:face-mask-buckle.scad[face-mask-buckle.scad]
-
-image:face-mask-buckle-v2.png[Face Mask Buckle With Angle,400,240]
-
-link:face-mask-buckle-v2.scad[face-mask-buckle-v2.scad]
+* link:face-mask/face-mask-buckle.scad[face-mask-buckle.scad]
+* link:face-mask/face-mask-buckle-v2.scad[face-mask-buckle-v2.scad]
 
 == Keychain
 
@@ -40,19 +34,7 @@ This is a funny project to create a very randomized COVID figure.
 
 Each refresh in OpenSCAD will generate a distinct figure such as below:
 
-image:keychain-covid/keychain-covid-19-nb01.png[Keychain COVID, 180,150]
-image:keychain-covid/keychain-covid-19-nb02.png[Keychain COVID, 180,150]
-image:keychain-covid/keychain-covid-19-nb03.png[Keychain COVID, 180,150]
-image:keychain-covid/keychain-covid-19-nb04.png[Keychain COVID, 180,150]
-
-image:keychain-covid/keychain-covid-19-nb05.png[Keychain COVID, 180,150]
-image:keychain-covid/keychain-covid-19-nb06.png[Keychain COVID, 180,150]
-image:keychain-covid/keychain-covid-19-nb07.png[Keychain COVID, 180,150]
-image:keychain-covid/keychain-covid-19-nb08.png[Keychain COVID, 180,150]
-
-image:keychain-covid/keychain-covid-19-nb09.png[Keychain COVID, 180,150]
-image:keychain-covid/keychain-covid-19-nb10.png[Keychain COVID, 180,150]
-image:keychain-covid/keychain-covid-19-nb11.png[Keychain COVID, 180,150]
+image:keychain-covid/keychain-covid-mix-color.png[Keychain COVID, 640,400]
 
 link:keychain-covid/keychain-covid.scad[keychain-covid.scad]
 
@@ -64,9 +46,9 @@ image:keychain-covid/keychain-covid-3d-mix00.png[COVID 3D,640,400]
 
 image:keychain-covid/keychain-covid-3d-mix01.png[COVID 3D,640,400]
 
-image:keychain-covid/keychain-covid-3d-mix02.png[COVID 3D,640,400]
+// image:keychain-covid/keychain-covid-3d-mix02.png[COVID 3D,640,400]
 
-image:keychain-covid/keychain-covid-3d-mix03.png[COVID 3D,640,400]
+// image:keychain-covid/keychain-covid-3d-mix03.png[COVID 3D,640,400]
 
 link:keychain-covid/keychain-covid-3d.scad[keychain-covid-3d.scad]
 
