@@ -56,6 +56,20 @@ image:keychain-covid/keychain-covid-19-nb11.png[Keychain COVID, 180,150]
 
 link:keychain-covid/keychain-covid.scad[keychain-covid.scad]
 
+== Drawing 3D
+
+To follow-up on useless random testing, below is 3D generated volumes:
+
+image:keychain-covid/keychain-covid-3d-mix00.png[COVID 3D,640,400]
+
+image:keychain-covid/keychain-covid-3d-mix01.png[COVID 3D,640,400]
+
+image:keychain-covid/keychain-covid-3d-mix02.png[COVID 3D,640,400]
+
+image:keychain-covid/keychain-covid-3d-mix03.png[COVID 3D,640,400]
+
+link:keychain-covid/keychain-covid-3d.scad[keychain-covid-3d.scad]
+
 == References
 
 * link:https://smartairfilters.com/en/blog/best-materials-make-diy-face-mask-virus/[Mask materials]

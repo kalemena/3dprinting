@@ -58,16 +58,16 @@ module virus() {
     }
 }
 
-for(z=[0:80:400]) {
-for(x=[0:80:640]) {
+for(nz=[0:10]) {
+for(nx=[0:6]) {
     
-    rndXGlitch = rands(-10,10,1)[0];
+    rndXGlitch = rands(0,640,1)[0];
     rndYGlitch = rands(-25,25,1)[0];
-    rndZGlitch = rands(-25,25,1)[0];
+    rndZGlitch = rands(0,400,1)[0];
     rndColor = rands(0.1,0.9,3);
     rdScale = rands(0.7,1.5,1)[0];
     
-    translate([x+rndXGlitch,rndYGlitch,z+rndZGlitch])
+    translate([rndXGlitch,rndYGlitch,rndZGlitch])
     color(rndColor)
     scale(rdScale)
         virus();
