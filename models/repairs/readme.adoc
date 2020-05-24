@@ -9,6 +9,12 @@ link:rack-hinge-parts.scad[rack-hinge-parts.scad]
 
 == Kitchen sink
 
-image:kitchen-fix-sink-plug.png[Kitchen sink plug repair, 320, 240]
+image:kitchen/kitchen-fix-sink-plug.png[Kitchen sink plug repair, 320, 240]
 
-link:kitchen-fix-sink-plug.scad[kitchen-fix-sink-plug.scad]
+link:kitchen/kitchen-fix-sink-plug.scad[kitchen-fix-sink-plug.scad]
+
+== Fish Tank Things
+
+image:fishtank/neon-clip.png[FishTank Neon Reflector Clip, 320, 240]
+
+link:fishtank/neon-clip.scad[neon-clip.scad]
