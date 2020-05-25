@@ -3,7 +3,7 @@
 
 == Rack Hinge
 
-image:rack-hinge/rack-hinge-parts.png[Rack Hinge repair, 320, 240]
+image:rack-hinge/rack-hinge-parts.png[Rack Hinge repair, 320, 280]
 
 link:rack-hinge/rack-hinge-parts.scad[rack-hinge-parts.scad]
 
@@ -15,7 +15,7 @@ link:kitchen/kitchen-fix-sink-plug.scad[kitchen-fix-sink-plug.scad]
 
 == Fish Tank Things
 
-image:fishtank/neon-clip.png[FishTank Neon Reflector Clip, 320, 240]
-image:fishtank/neon-clip-print.png[FishTank Neon Reflector Clip, 320, 240]
+image:fishtank/neon-clip.png[FishTank Neon Reflector Clip, 320, 280]
+image:fishtank/neon-clip-print.png[FishTank Neon Reflector Clip, 320, 280]
 
 link:fishtank/neon-clip.scad[neon-clip.scad]
