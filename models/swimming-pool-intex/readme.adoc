@@ -1,0 +1,29 @@
+
+= Swimmming Pool Printed parts
+
+== Cover Clip
+
+image:cover-clip/cover-clip.png[Cover Clip, 320, 240]
+
+link:cover-clip/cover-clip.scad[Cover Clip SCAD]
+
+== Resources
+
+* filtre
+* link:https://www.thingiverse.com/thing:3693994[Idée filtre]
+
+* outlet
+* link:https://www.thingiverse.com/thing:2425707[Idée outlet (scad)]
+* link:https://www.thingiverse.com/thing:2945782[Idée outlet 2]
+* link:https://www.thingiverse.com/thing:2423664[Outlet 3]
+
+* aspi
+* link:https://www.thingiverse.com/thing:941551/files[Idée aspi]
+* link:https://www.thingiverse.com/thing:1649784/files[]
+https://www.thingiverse.com/thing:179352/files
+
+* fountain
+* link:https://www.thingiverse.com/thing:3014667/files[Fontaine]
+
+* drink:
+* link:https://www.thingiverse.com/thing:1593991[]
