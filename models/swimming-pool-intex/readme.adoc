@@ -9,18 +9,21 @@ link:cover-clip/cover-clip.scad[Cover Clip SCAD]
 
 == Resources
 
+* link:https://www.thingiverse.com/thing:14028[Water Hose Connector]
+
 * filtre
-* link:https://www.thingiverse.com/thing:3693994[Idée filtre]
+** link:https://www.thingiverse.com/thing:3693994[Idée filtre]
 
 * outlet
 * link:https://www.thingiverse.com/thing:2425707[Idée outlet (scad)]
 * link:https://www.thingiverse.com/thing:2945782[Idée outlet 2]
 * link:https://www.thingiverse.com/thing:2423664[Outlet 3]
 
-* aspi
+* aspi (inlet)
 * link:https://www.thingiverse.com/thing:941551/files[Idée aspi]
 * link:https://www.thingiverse.com/thing:1649784/files[]
-https://www.thingiverse.com/thing:179352/files
+https://www.thingiverse.com/thing:179352
+https://www.thingiverse.com/thing:2430487
 
 * fountain
 * link:https://www.thingiverse.com/thing:3014667/files[Fontaine]
