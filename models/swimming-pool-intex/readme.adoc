@@ -15,24 +15,18 @@ link:vacuum/water-hose-connector.scad[Water Hose Connector]
 
 == Resources
 
-* link:https://www.thingiverse.com/thing:14028[Water Hose Connector]
+* Adopted:
+** link:https://www.thingiverse.com/thing:14028[Water Hose Connector]
 
-* filtre
-** link:https://www.thingiverse.com/thing:3693994[Idée filtre]
-
-* outlet
-** link:https://www.thingiverse.com/thing:2425707[Idée outlet (scad)]
-** link:https://www.thingiverse.com/thing:2945782[Idée outlet 2]
-** link:https://www.thingiverse.com/thing:2423664[Outlet 3]
-
-* aspi (inlet)
-** link:https://www.thingiverse.com/thing:941551[Idée aspi]
-** link:https://www.thingiverse.com/thing:1649784[]
-** link:https://www.thingiverse.com/thing:179352[]
-** link:https://www.thingiverse.com/thing:2430487[]
-
-* fountain
-** link:https://www.thingiverse.com/thing:3014667[Fontaine]
-
-* drink:
-** link:https://www.thingiverse.com/thing:1593991[]
+* Ideas to adapt/fix:
+** link:https://www.thingiverse.com/thing:3693994[Filter Idea (no scad)]
+** Inlets (vacuum)
+*** link:https://www.thingiverse.com/thing:941551[Vacuum cleaner (no scad)]
+*** link:https://www.thingiverse.com/thing:179352[Vacuum cleaner (scad)]
+*** link:https://www.thingiverse.com/thing:1649784[Vacuum cleaner (scad tested)]
+*** link:https://www.thingiverse.com/thing:1693957[Inlet cap (scad)]
+** outlets
+*** link:https://www.thingiverse.com/thing:2430487[Outlet adapter (scad)]
+*** link:https://www.thingiverse.com/thing:2425707[Outlet bender (scad)]
+** Drink support:
+*** link:https://www.thingiverse.com/thing:1593991[Drink support (no scad)]

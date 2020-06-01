@@ -8,7 +8,7 @@ vert0 = 64;
 vert1 = 32;
 
 t1 = 1.75; // minimum wallthickness
-r1 = 38/2;
+r1 = 28/2;
 
 // initial standoff
 t2 = 4; 
@@ -42,10 +42,10 @@ module torus(ra,rb,va,vb) {
                 circle(r=ra,$fn=va);
 }
 
-module waterhose() {
+module waterhose_connector_male() {
     difference() {
         union() {
-            // cylinder(r=r1,h=t1,$fn=vert0);
+            cylinder(r=r1,h=t1,$fn=vert0);
 
             // bottom part
             translate([0,0,t1]) {
@@ -97,9 +97,4 @@ module waterhose() {
     }
 }
 
- waterhose();
-
-
-
-
-
+waterhose_connector_male();
