@@ -9,9 +9,15 @@ link:cover-clip/cover-clip.scad[Cover Clip SCAD]
 
 == Water Hose Connector
 
-image:vacuum/water-hose-connector.png[Water Hose Connector, 320,240]
+image:inlets/water-hose-connector.png[Water Hose Connector, 320,240]
 
-link:vacuum/water-hose-connector.scad[Water Hose Connector]
+link:inlets/water-hose-connector.scad[Water Hose Connector]
+
+== Inlets - Cap
+
+image:inlets/intex_inlet_cap.png[Intex inlet cap, 320,240]
+
+link:inlets/intex_inlet_cap.scad[Intex inlet cap]
 
 == Resources
 
