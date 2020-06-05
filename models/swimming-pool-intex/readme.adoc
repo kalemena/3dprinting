@@ -20,6 +20,10 @@ image:inlets/intex_inlet_cap_top.png[Intex inlet cap, 320,240]
 
 link:inlets/intex_inlet_cap.scad[Intex inlet cap]
 
+== Outlets - Cap
+
+link:outlets/intex_outlet_cap.scad[Intex outlet cap]
+
 == Resources
 
 * Adopted:
@@ -37,3 +41,11 @@ link:inlets/intex_inlet_cap.scad[Intex inlet cap]
 *** link:https://www.thingiverse.com/thing:2425707[Outlet bender (scad)]
 ** Drink support:
 *** link:https://www.thingiverse.com/thing:1593991[Drink support (no scad)]
+
+* Heating:
+** link:https://www.bricozone.be/t/chauffage-solaire-artisanal.40148/[Heating forum]
+** link:https://www.azialo.com/53-chauffage-solaire-intex-6941057402031.html[Produit # Tapis solaire]
+** link:https://www.youtube.com/watch?v=IkDO8QjJ394[Produit # Tapis solaire]
+** link:https://fr.aliexpress.com/item/33060174388.html[Tuyau noir]
+** link:https://www.amazon.fr/12m-32mm-flottant-sections-pr%C3%A9form%C3%A9es/dp/B00LA7GJR0[Tuyau noir]
+https://www.manomano.fr/p/25m-tuyau-de-bassin-spirale-19-mm-3-4-noir-tuyau-daspiration-koi-bassin-3468245
