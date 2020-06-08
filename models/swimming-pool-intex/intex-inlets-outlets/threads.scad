@@ -15,7 +15,7 @@ metric_thread(8, 1, 8);
 pi = 3.14159265;
 
 // ----------------------------------------------------------------------------
-function segments(diameter) = min(36, ceil(diameter*6));
+function segments(diameter) = min(50, ceil(diameter*6));
 
 // ----------------------------------------------------------------------------
 // internal - true = clearances for internal thread (e.g., a nut).
