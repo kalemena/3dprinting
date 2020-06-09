@@ -16,12 +16,12 @@ InletThreadPitch = 3; // in mm
 cornerOffset=4;
 
 // ---------------------------
-//rotate([0,0,15]) cube([86.5-4,10,10],center=true);
 //inlet_cap();
-inlet_adaptor();
+//inlet_adaptor();
 
 //outlet_cap();
 //outlet_adaptor();
+
 //thread_coupler(10);
 //translate([0,0,10.3])    
 //    waterhose_connector_male();
@@ -41,64 +41,6 @@ module outlet_cap() {
         OutletThreadHeight, 
         OutletThreadPitch, 
         cornerOffset);
-}
-
-module inlet_adaptor() { 
-    
-    realDiamExt = InletExternalDiameter - cornerOffset;
-    realThreadH = InletThreadHeight - cornerOffset/2;
-    
-    difference() {
-        union() {
-            minkowski() {
-                union() {
-                    cylinder(d=realDiamExt, 
-                             h=realThreadH+2);
-                    
-                    translate([0,0,realThreadH+2])
-                        cylinder(d1=realDiamExt,
-                                 d2=realDiamExt-10,
-                                 h=6);
-                }
-                sphere(d=cornerOffset);
-            }
-            
-            for(rotZ=[0:45:360]) {
-                rotate([0,0,rotZ]) translate([realDiamExt/2-3,0,0]) 
-                    scale([1,1,1.8])
-                        sphere(d=19);
-            }
-        }
-        
-        translate([0,0,realThreadH+2-0.02])
-            cylinder(d1=realDiamExt,
-                     d2=realDiamExt-10-2,
-                     h=6);
-        
-        translate([0,0,-0.01]) 
-            metric_thread(diameter=InletThreadDiameter, 
-                          pitch=InletThreadPitch, 
-                          length=InletThreadHeight, 
-                          internal=true);
-        translate([0,0,-20/2]) 
-            cube([100,100,20], center=true);
-        
-        cylinder(d=28,h=50);
-    }
-}
-
-module outlet_adaptor() {    
-    difference() {
-        union() {
-            outlet_cap();
-            translate([0,0,8]) cylinder(d=40,h=5);
-        }
-        translate([0,0,1])
-        metric_thread(  diameter=26.5,
-                        pitch=2, 
-                        length=15, 
-                        internal=true);
-    }
 }
 
 module cap(extDiameter, threadDiam, threadH, threadP, cornerOffset) {
@@ -128,6 +70,66 @@ module cap(extDiameter, threadDiam, threadH, threadP, cornerOffset) {
         
         translate([0,0,-10/2]) 
             cube([100,100,10], center=true);
+    }
+}
+
+module inlet_adaptor() { 
+    adaptor(InletExternalDiameter, 
+        InletThreadDiameter, 
+        InletThreadHeight, 
+        InletThreadPitch, 
+        cornerOffset);
+}
+
+module outlet_adaptor() {
+    adaptor(OutletExternalDiameter, 
+        OutletThreadDiameter, 
+        OutletThreadHeight, 
+        OutletThreadPitch, 
+        cornerOffset);
+}
+
+module adaptor(extDiameter, threadDiam, threadH, threadP, cornerOffset) { 
+    
+    realDiamExt = extDiameter - cornerOffset;
+    realThreadH = threadH - cornerOffset/2;
+    
+    difference() {
+        union() {
+            minkowski() {
+                union() {
+                    cylinder(d=realDiamExt, 
+                             h=realThreadH+2);
+                    
+                    translate([0,0,realThreadH+2])
+                        cylinder(d1=realDiamExt,
+                                 d2=realDiamExt-10,
+                                 h=6);
+                }
+                sphere(d=cornerOffset);
+            }
+            
+            for(rotZ=[0:45:360]) {
+                rotate([0,0,rotZ]) translate([realDiamExt/2-3,0,0]) 
+                    scale([1,1,1.8])
+                        sphere(d=19);
+            }
+        }
+        
+        translate([0,0,realThreadH+2-0.02])
+            cylinder(d1=realDiamExt,
+                     d2=realDiamExt-10-2,
+                     h=6);
+        
+        translate([0,0,-0.01]) 
+            metric_thread(diameter=threadDiam, 
+                          pitch=threadP, 
+                          length=threadH, 
+                          internal=true);
+        translate([0,0,-20/2]) 
+            cube([100,100,20], center=true);
+        
+        cylinder(d=28,h=50);
     }
 }
 
