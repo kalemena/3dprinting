@@ -17,7 +17,7 @@ cornerOffset=4;
 
 // ---------------------------
 //inlet_cap();
-//inlet_adaptor();
+inlet_adaptor();
 
 //outlet_cap();
 //outlet_adaptor();
@@ -116,10 +116,14 @@ module adaptor(extDiameter, threadDiam, threadH, threadP, cornerOffset) {
             }
         }
         
-        translate([0,0,realThreadH+2-0.02])
-            cylinder(d1=realDiamExt,
-                     d2=realDiamExt-10-2,
-                     h=6);
+        difference() {
+            translate([0,0,realThreadH+2-0.02])
+                cylinder(d1=realDiamExt,
+                         d2=realDiamExt-10-2,
+                         h=6);
+            translate([0,0,15])
+                cylinder(d=40,h=50);
+        }
         
         translate([0,0,-0.01]) 
             metric_thread(diameter=threadDiam, 
@@ -131,6 +135,8 @@ module adaptor(extDiameter, threadDiam, threadH, threadP, cornerOffset) {
         
         cylinder(d=28,h=50);
     }
+    
+    
 }
 
 module thread_coupler(high) {
