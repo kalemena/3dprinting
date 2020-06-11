@@ -121,8 +121,15 @@ module adaptor(extDiameter, threadDiam, threadH, threadP, cornerOffset) {
                 cylinder(d1=realDiamExt,
                          d2=realDiamExt-10-2,
                          h=6);
+            
             translate([0,0,15])
                 cylinder(d=40,h=50);
+            
+            for(rotZ=[0:45:180]) {
+                rotate([0,0,rotZ])
+                    translate([0,0,realThreadH+2+6.5]) 
+                        cube([80,5,5], center=true);
+            }
         }
         
         translate([0,0,-0.01]) 
