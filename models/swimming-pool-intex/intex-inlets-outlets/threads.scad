@@ -163,7 +163,7 @@ module thread_polyhedron(radius, pitch, internal, n_starts)
                 [-x_incr_outer/2, -outer_r, pitch - z0_outer]                      // [7]
                ],
 
-      triangles = [
+      faces = [
                 [0, 3, 4],  // This-side trapezoid, bottom
                 [3, 7, 4],  // This-side trapezoid, top
 
