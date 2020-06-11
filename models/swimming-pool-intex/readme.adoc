@@ -21,6 +21,9 @@ image:intex-inlets-outlets/intex-inlet-cap-top.png[Intex inlet cap, 320,240]
 image:intex-inlets-outlets/intex-inlet-adaptor-bottom.png[Intex inlet adaptor, 320,240]
 image:intex-inlets-outlets/intex-inlet-adaptor-top.png[Intex inlet adaptor, 320,240]
 
+image:intex-inlets-outlets/intex-inlet-adaptor-hose-plug-bottom.png[Intex inlet adaptor to hose, 320,240]
+image:intex-inlets-outlets/intex-inlet-adaptor-hose-plug-top.png[Intex inlet adaptor to hose, 320,240]
+
 link:intex-inlets-outlets/intex-inlets-outlets.scad[Intex inlets/outlets]
 
 == Resources

@@ -17,14 +17,14 @@ cornerOffset=4;
 
 // ---------------------------
 //inlet_cap();
-inlet_adaptor();
+//inlet_adaptor();
+
+plug_hose();
+//translate([0,0,7]) rotate([0,0,15]) 
+//    thread_coupler_female(5);
 
 //outlet_cap();
 //outlet_adaptor();
-
-//thread_coupler(10);
-//translate([0,0,10.3])    
-//    waterhose_connector_male();
 // ---------------------------
 
 module inlet_cap() {
@@ -128,7 +128,7 @@ module adaptor(extDiameter, threadDiam, threadH, threadP, cornerOffset) {
             for(rotZ=[0:45:180]) {
                 rotate([0,0,rotZ])
                     translate([0,0,realThreadH+2+6.5]) 
-                        cube([80,5,5], center=true);
+                        cube([realDiamExt,5,5], center=true);
             }
         }
         
@@ -142,11 +142,15 @@ module adaptor(extDiameter, threadDiam, threadH, threadP, cornerOffset) {
         
         cylinder(d=28,h=50);
     }
-    
-    
 }
 
-module thread_coupler(high) {
+module plug_hose() {
+    thread_coupler_male(10);
+    translate([0,0,10.3])    
+        waterhose_connector_male();
+}
+
+module thread_coupler_male(high) {
     difference() {
         union() {
             cylinder(d=40,h=2);
@@ -154,7 +158,6 @@ module thread_coupler(high) {
                 rotate([0,0,rotZ]) translate([19,0,0]) 
                     cylinder(d=8,h=2);
             }
-            
             translate([0,0,1.95])
             metric_thread(  diameter=26,
                             pitch=2, 
@@ -162,6 +165,23 @@ module thread_coupler(high) {
                             internal=false);
         }
         cylinder(d=18,h=high+2);
+    }
+}
+
+module thread_coupler_female(high) {
+    difference() {
+        union() {
+            cylinder(d=40,h=high);
+            for(rotZ=[0:45:360]) {
+                rotate([0,0,rotZ]) translate([19,0,0]) 
+                    cylinder(d=8,h=high);
+            }
+        }
+            
+        metric_thread(  diameter=26.5,
+                        pitch=2, 
+                        length=high, 
+                        internal=true);        
     }
 }
 
