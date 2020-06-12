@@ -19,9 +19,9 @@ cornerOffset=4;
 //inlet_cap();
 //inlet_adaptor();
 
-plug_hose();
-//translate([0,0,7]) rotate([0,0,15]) 
-//    thread_coupler_female(5);
+//plug_hose();
+translate([0,0,7]) rotate([0,0,15]) 
+    thread_coupler_female(5);
 
 //outlet_cap();
 //outlet_adaptor();
@@ -178,7 +178,7 @@ module thread_coupler_female(high) {
             }
         }
             
-        metric_thread(  diameter=26.5,
+        metric_thread(  diameter=27.5,
                         pitch=2, 
                         length=high, 
                         internal=true);        
