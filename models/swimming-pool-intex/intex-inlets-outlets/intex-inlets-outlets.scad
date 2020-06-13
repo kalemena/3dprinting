@@ -17,14 +17,14 @@ cornerOffset=4;
 
 // ---------------------------
 //inlet_cap();
-inlet_adaptor();
+//inlet_adaptor();
 
 //plug_hose();
 //translate([0,0,7]) rotate([0,0,15]) 
 //    thread_coupler_female(5);
 
 //outlet_cap();
-//outlet_adaptor();
+outlet_adaptor();
 // ---------------------------
 
 module inlet_cap() {
@@ -74,7 +74,8 @@ module cap(extDiameter, threadDiam, threadH, threadP, cornerOffset) {
 }
 
 module inlet_adaptor() { 
-    adaptor(InletExternalDiameter, 
+    adaptor(28,
+        InletExternalDiameter, 
         InletThreadDiameter, 
         InletThreadHeight, 
         InletThreadPitch, 
@@ -82,14 +83,15 @@ module inlet_adaptor() {
 }
 
 module outlet_adaptor() {
-    adaptor(OutletExternalDiameter, 
+    adaptor(38,
+        OutletExternalDiameter, 
         OutletThreadDiameter, 
         OutletThreadHeight, 
         OutletThreadPitch, 
         cornerOffset);
 }
 
-module adaptor(extDiameter, threadDiam, threadH, threadP, cornerOffset) { 
+module adaptor(holeDiam, extDiameter, threadDiam, threadH, threadP, cornerOffset) { 
     
     realDiamExt = extDiameter - cornerOffset;
     realThreadH = threadH - cornerOffset/2;
@@ -123,7 +125,7 @@ module adaptor(extDiameter, threadDiam, threadH, threadP, cornerOffset) {
                          h=6);
             
             translate([0,0,16])
-                cylinder(d=40,h=50);
+                cylinder(d=holeDiam+10,h=50);
             
             for(rotZ=[0:45:180]) {
                 rotate([0,0,rotZ])
@@ -140,7 +142,7 @@ module adaptor(extDiameter, threadDiam, threadH, threadP, cornerOffset) {
         translate([0,0,-20/2]) 
             cube([100,100,20], center=true);
         
-        cylinder(d=28,h=50);
+        cylinder(d=holeDiam,h=50);
     }
 }
 

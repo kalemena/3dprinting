@@ -24,8 +24,8 @@ image:intex-inlets-outlets/intex-inlet-adaptor-top.png[Intex inlet adaptor, 320,
 image:intex-inlets-outlets/intex-inlet-adaptor-hose-plug-bottom.png[Intex inlet adaptor to hose, 320,240]
 image:intex-inlets-outlets/intex-inlet-adaptor-hose-plug-top.png[Intex inlet adaptor to hose, 320,240]
 
-image:intex-inlets-outlets/intex-inlet-parts-hose.jpg[Printed Parts]
-image:intex-inlets-outlets/intex-inlet-adaptor-hose.jpg[Mounted Parts]
+image:intex-inlets-outlets/intex-inlet-parts-hose.jpg[Printed Parts, 320,240]
+image:intex-inlets-outlets/intex-inlet-adaptor-hose.jpg[Mounted Parts, 320,240]
 
 link:intex-inlets-outlets/intex-inlets-outlets.scad[Intex inlets/outlets]
 
@@ -40,12 +40,14 @@ link:intex-inlets-outlets/intex-inlets-outlets.scad[Intex inlets/outlets]
 *** link:https://www.thingiverse.com/thing:941551[Vacuum cleaner (no scad)]
 *** link:https://www.thingiverse.com/thing:179352[Vacuum cleaner (scad)]
 *** link:https://www.thingiverse.com/thing:1649784[Vacuum cleaner (scad tested)]
+*** link:https://www.thingiverse.com/thing:380387[Vacuum cleaner (scad)]
+*** link:https://www.thingiverse.com/thing:25638[Vacuum cleaner (scad)]
 *** link:https://www.thingiverse.com/thing:1693957[Inlet cap (scad)]
+*** link:https://www.thingiverse.com/thing:3742389[Vacuum cleaner (no scad)]
+*** link:https://www.thingiverse.com/thing:1664056[Vacuum cleaner (no scad)]
 ** outlets
 *** link:https://www.thingiverse.com/thing:2430487[Outlet adapter (scad)]
 *** link:https://www.thingiverse.com/thing:2425707[Outlet bender (scad)]
-** Drink support:
-*** link:https://www.thingiverse.com/thing:1593991[Drink support (no scad)]
 
 * Heating:
 ** link:https://www.bricozone.be/t/chauffage-solaire-artisanal.40148/[Heating forum]
