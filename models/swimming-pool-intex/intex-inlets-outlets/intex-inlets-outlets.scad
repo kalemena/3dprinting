@@ -17,11 +17,11 @@ cornerOffset=4;
 
 // ---------------------------
 //inlet_cap();
-//inlet_adaptor();
+inlet_adaptor();
 
 //plug_hose();
-translate([0,0,7]) rotate([0,0,15]) 
-    thread_coupler_female(5);
+//translate([0,0,7]) rotate([0,0,15]) 
+//    thread_coupler_female(5);
 
 //outlet_cap();
 //outlet_adaptor();
@@ -118,17 +118,17 @@ module adaptor(extDiameter, threadDiam, threadH, threadP, cornerOffset) {
         
         difference() {
             translate([0,0,realThreadH+2-0.02])
-                cylinder(d1=realDiamExt,
-                         d2=realDiamExt-10-2,
+                cylinder(d1=realDiamExt-3,
+                         d2=realDiamExt-10,
                          h=6);
             
-            translate([0,0,15])
+            translate([0,0,16])
                 cylinder(d=40,h=50);
             
             for(rotZ=[0:45:180]) {
                 rotate([0,0,rotZ])
                     translate([0,0,realThreadH+2+6.5]) 
-                        cube([realDiamExt,5,5], center=true);
+                        cube([realDiamExt,5,3], center=true);
             }
         }
         
@@ -145,8 +145,8 @@ module adaptor(extDiameter, threadDiam, threadH, threadP, cornerOffset) {
 }
 
 module plug_hose() {
-    thread_coupler_male(10);
-    translate([0,0,10.3])    
+    thread_coupler_male(12);
+    translate([0,0,13.3])    
         waterhose_connector_male();
 }
 
