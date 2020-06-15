@@ -17,14 +17,33 @@ cornerOffset=4;
 
 // ---------------------------
 //inlet_cap();
-//inlet_adaptor();
-
-plug_hose();
-//translate([0,0,7]) rotate([0,0,15]) 
-//    thread_coupler_female(5);
-
 //outlet_cap();
-//outlet_adaptor();
+
+//inlet_adaptor();
+outlet_adaptor();
+
+//thread_bolt(12,26);
+//translate([0,0,13.3])    
+//    waterhose_connector_male();
+//translate([0,0,7]) rotate([0,0,15]) 
+//    thread_coupler_female(5, 27,5);
+
+
+//translate([0,0,12]) thread_coupler_male(12, 39);
+//translate([0,0,12+8])
+//    thread_coupler_female(5, 40.5);
+    
+// outlet 60°
+//translate([-25,0,26])
+//rotate([90,0,0])
+//rotate_extrude(angle=90, convexity = 10)
+//    translate([25, 0, 0]) {
+//        difference() {
+//            circle(d = 35);
+//            circle(d = 39-10);
+//        }
+//    }
+    
 // ---------------------------
 
 module inlet_cap() {
@@ -37,6 +56,24 @@ module inlet_cap() {
 
 module outlet_cap() {
     cap(OutletExternalDiameter, 
+        OutletThreadDiameter, 
+        OutletThreadHeight, 
+        OutletThreadPitch, 
+        cornerOffset);
+}
+
+module inlet_adaptor() { 
+    adaptor(28,
+        InletExternalDiameter, 
+        InletThreadDiameter, 
+        InletThreadHeight, 
+        InletThreadPitch, 
+        cornerOffset);
+}
+
+module outlet_adaptor() {
+    adaptor(40,
+        OutletExternalDiameter, 
         OutletThreadDiameter, 
         OutletThreadHeight, 
         OutletThreadPitch, 
@@ -71,24 +108,6 @@ module cap(extDiameter, threadDiam, threadH, threadP, cornerOffset) {
         translate([0,0,-10/2]) 
             cube([100,100,10], center=true);
     }
-}
-
-module inlet_adaptor() { 
-    adaptor(28,
-        InletExternalDiameter, 
-        InletThreadDiameter, 
-        InletThreadHeight, 
-        InletThreadPitch, 
-        cornerOffset);
-}
-
-module outlet_adaptor() {
-    adaptor(42,
-        OutletExternalDiameter, 
-        OutletThreadDiameter, 
-        OutletThreadHeight, 
-        OutletThreadPitch, 
-        cornerOffset);
 }
 
 module adaptor(holeDiam, extDiameter, threadDiam, threadH, threadP, cornerOffset) { 
@@ -146,18 +165,12 @@ module adaptor(holeDiam, extDiameter, threadDiam, threadH, threadP, cornerOffset
     }
 }
 
-module plug_hose() {
-    thread_coupler_male(12,26);
-    translate([0,0,13.3])    
-        waterhose_connector_male();
-}
-
-module thread_coupler_male(high, diamThread) {
+module thread_bolt(high, diamThread) {
     difference() {
         union() {
-            cylinder(d=diamThread+15,h=2);
+            cylinder(d=diamThread+10,h=2);
             for(rotZ=[0:45:360]) {
-                rotate([0,0,rotZ]) translate([(diamThread+15)*0.48,0,0]) 
+                rotate([0,0,rotZ]) translate([(diamThread+15)*0.43,0,0]) 
                     cylinder(d=(diamThread+15)/5,h=2);
             }
             translate([0,0,1.95])
@@ -166,21 +179,22 @@ module thread_coupler_male(high, diamThread) {
                             length=high, 
                             internal=false);
         }
-        cylinder(d=18,h=high+2);
+        translate([0,0,-0.01])
+            cylinder(d=diamThread-10,h=high+2);
     }
 }
 
-module thread_coupler_female(high) {
+module thread_nut(high, diamThread) {
     difference() {
         union() {
-            cylinder(d=40,h=high);
+            cylinder(d=diamThread+10,h=high);
             for(rotZ=[0:45:360]) {
-                rotate([0,0,rotZ]) translate([19,0,0]) 
-                    cylinder(d=8,h=high);
+                rotate([0,0,rotZ]) translate([(diamThread+15)*0.43,0,0]) 
+                    cylinder(d=(diamThread+15)/5,h=high);
             }
         }
             
-        metric_thread(  diameter=27.5,
+        metric_thread(  diameter=diamThread,
                         pitch=2, 
                         length=high, 
                         internal=true);        
