@@ -24,8 +24,10 @@ image:intex-inlets-outlets/intex-inlet-adaptor-top.png[Intex inlet adaptor, 320,
 image:intex-inlets-outlets/intex-inlet-adaptor-hose-plug-bottom.png[Intex inlet adaptor to hose, 320,240]
 image:intex-inlets-outlets/intex-inlet-adaptor-hose-plug-top.png[Intex inlet adaptor to hose, 320,240]
 
-image:intex-inlets-outlets/intex-inlet-parts-hose.jpg[Printed Parts, 320,240]
+image:intex-inlets-outlets/intex-inlet-parts-hose.jpg[Printed Parts, 350,240]
 image:intex-inlets-outlets/intex-inlet-adaptor-hose.jpg[Mounted Parts, 320,240]
+
+image:intex-inlets-outlets/intex-outlet-adaptor-90.png[Intex Outlet with angle 90, 320,240]
 
 link:intex-inlets-outlets/intex-inlets-outlets.scad[Intex inlets/outlets]
 
