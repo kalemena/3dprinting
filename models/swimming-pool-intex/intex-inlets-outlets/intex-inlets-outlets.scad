@@ -27,19 +27,21 @@ translate([0,0,12+7]) rotate([0,0,15]) thread_nut(5, 27.5);
 */
 
 //outlet_adaptor();
-translate([0,0,12]) thread_bolt(12, 39);
-//translate([0,0,12+8]) thread_nut(5, 40.5);
+//translate([0,0,12]) thread_bolt(12, 39);
+
+translate([0,0,12+8]) rotate([0,0,15]) thread_nut(5, 40.5);
+/*
 // outlet 90°
 translate([-25,0,26])
 rotate([90,0,0])
 rotate_extrude(angle=90, convexity = 10)
     translate([25, 0, 0]) {
         difference() {
-            circle(d = 35);
-            circle(d = 39-10);
+            circle(d = 34);
+            circle(d = 39-11);
         }
     }
-    
+  */  
 // ---------------------------
 
 module inlet_cap() {
@@ -176,7 +178,7 @@ module thread_bolt(high, diamThread) {
                             internal=false);
         }
         translate([0,0,-0.01])
-            cylinder(d=diamThread-10,h=high+2);
+            cylinder(d1=diamThread-10,d2=diamThread-11,h=high+2);
     }
 }
 
