@@ -14,6 +14,7 @@ $ sudo apt-get install openscad
 Cura engine is probably best tool for slicing.
 
 * link:https://download.ultimaker.com[Ultimaker Cura]
+* link:https://github.com/Ultimaker/Cura/releases[AppImage Ultimaker Cura]
 
 ### Repetier
 
