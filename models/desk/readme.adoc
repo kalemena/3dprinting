@@ -1,0 +1,25 @@
+= Desk Tools
+
+== Cable cleanups
+
+// image:face-shield/face-shield-model-2-proto.png[Prototype,320,240]
+// image:face-shield/face-shield-model-2-build.png[Build,320,240]
+// image:face-shield/face-shield-model-2.png[Model #2,320,240]
+
+// link:face-shield/face-shield-model-2.scad[face-shield-model-2.scad]
+
+== References
+
+* Support Desk
+** link:https://www.thingiverse.com/thing:796100[Cable clip]
+** link:https://www.thingiverse.com/thing:3133964[Cable support]
+** link:https://www.thingiverse.com/thing:2278408[Cable support (scad)]
+link:https://www.thingiverse.com/thing:387044[Cable hanger]
+
+
+* link:https://www.thingiverse.com/thing:1230239[Cable tray]
+** link:https://www.thingiverse.com/thing:952882[Headphone stand]
+
+
+https://www.thingiverse.com/thing:18353[Round cable support]
+link:https://www.thingiverse.com/thing:1102812[Cable organizer (scad)]
