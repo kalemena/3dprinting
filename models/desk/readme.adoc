@@ -11,15 +11,7 @@
 == References
 
 * Support Desk
-** link:https://www.thingiverse.com/thing:796100[Cable clip]
-** link:https://www.thingiverse.com/thing:3133964[Cable support]
-** link:https://www.thingiverse.com/thing:2278408[Cable support (scad)]
-link:https://www.thingiverse.com/thing:387044[Cable hanger]
-
-
-* link:https://www.thingiverse.com/thing:1230239[Cable tray]
+** link:https://www.thingiverse.com/thing:1230239[Cable tray]
 ** link:https://www.thingiverse.com/thing:952882[Headphone stand]
-
-
-https://www.thingiverse.com/thing:18353[Round cable support]
-link:https://www.thingiverse.com/thing:1102812[Cable organizer (scad)]
+** https://www.thingiverse.com/thing:18353[Round cable support]
+** link:https://www.thingiverse.com/thing:1102812[Cable organizer (scad)]

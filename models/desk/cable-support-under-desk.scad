@@ -1,9 +1,10 @@
-// import("cablemanager_underdesk.stl");
 
 $fn=80;
 
+// shapeU();
+shapeO();
+
 module shapeU() {
-    
     difference() {
         union() {
             hull() {
@@ -35,7 +36,32 @@ module shapeU() {
         translate([-40,4,5]) rotate([-90,0,0]) cylinder(d1=4,d2=6,h=1.05);
         translate([-110/2,-10,-0.5]) cube([110,10,11]);
     }
-
 }
 
-shapeU();
+module shapeO() {
+    width=10;
+    thick=5;
+
+    difference() {
+        union() {
+            translate([0,-6,0]) 
+                cube([thick,38,width]);
+            
+            translate([0,25,0]) 
+                rotate([0,90,0])
+                cylinder(d=15,h=thick);
+            
+            translate([-20,30,0])
+            rotate([0,0,0]) 
+            rotate_extrude(angle = 305, convexity = 20)
+                translate([40/2,0]) 
+                    square([thick,width]);
+        }
+        
+        translate([-5,0,5]) rotate([0,90,0]) cylinder(d=4,h=20);
+        translate([1,0,5]) rotate([0,-90,0]) cylinder(d1=4,d2=6,h=1.05);
+        
+        translate([-5,25,-2]) rotate([0,90,0]) cylinder(d=4,h=20);
+        translate([1,25,-2]) rotate([0,-90,0]) cylinder(d1=4,d2=6,h=1.05);
+    }
+}
