@@ -2,11 +2,10 @@
 
 == Cable cleanups
 
-// image:face-shield/face-shield-model-2-proto.png[Prototype,320,240]
-// image:face-shield/face-shield-model-2-build.png[Build,320,240]
-// image:face-shield/face-shield-model-2.png[Model #2,320,240]
+image:cable-support-under-desk-U.png[Model #2,320,240]
+image:cable-support-under-desk-O.png[Model #2,320,240]
 
-// link:face-shield/face-shield-model-2.scad[face-shield-model-2.scad]
+link:cable-support-under-desk.scad[cable-support-under-desk.scad]
 
 == References
 
