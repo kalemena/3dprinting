@@ -10,28 +10,20 @@ Tooling &amp; Tips for 3d printing
 
 ## Printer model
 
-Below is used together with Creality Ender-3 model.
+Creality Ender-3 model.
 
-Ender-3 is easy to mount, with ~1h effort.
-
-There are no specific configuration after, because Cura can use "CR-10" defaults, with only changing printer XYZ size.
-
-image:images/ender3.jpg[Ender3,600,600]
+image:images/ender3.jpg[Ender3,450,450]
 
 ## Tips
 
 * link:enhancements.adoc[Enhancements]
-
 * link:software.adoc[Software]
-
 * link:https://www.simplify3d.com/support/print-quality-troubleshooting[Troubleshooting General Guides]
-
 * link:https://www.zirotroc.fr/ender-3-reglage-des-axes/[Rêglage des 3 axes]
 
 ## Material
 
-Up to now, I use only SUNLU wires (from Amazon), so it is not clear if other wires are better or not.
-
+Up to now, I use only SUNLU wires (from Amazon), so it is not clear if other wires are better or not. +
 Sunlu wire is good in all flavors tested below.
 
 .Materials
@@ -39,11 +31,11 @@ Sunlu wire is good in all flavors tested below.
 |=========================================================
 |Type |T°C Nozzle |T°C Plate |Speed | Options | Comments
 
-|PLA+ Gray/Green | 210°C | 40°C | 60mm/s | |*EASY*
+|PLA+ Gray/Green | 210°C | 50°C | 60mm/s | |*EASY*
 
 |PLA+ Carbon Fiber | 215°C | 40°C | 60mm/s | |*GOOD FINISH, not so STRONG*
 
-|PETG+ White/Red | 240°C | 50°C | 60mm/s | 
+|PETG+ White/Red | 240°C | 80°C | 60mm/s | 
 
 Enable *coasting*
 
@@ -58,32 +50,21 @@ Reduced *infill speed* to 40mm/s | *VERY GOOD FINISH*
 Generally, steps are as follows:
 
 - identify part you want to print with it's keywords
-
 - measure your part specifics using *digital measuring calliper*
-
-- search link:https://www.thingiverse.com/[thingiverse] or other site for these keywords
-
+- search link:https://www.thingiverse.com/[thingiverse] or other site for parts keywords, add *parametric* keyword to find SCAD (if any)
 - usually, people sharing parts only share STL. + 
 STL is fine if you have exact part measures you seek, but a pain if you want to customize the part. + 
-Nevertheless, STL often give good advice on part specifics.
-
+Nevertheless, STL often give good advice on part specifics. +
 In a wonderful world, people would provide source code, and be using open source and open format ...
-
 - link:https://www.openscad.org/[OpenSCAD] is suitable for programmatic parts creation with basic parts + 
 With few experience, pretty advanced figures can be built with need to learn fancy CAD UI *click-odrome*
-
 - design/program your part with boolean 3D operations
-
 - render *STL* from *openSCAD*
-
 - open in *Cura*, fine tune specifics for your wire (PETG, PLA, etc), and render *GCode* + 
 Cura although gives an approximate duration and wire consumption.
-
 - open *GCode* in *Repetier*, plug to printer, warm up your wire, calibrate if needed when changing wire or once every 10 prints or when there was big changes in room temperature or humidity. + 
 Although Cura can plug and print directly, it seems Repetier gives more stability
-
 - start printing
-
 - enjoy printed custom part
 
 ## Models
@@ -93,4 +74,10 @@ Best place to find model is Thingiverse.
 Find few of my models under:
 
 * link:models[sub-folder models]
+** link:models/covid-19[COVID-19]
+** link:models/desk[Desktop setup]
+** link:models/duplo[Lego Duplo things]
+** link:models/ender3-addon[Eder 3 addon]
+** link:models/kite[Kite Wing Cross]
 ** link:models/repairs[Repairing models]
+** link:models/swimming-pool-intex[Swimming Pool Things]
