@@ -2,15 +2,14 @@
 
 == Cable cleanups
 
-image:cable-support-under-desk-U.png[Model #2,320,240]
-image:cable-support-under-desk-O.png[Model #2,320,240]
+image:cable-support-under-desk-U.png[Shape U,320,240]
+image:cable-support-under-desk-O.png[Shape O,320,240]
+image:cable-support-under-desk-E.png[Shape E,320,240]
 
 link:cable-support-under-desk.scad[cable-support-under-desk.scad]
 
 == References
 
 * Support Desk
-** link:https://www.thingiverse.com/thing:1230239[Cable tray]
 ** link:https://www.thingiverse.com/thing:952882[Headphone stand]
-** https://www.thingiverse.com/thing:18353[Round cable support]
-** link:https://www.thingiverse.com/thing:1102812[Cable organizer (scad)]
+** link:https://www.thingiverse.com/thing:18353[Round cable support]
