@@ -70,8 +70,7 @@ module shapeO() {
 
 module shapeE() {
     
-    difference() {
-        
+    difference() {        
         union() {
             hull() {
                 cube([85,2,6], center=true);
@@ -94,10 +93,8 @@ module shapeE() {
         translate([-25,0,8]) rotate([90,0,0]) cylinder(d1=4,d2=6,h=1.05);
         
         translate([25,10,8]) rotate([90,0,0]) cylinder(d=4,h=20);
-        translate([25,0,8]) rotate([90,0,0]) cylinder(d1=4,d2=6,h=1.05);
-        
-    }
-    
+        translate([25,0,8]) rotate([90,0,0]) cylinder(d1=4,d2=6,h=1.05);    
+    }    
 }
 
 module shapeX() {
@@ -114,10 +111,12 @@ module shapeX() {
         translate([0,0,19.8]) cylinder(d1=7,d2=4,h=2);
         
         for(rotZ=[0:360/8:360]) {            
-            rotate([0,0,rotZ]) 
-            hull() {
-                translate([32,0,-0.1]) cylinder(d=20,h=24);
-                translate([21,0,-0.1]) cube([9,9,25], center=true);
+            rotate([0,0,rotZ]) {
+                hull() {
+                    translate([30,0,-0.1]) cylinder(d=18,h=24);
+                    translate([21,0,-0.1]) cube([9,9,25], center=true);
+                }
+                translate([36,0,-0.1]) cube([9,9,25], center=true);
             }
         }
     }
