@@ -110,13 +110,13 @@ module shapeX() {
         translate([0,0,-0.1]) cylinder(d=4,h=25);
         translate([0,0,19.8]) cylinder(d1=7,d2=4,h=2);
         
-        for(rotZ=[0:360/8:360]) {            
+        for(rotZ=[0:360/6:360]) {            
             rotate([0,0,rotZ]) {
                 hull() {
-                    translate([30,0,-0.1]) cylinder(d=18,h=24);
-                    translate([21,0,-0.1]) cube([9,9,25], center=true);
+                    translate([28,0,-0.1]) cylinder(d=22,h=24);
+                    translate([21,0,-0.1]) cube([15,10,25], center=true);
                 }
-                translate([36,0,-0.1]) cube([9,9,25], center=true);
+                translate([36,0,-0.1]) cube([15,10,25], center=true);
             }
         }
     }
