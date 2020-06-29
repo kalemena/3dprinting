@@ -3,8 +3,8 @@ $fn=80;
 
 // shapeU();
 // shapeO();
-// shapeX();
-shapeE();
+// shapeE();
+shapeX();
 
 module shapeU() {
     difference() {
@@ -98,4 +98,27 @@ module shapeE() {
         
     }
     
+}
+
+module shapeX() {
+    difference() {
+        union() {
+            cylinder(d=80,h=3);
+            cylinder(d=20,h=20);
+            translate([0,0,20]) cylinder(d=26,h=4); 
+            translate([0,0,16]) cylinder(d1=20,d2=26,h=4); 
+        }
+        
+        translate([0,0,-0.1]) cylinder(d=7,h=20);
+        translate([0,0,-0.1]) cylinder(d=4,h=25);
+        translate([0,0,19.8]) cylinder(d1=7,d2=4,h=2);
+        
+        for(rotZ=[0:360/8:360]) {            
+            rotate([0,0,rotZ]) 
+            hull() {
+                translate([32,0,-0.1]) cylinder(d=20,h=24);
+                translate([21,0,-0.1]) cube([9,9,25], center=true);
+            }
+        }
+    }
 }
