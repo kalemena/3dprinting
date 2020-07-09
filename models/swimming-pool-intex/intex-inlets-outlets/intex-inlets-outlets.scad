@@ -19,17 +19,17 @@ cornerOffset=4;
 //inlet_cap();
 //outlet_cap();
 
-/*
-inlet_adaptor();
-translate([0,0,12]) thread_bolt(12,26);
-translate([0,0,12+13.3]) waterhose_connector_male();
-translate([0,0,12+7]) rotate([0,0,15]) thread_nut(5, 27.5);
-*/
+//inlet_adaptor();
+
+//plug_garden_hose();
+//translate([0,0,12+7]) rotate([0,0,15]) thread_nut(5, 27.5);
+
+plug_38mm();
 
 //outlet_adaptor();
 //translate([0,0,12]) thread_bolt(12, 39);
 
-translate([0,0,12+8]) rotate([0,0,15]) thread_nut(5, 40.5);
+//translate([0,0,12+8]) rotate([0,0,15]) thread_nut(5, 40.5);
 /*
 // outlet 90°
 translate([-25,0,26])
@@ -61,7 +61,7 @@ module outlet_cap() {
 }
 
 module inlet_adaptor() { 
-    adaptor(28,
+    adaptor(40,
         InletExternalDiameter, 
         InletThreadDiameter, 
         InletThreadHeight, 
@@ -76,6 +76,42 @@ module outlet_adaptor() {
         OutletThreadHeight, 
         OutletThreadPitch, 
         cornerOffset);
+}
+
+module plug_garden_hose() {
+    translate([0,0,12]) thread_bolt(12,26);
+    translate([0,0,12+13.3]) waterhose_connector_male();
+}
+
+module plug_38mm() {
+    high = 10;
+    diamThread = 39;
+    
+    difference() {
+        union() {
+            cylinder(d=diamThread+10,h=2);
+            translate([0,0,1.95])
+            metric_thread(  diameter=diamThread,
+                            pitch=2, 
+                            length=high, 
+                            internal=false);
+            
+            translate([0,0,-5]) cylinder(d1=38, d2=49, h=5);
+            
+            translate([0,0,-25])
+                cylinder(d1=38, d2=39, h=20);
+        }
+        
+        translate([0,0,-25.01])
+            cylinder(d1=diamThread-10,d2=diamThread-11,h=50);
+    }
+     
+/*    
+        
+
+    translate([0,0,-0.01])
+        cylinder(d=39-10,h=35);
+}*/
 }
 
 module cap(extDiameter, threadDiam, threadH, threadP, cornerOffset) {
