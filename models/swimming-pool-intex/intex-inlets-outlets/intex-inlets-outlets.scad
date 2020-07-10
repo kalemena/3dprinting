@@ -104,6 +104,15 @@ module plug_38mm() {
         
         translate([0,0,-25.01])
             cylinder(d1=diamThread-10,d2=diamThread-11,h=50);
+        
+        translate([-30,0,-20])
+            rotate([0,90,0])
+                cylinder(d=4, h=60);
+
+        translate([0,30,-20])
+            rotate([90,0,0])
+                cylinder(d=4, h=60);         
+           
     }
      
 /*    
