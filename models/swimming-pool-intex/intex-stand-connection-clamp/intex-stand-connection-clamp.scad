@@ -10,21 +10,24 @@ module side() {
         
         hull() {
             translate([0,3/2,0]) cylinder(d=2,h=8);
-            translate([45,19,0]) cylinder(d=3,h=8);
+            translate([35,13,0]) cylinder(d=3,h=8);
         }
         
-        translate([45,19,0]) {
+        translate([35,13,0]) {
             hull() {
                 cylinder(d=3,h=8);
                 translate([10,0,0]) cylinder(d=3,h=8);
             }
         }
         
-        translate([50,25,3.35]) rotate([90,0,0]) cylinder(d=6.7,h=9, center=true);
+        translate([35+5,17,3.35]) {
+            hull() {
+                rotate([90,0,0]) cylinder(d=6.5,h=5, center=true);
+                translate([0,3,0]) sphere(d=6.5);
+            }
+        }
     }
 }
 
-translate([0,0,20]) {
-    side();
-    mirror([0,1,0]) side();
-}
+side();
+mirror([0,1,0]) side();
