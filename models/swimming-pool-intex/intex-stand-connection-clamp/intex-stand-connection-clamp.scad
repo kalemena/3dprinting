@@ -4,7 +4,9 @@ use <../water-hose-connector/water-hose-connector.scad>;
 
 // ---------------------------
 
-clamp();
+//clamp();
+
+vacuum_cleaner();
 
 // ---------------------------
 
@@ -49,4 +51,29 @@ module clamp() {
         }
         translate([0,0,15]) sphere(d=16);
     }
+}
+
+// ---------------------------
+
+module vacuum_cleaner() {
+    union() {
+        translate([0,0,25]) 
+            waterhose_connector_male();
+        difference() {
+            hull() {
+                translate([0,0,25])
+                    cylinder(d=24,h=1);
+                cube([10,80,5], center=true);
+            }
+            
+            translate([0,0,-0.01])
+            hull() {
+                translate([0,0,25])
+                    cylinder(d=20,h=1);
+                cube([5,76,5], center=true);
+            }
+        }
+        
+    }
+    
 }
