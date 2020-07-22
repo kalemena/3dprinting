@@ -6,6 +6,7 @@ use <../water-hose-connector/water-hose-connector.scad>;
 
 //clamp();
 
+//rotate([0,45,0])
 vacuum_cleaner();
 
 // ---------------------------
@@ -54,19 +55,66 @@ module clamp() {
 }
 
 // ---------------------------
+tube_width = 30-1;
+
+module vacuum_connector() {
+    difference() {
+        cylinder(d=tube_width, h=80);
+        translate([0,0,0.01]) cylinder(d=tube_width-6, h=80);
+        translate([5,-10,5]) cube([10,20,80]);
+    }
+}
 
 module vacuum_cleaner() {
-    union() {
-        translate([0,0,25]) 
-            waterhose_connector_male();
-        difference() {
+    
+    
+    difference() {
+        union() {
+            translate([0,0,27]) waterhose_connector_male();
+            
             hull() {
-                translate([0,0,25])
-                    cylinder(d=24,h=1);
-                cube([10,80,5], center=true);
+                translate([0,0,27]) cylinder(d=24,h=1);
+                translate([40-5,0,0]) cylinder(d=10,h=5);
+                translate([-40+5,0,0]) cylinder(d=10,h=5);
+                //translate([0,-30,0]) cylinder(d=30,h=5);
             }
             
-            translate([0,0,-0.01])
+            hull() {
+                translate([40-5,0,0]) cylinder(d=10,h=4);
+                translate([-40+5,0,0]) cylinder(d=10,h=4);
+                translate([-15,-28,0]) cylinder(d=10,h=4);
+                translate([15,-28,0]) cylinder(d=10,h=4);
+                //translate([0,-15,2]) cube([40,40,4],center=true);
+            }
+            
+            hull() {
+                translate([15-2,-17,5]) cube([4,30,10],center=true);
+                translate([15-2,-20,15]) rotate([0,90,0]) cylinder(d=30,h=4,center=true);
+            }
+            hull() {
+                translate([-15+2,-17,5]) cube([4,30,10],center=true);
+                translate([-15+2,-20,15]) rotate([0,90,0]) cylinder(d=30,h=4,center=true);
+            }
+        }
+        
+        translate([0,-25,20]) rotate([0,90,0]) cylinder(d=7,h=80, center=true);
+        
+        translate([0,5,2]) rotate([45,0,0]) cube([80,20,10], center=true);
+        
+        hull() {
+            translate([0,0,27.01]) cylinder(d=18,h=1);
+            translate([40-5,0,-0.01]) cylinder(d=1,h=5);
+            translate([-40+5,0,-0.01]) cylinder(d=1,h=5);
+            //translate([0,-30,0]) cylinder(d=30,h=5);
+        }
+    }
+    
+        
+    //rotate([0,90,0]) cylinder(d=30-1, h=80);
+}
+
+/*
+   translate([0,0,-0.01])
             hull() {
                 translate([0,0,25])
                     cylinder(d=20,h=1);
@@ -74,6 +122,13 @@ module vacuum_cleaner() {
             }
         }
         
-    }
-    
-}
+        translate([20,0,1])
+            rotate([0,20,0])
+            difference() {
+                hull() {
+                    cylinder(d=30-1, h=80);
+                    cube([5,76,5], center=true);
+                }
+                cylinder(d=30-1-6, h=80);
+            }
+*/
