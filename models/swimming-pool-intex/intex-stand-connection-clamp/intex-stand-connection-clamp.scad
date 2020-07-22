@@ -68,7 +68,7 @@ module vacuum_connector() {
 
 module vacuum_clamp_connector() {
     hull() {
-        translate([0,-17,5]) cube([4,30,10],center=true);
+        translate([0,-30,5]) cube([4,30,10],center=true);
         translate([0,-20,15]) rotate([0,90,0]) cylinder(d=30,h=4,center=true);
     }
 }
@@ -82,21 +82,21 @@ module vacuum_cleaner() {
             // water hose to floor
             hull() {
                 translate([0,0,27]) cylinder(d=24,h=1);
-                translate([floor_width/2-5,0,0]) cylinder(d=10,h=4);
-                translate([-floor_width/2+5,0,0]) cylinder(d=10,h=4);
+                translate([floor_width/2-5,0,0]) cylinder(d=15,h=4);
+                translate([-floor_width/2+5,0,0]) cylinder(d=15,h=4);
             }
             
             // base floor
             hull() {
-                translate([floor_width/2-5,0,0]) cylinder(d=10,h=4);
-                translate([-floor_width/2+5,0,0]) cylinder(d=10,h=4);
-                translate([-15,-28,0]) cylinder(d=10,h=4);
-                translate([15,-28,0]) cylinder(d=10,h=4);
+                translate([floor_width/2-5,0,0]) cylinder(d=15,h=4);
+                translate([-floor_width/2+5,0,0]) cylinder(d=15,h=4);
+                translate([-15,-38,0]) cylinder(d=15,h=4);
+                translate([15 ,-38,0]) cylinder(d=15,h=4);
             }
             
             // pole clip
-            translate([15-2,0,0]) vacuum_clamp_connector();
-            translate([-15+2,0,0]) vacuum_clamp_connector();
+            translate([15-2,0,0])   vacuum_clamp_connector();
+            translate([-15+2,0,0])  vacuum_clamp_connector();
         }
         
         // pole clip hole
@@ -110,10 +110,10 @@ module vacuum_cleaner() {
         }
         
         // angle 45° to floor
-        translate([0,5,2]) rotate([45,0,0]) cube([10,20,10], center=true);
-        translate([10+2,5,2]) rotate([45,0,0]) cube([10,20,10], center=true);
-        translate([10+2+10+2,5,2]) rotate([45,0,0]) cube([10,20,10], center=true);
-        translate([-10-2,5,2]) rotate([45,0,0]) cube([10,20,10], center=true);
-        translate([-10-2-10-2,5,2]) rotate([45,0,0]) cube([10,20,10], center=true);
+        translate([0,5,2])          rotate([45,0,0]) cube([10,30,10], center=true);
+        translate([10+2,5,2])       rotate([45,0,0]) cube([10,30,10], center=true);
+        translate([10+2+10+2,5,2])  rotate([45,0,0]) cube([10,30,10], center=true);
+        translate([-10-2,5,2])      rotate([45,0,0]) cube([10,30,10], center=true);
+        translate([-10-2-10-2,5,2]) rotate([45,0,0]) cube([10,30,10], center=true);
     }
 }
