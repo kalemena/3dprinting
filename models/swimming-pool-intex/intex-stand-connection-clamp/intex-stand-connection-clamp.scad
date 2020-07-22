@@ -1,7 +1,14 @@
 
 $fn=100;
+use <../water-hose-connector/water-hose-connector.scad>;
 
-module side() {
+// ---------------------------
+
+clamp();
+
+// ---------------------------
+
+module clamp_side() {
     union() {
         hull() {
             translate([0,0,0]) cylinder(d=5,h=8);
@@ -34,10 +41,12 @@ module side() {
     }
 }
 
-difference() {
-    union() {
-        side();
-        mirror([0,1,0]) side();
+module clamp() {
+    difference() {
+        union() {
+            clamp_side();
+            mirror([0,1,0]) clamp_side();
+        }
+        translate([0,0,15]) sphere(d=16);
     }
-    translate([0,0,15]) sphere(d=16);
 }
