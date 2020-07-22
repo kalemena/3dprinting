@@ -110,10 +110,8 @@ module vacuum_cleaner() {
         }
         
         // angle 45° to floor
-        translate([0,5,2])          rotate([45,0,0]) cube([10,30,10], center=true);
-        translate([10+2,5,2])       rotate([45,0,0]) cube([10,30,10], center=true);
-        translate([10+2+10+2,5,2])  rotate([45,0,0]) cube([10,30,10], center=true);
-        translate([-10-2,5,2])      rotate([45,0,0]) cube([10,30,10], center=true);
-        translate([-10-2-10-2,5,2]) rotate([45,0,0]) cube([10,30,10], center=true);
+        for(posX=[-24:12:+24]) {
+            translate([posX,5,2]) rotate([45,0,0]) cube([10,30,10], center=true);
+        }
     }
 }
