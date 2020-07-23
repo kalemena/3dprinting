@@ -75,14 +75,17 @@ module vacuum_clamp_connector() {
 module vacuum_cleaner() {
     difference() {
         union() {
+            // clip water hose
             translate([0,0,27]) waterhose_connector_male();
             
+            // water hose to floor
             hull() {
                 translate([0,0,27]) cylinder(d=24,h=1);
                 translate([40-5,0,0]) cylinder(d=10,h=4);
                 translate([-40+5,0,0]) cylinder(d=10,h=4);
             }
             
+            // base floor
             hull() {
                 translate([40-5,0,0]) cylinder(d=10,h=4);
                 translate([-40+5,0,0]) cylinder(d=10,h=4);
@@ -90,14 +93,18 @@ module vacuum_cleaner() {
                 translate([15,-28,0]) cylinder(d=10,h=4);
             }
             
+            // pole clip
             translate([15-2,0,0]) vacuum_clamp_connector();
             translate([-15+2,0,0]) vacuum_clamp_connector();
         }
         
+        // pole clip hole
         translate([0,-25,20]) rotate([0,90,0]) cylinder(d=7,h=80, center=true);
         
+        // angle 45° to floor
         translate([0,5,2]) rotate([45,0,0]) cube([80,20,10], center=true);
         
+        // hole to water hose
         hull() {
             translate([0,0,27.01]) cylinder(d=18,h=1);
             translate([40-5,0,-0.01]) cylinder(d=1,h=5);
