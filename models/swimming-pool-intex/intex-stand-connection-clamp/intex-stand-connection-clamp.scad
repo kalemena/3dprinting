@@ -101,14 +101,18 @@ module vacuum_cleaner() {
         // pole clip hole
         translate([0,-25,20]) rotate([0,90,0]) cylinder(d=7,h=80, center=true);
         
-        // angle 45° to floor
-        translate([0,5,2]) rotate([45,0,0]) cube([80,20,10], center=true);
-        
         // hole to water hose
         hull() {
-            translate([0,0,27.01]) cylinder(d=18,h=1);
+            translate([0,0,27.01]) cylinder(d=15.5,h=1);
             translate([40-5,0,-0.01]) cylinder(d=1,h=5);
             translate([-40+5,0,-0.01]) cylinder(d=1,h=5);
         }
+        
+        // angle 45° to floor
+        translate([0,5,2]) rotate([45,0,0]) cube([10,20,10], center=true);
+        translate([10+2,5,2]) rotate([45,0,0]) cube([10,20,10], center=true);
+        translate([10+2+10+2,5,2]) rotate([45,0,0]) cube([10,20,10], center=true);
+        translate([-10-2,5,2]) rotate([45,0,0]) cube([10,20,10], center=true);
+        translate([-10-2-10-2,5,2]) rotate([45,0,0]) cube([10,20,10], center=true);
     }
 }
