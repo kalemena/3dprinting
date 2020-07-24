@@ -56,7 +56,7 @@ module clamp() {
 
 // ---------------------------
 pole_width = 30-1;
-floor_width = 80;
+floor_width = 100;
 
 module vacuum_connector() {
     difference() {
@@ -110,7 +110,7 @@ module vacuum_cleaner() {
         }
         
         // angle 45° to floor
-        for(posX=[-24:12:+24]) {
+        for(posX=[-36:12:+36]) {
             translate([posX,5,2]) rotate([45,0,0]) cube([10,30,10], center=true);
         }
     }
