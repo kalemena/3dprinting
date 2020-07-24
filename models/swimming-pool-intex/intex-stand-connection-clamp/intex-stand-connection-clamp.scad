@@ -55,12 +55,13 @@ module clamp() {
 }
 
 // ---------------------------
-tube_width = 30-1;
+pole_width = 30-1;
+floor_width = 80;
 
 module vacuum_connector() {
     difference() {
-        cylinder(d=tube_width, h=80);
-        translate([0,0,0.01]) cylinder(d=tube_width-6, h=80);
+        cylinder(d=pole_width, h=80);
+        translate([0,0,0.01]) cylinder(d=pole_width-6, h=80);
         translate([5,-10,5]) cube([10,20,80]);
     }
 }
@@ -81,14 +82,14 @@ module vacuum_cleaner() {
             // water hose to floor
             hull() {
                 translate([0,0,27]) cylinder(d=24,h=1);
-                translate([40-5,0,0]) cylinder(d=10,h=4);
-                translate([-40+5,0,0]) cylinder(d=10,h=4);
+                translate([floor_width/2-5,0,0]) cylinder(d=10,h=4);
+                translate([-floor_width/2+5,0,0]) cylinder(d=10,h=4);
             }
             
             // base floor
             hull() {
-                translate([40-5,0,0]) cylinder(d=10,h=4);
-                translate([-40+5,0,0]) cylinder(d=10,h=4);
+                translate([floor_width/2-5,0,0]) cylinder(d=10,h=4);
+                translate([-floor_width/2+5,0,0]) cylinder(d=10,h=4);
                 translate([-15,-28,0]) cylinder(d=10,h=4);
                 translate([15,-28,0]) cylinder(d=10,h=4);
             }
@@ -104,8 +105,8 @@ module vacuum_cleaner() {
         // hole to water hose
         hull() {
             translate([0,0,27.01]) cylinder(d=15.5,h=1);
-            translate([40-5,0,-0.01]) cylinder(d=1,h=5);
-            translate([-40+5,0,-0.01]) cylinder(d=1,h=5);
+            translate([floor_width/2-5-4,0,4]) cylinder(d=4,h=5);
+            translate([-floor_width/2+5+4,0,4]) cylinder(d=4,h=5);
         }
         
         // angle 45° to floor
