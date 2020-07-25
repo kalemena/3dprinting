@@ -20,28 +20,17 @@ cornerOffset=4;
 //outlet_cap();
 
 //inlet_adaptor();
+//outlet_adaptor();
 
 //plug_garden_hose();
 //translate([0,0,12+7]) rotate([0,0,15]) thread_nut(5, 27.5);
 
-plug_38mm();
+// plug_38mm();
+plug_90();
 
-//outlet_adaptor();
 //translate([0,0,12]) thread_bolt(12, 39);
-
 //translate([0,0,12+8]) rotate([0,0,15]) thread_nut(5, 40.5);
-/*
-// outlet 90°
-translate([-25,0,26])
-rotate([90,0,0])
-rotate_extrude(angle=90, convexity = 10)
-    translate([25, 0, 0]) {
-        difference() {
-            circle(d = 34);
-            circle(d = 39-11);
-        }
-    }
-  */  
+
 // ---------------------------
 
 module inlet_cap() {
@@ -111,17 +100,42 @@ module plug_38mm() {
 
         translate([0,30,-20])
             rotate([90,0,0])
-                cylinder(d=4, h=60);         
-           
+                cylinder(d=4, h=60);
     }
-     
-/*    
-        
-
-    translate([0,0,-0.01])
-        cylinder(d=39-10,h=35);
-}*/
 }
+
+module plug_90() {
+    high = 10;
+    diamThread = 39;
+    
+    difference() {
+        union() {
+            cylinder(d=diamThread+10,h=2);
+            translate([0,0,1.95])
+            metric_thread(  diameter=diamThread,
+                            pitch=2, 
+                            length=high, 
+                            internal=false);
+            
+            translate([0,0,-5]) cylinder(d1=38, d2=49, h=5);
+            
+            translate([-25,0,-5])
+            rotate([-90,0,0])
+            rotate_extrude(angle=90, convexity = 10)
+                translate([25, 0, 0]) {
+                    difference() {
+                        circle(d = 34);
+                        circle(d = 39-11);
+                    }
+                }
+        }
+        
+        translate([0,0,-9.01])
+            cylinder(d1=diamThread-10,d2=diamThread-11,h=50);
+    }
+}
+
+// ---------------------------
 
 module cap(extDiameter, threadDiam, threadH, threadP, cornerOffset) {
     difference() {
