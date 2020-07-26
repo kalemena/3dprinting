@@ -37,19 +37,18 @@ link:intex-inlets-outlets/intex-inlets-outlets.scad[Intex inlets/outlets]
 
 == Resources
 
+Here are few ressources which inspired for above designs:
+
 * Adopted:
 ** link:https://www.thingiverse.com/thing:14028[Water Hose Connector]
 
 * Ideas to adapt/fix:
 ** link:https://www.thingiverse.com/thing:3693994[Filter Idea (no scad)]
 ** Inlets (vacuum)
-*** link:https://www.thingiverse.com/thing:941551[Vacuum cleaner (no scad)]
-*** link:https://www.thingiverse.com/thing:179352[Vacuum cleaner (scad)]
 *** link:https://www.thingiverse.com/thing:1649784[Vacuum cleaner (scad tested)]
 *** link:https://www.thingiverse.com/thing:380387[Vacuum cleaner (scad)]
 *** link:https://www.thingiverse.com/thing:25638[Vacuum cleaner (scad)]
 *** link:https://www.thingiverse.com/thing:1693957[Inlet cap (scad)]
-*** link:https://www.thingiverse.com/thing:3742389[Vacuum cleaner (no scad)]
 *** link:https://www.thingiverse.com/thing:1664056[Vacuum cleaner (no scad)]
 ** outlets
 *** link:https://www.thingiverse.com/thing:2430487[Outlet adapter (scad)]
