@@ -1,17 +1,20 @@
 
 = Swimmming Pool Printed parts
 
-== Cover Clip
+== Cleaning
+
+=== Vacuum
+
+image:cleaning-vacuum/intex-stand-connection-clamp.png[Connection Clamp, 320, 240]
+image:cleaning-vacuum/cleaning-vacuum.png[Vacuum, 320, 240]
+
+link:cleaning-vacuum/cleaning-vacuum-parts.scad[Cleaning Vacuum parts]
+
+== Cover
 
 image:cover-clip/cover-clip.png[Cover Clip, 320, 240]
 
 link:cover-clip/cover-clip.scad[Cover Clip SCAD]
-
-== Water Hose Connector
-
-image:water-hose-connector/water-hose-connector.png[Water Hose Connector, 320,240]
-
-link:water-hose-connector/water-hose-connector.scad[Water Hose Connector]
 
 == Inlets / Outlets - Cap
 
