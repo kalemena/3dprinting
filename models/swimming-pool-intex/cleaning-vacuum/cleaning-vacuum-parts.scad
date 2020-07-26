@@ -7,7 +7,9 @@ use <../water-hose-connector/water-hose-connector.scad>;
 //clamp();
 
 //rotate([0,45,0])
-vacuum_cleaner();
+//vacuum_cleaner();
+
+vacuum_to_pole();
 
 // ---------------------------
 
@@ -58,11 +60,28 @@ module clamp() {
 pole_width = 30-1;
 floor_width = 100;
 
-module vacuum_connector() {
+module vacuum_to_pole() {
     difference() {
-        cylinder(d=pole_width, h=80);
-        translate([0,0,0.01]) cylinder(d=pole_width-6, h=80);
-        translate([5,-10,5]) cube([10,20,80]);
+        
+        union() {
+            cylinder(d=pole_width, h=100);
+            hull() {
+                translate([0,0,102]) cylinder(d1=pole_width, d2=pole_width-6, h=5, center=true);
+                
+                translate([-3,15+2,113]) rotate([90,0,0]) cylinder(d=20, h=4, center=true);
+                translate([-3,15+2,126]) rotate([90,0,0]) cylinder(d=20, h=4, center=true);
+                
+                translate([-3,-15-2,113]) rotate([90,0,0]) cylinder(d=20, h=4, center=true);
+                translate([-3,-15-2,126]) rotate([90,0,0]) cylinder(d=20, h=4, center=true);
+            }
+        }
+        
+        translate([0,0,85]) rotate([90,0,0]) cylinder(d=7, h=80, center=true);
+        translate([-3,0,85+41]) rotate([90,0,0]) cylinder(d=7, h=80, center=true);        
+        translate([0,0,124]) cube([30,30,30], center=true);
+        
+        translate([0,0,5]) cylinder(d=pole_width-6, h=90);
+        translate([5,-10,5]) cube([10,20,90]);
     }
 }
 
