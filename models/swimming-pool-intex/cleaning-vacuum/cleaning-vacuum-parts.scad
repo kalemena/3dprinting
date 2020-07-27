@@ -5,11 +5,9 @@ use <../water-hose-connector/water-hose-connector.scad>;
 // ---------------------------
 
 //clamp();
-
-//rotate([0,45,0])
 //vacuum_cleaner();
-
-vacuum_to_pole();
+//vacuum_to_pole();
+vacuum_cleaner_square();
 
 // ---------------------------
 
@@ -62,7 +60,6 @@ floor_width = 100;
 
 module vacuum_to_pole() {
     difference() {
-        
         union() {
             cylinder(d=pole_width, h=100);
             hull() {
@@ -82,6 +79,42 @@ module vacuum_to_pole() {
         
         translate([0,0,5]) cylinder(d=pole_width-6, h=90);
         translate([5,-10,5]) cube([10,20,90]);
+    }
+}
+
+module vacuum_cleaner_square() {
+    
+    difference() {
+        
+        union() {
+            minkowski() {
+                cube([90,90,10],center=true);
+                sphere(d=6);
+            }
+            
+            // clip water hose
+            translate([-10,0,7]) waterhose_connector_male();
+            
+            hull() {
+                translate([26,15-2,6]) cube([26,6,5], center=true);
+                minkowski() {
+                    translate([28,15-2,22]) rotate([90,0,0]) cylinder(d=20,h=4, center=true);
+                    sphere(d=2);
+                }
+            }
+            
+            hull() {
+                translate([26,-15+2,6]) cube([26,6,5], center=true);
+                minkowski() {
+                    translate([28,-15+2,22]) rotate([90,0,0]) cylinder(d=20,h=4, center=true);
+                    sphere(d=2);
+                }
+            }
+        }
+        
+        translate([-10,0,0]) cylinder(d=13, h=17, center=true);
+        
+        translate([28.5,0,24]) rotate([90,0,0]) cylinder(d=7, h=60, center=true);
     }
 }
 
