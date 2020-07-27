@@ -7,6 +7,7 @@
 
 image:cleaning-vacuum/intex-stand-connection-clamp.png[Connection Clamp, 320, 240]
 image:cleaning-vacuum/cleaning-vacuum.png[Vacuum, 320, 240]
+image:cleaning-vacuum/cleaning-vacuum-square.png[Vacuum, 320, 240]
 
 link:cleaning-vacuum/cleaning-vacuum-parts.scad[Cleaning Vacuum parts]
 
