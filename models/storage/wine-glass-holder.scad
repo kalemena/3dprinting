@@ -2,6 +2,7 @@
 $fn=80;
 
 wine_glass_holder_base();
+//translate([0,0,60]) wine_glass_holder_top();
 
 module wine_glass_holder_base() {    
     difference() {
@@ -35,8 +36,17 @@ module wine_glass_holder_base() {
 }
 
 module wine_glass_holder_top() {
-  
-    hull() {
+    difference() {
+        hull() {
+            cube([60,10,10], center=true);
+            translate([47.5/2-2,0,15]) sphere(d=10);
+            translate([-47.5/2+2,0,15]) sphere(d=10);
+        }
+        
+        translate([-47.5/2,0,0]) cylinder(d=4,h=20,center=true);
+        translate([+47.5/2,0,0]) cylinder(d=4,h=20,center=true);
+        
+        translate([0,0,-5]) sphere(d=30);
     }
     
 }
