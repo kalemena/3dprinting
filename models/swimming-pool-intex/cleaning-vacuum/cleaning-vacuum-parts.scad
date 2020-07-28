@@ -5,9 +5,10 @@ use <../water-hose-connector/water-hose-connector.scad>;
 // ---------------------------
 
 //clamp();
-//vacuum_cleaner();
 //vacuum_to_pole();
-vacuum_cleaner_square();
+
+vacuum_cleaner();
+//vacuum_cleaner_square();
 
 // ---------------------------
 
@@ -124,8 +125,12 @@ module vacuum_cleaner_square() {
 
 module vacuum_clamp_connector() {
     hull() {
-        translate([0,-30,5]) cube([4,30,10],center=true);
-        translate([0,-20,15]) rotate([0,90,0]) cylinder(d=30,h=4,center=true);
+        translate([0,-27,5]) cube([4,36,10],center=true);
+        translate([0,-20,15]) rotate([0,90,0]) 
+            minkowski() {
+                cylinder(d=27,h=3,center=true);
+                sphere(d=2);
+            }
     }
 }
 
@@ -151,12 +156,14 @@ module vacuum_cleaner() {
             }
             
             // pole clip
-            translate([15-2,0,0])   vacuum_clamp_connector();
-            translate([-15+2,0,0])  vacuum_clamp_connector();
+            translate([15-2.5,0,0])   vacuum_clamp_connector();
+            translate([-15+2.5,0,0])  vacuum_clamp_connector();
+            
+            //translate([0,-20,20]) cube([30,30,10], center=true);
         }
         
         // pole clip hole
-        translate([0,-25,20]) rotate([0,90,0]) cylinder(d=7,h=80, center=true);
+        translate([0,-25,16]) rotate([0,90,0]) cylinder(d=7,h=80, center=true);
         
         // hole to water hose
         hull() {
