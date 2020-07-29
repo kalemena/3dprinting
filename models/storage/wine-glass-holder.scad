@@ -10,13 +10,13 @@ module wine_glass_holder_top() {
         difference() {
             linear_extrude(height=12, convexity=4)
                     minkowski() {
-                        square([100-4,24-4]);
+                        square([100-4,20-4]);
                         circle(d=4);
                     }
                 
-            translate([8,-3,-0.01]) cube([80,24-4,12.02]);
+            translate([5,-3,-0.01]) cube([86,20-4,12.02]);
                 
-            translate([-2+50,20,12/2]) {
+            translate([-2+50,16,12/2]) {
                 rotate([90,0,0]) cylinder(d=3, h=10, center=true);
                 translate([0,-2.8,0]) rotate([90,0,0]) cylinder(d1=3, d2=6, h=2, center=true);
             }
@@ -24,17 +24,17 @@ module wine_glass_holder_top() {
         
         difference() {
             hull() {
-                translate([0,-2,0]) cube([10,8,12]);
-                translate([32,-1,0]) cylinder(d=9, h=12);
+                translate([0,-2,0]) cube([8,6,12]);
+                translate([32,-2,0]) cylinder(d=9, h=12);
             }
-            translate([32,-1,0]) cylinder(d=4,h=25,center=true);
+            translate([32,-2,0]) cylinder(d=4,h=25,center=true);
         }
         difference() {    
             hull() {
-                translate([100-4-10,-2,0]) cube([10,8,12]);
-                translate([100-4-32,-1,0]) cylinder(d=9, h=12);
+                translate([100-4-8,-2,0]) cube([8,6,12]);
+                translate([100-4-32,-2,0]) cylinder(d=9, h=12);
             }
-            translate([100-4-32,-1,0]) cylinder(d=4,h=25,center=true);
+            translate([100-4-32,-2,0]) cylinder(d=4,h=25,center=true);
         }
 
     }
