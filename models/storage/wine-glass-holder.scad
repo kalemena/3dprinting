@@ -1,9 +1,12 @@
 
 $fn=80;
 
-//wine_glass_holder_base();
+//translate([48,-2,100]) rotate([180,0,0]) wine_glass_holder_base();
 wine_glass_holder_top();
 //translate([0,0,60]) wine_glass_holder_finish();
+
+//translate([100-4-32,-2,50]) cylinder(d=4,h=100,center=true);
+//translate([32,-2,50]) cylinder(d=4,h=100,center=true);
 
 module wine_glass_holder_top() {
     union() {
@@ -18,7 +21,7 @@ module wine_glass_holder_top() {
                 
             translate([-2+50,16,12/2]) {
                 rotate([90,0,0]) cylinder(d=3, h=10, center=true);
-                translate([0,-2.8,0]) rotate([90,0,0]) cylinder(d1=3, d2=6, h=2, center=true);
+                translate([0,-2.1,0]) rotate([90,0,0]) cylinder(d1=3, d2=7, h=2, center=true);
             }
         }
         
@@ -27,14 +30,14 @@ module wine_glass_holder_top() {
                 translate([0,-2,0]) cube([8,6,12]);
                 translate([32,-2,0]) cylinder(d=9, h=12);
             }
-            translate([32,-2,0]) cylinder(d=4,h=25,center=true);
+            translate([32,-2,0]) cylinder(d=4.1,h=25,center=true);
         }
         difference() {    
             hull() {
                 translate([100-4-8,-2,0]) cube([8,6,12]);
                 translate([100-4-32,-2,0]) cylinder(d=9, h=12);
             }
-            translate([100-4-32,-2,0]) cylinder(d=4,h=25,center=true);
+            translate([100-4-32,-2,0]) cylinder(d=4.1,h=25,center=true);
         }
 
     }
@@ -44,31 +47,27 @@ module wine_glass_holder_top() {
 module wine_glass_holder_base() {    
     difference() {
         union() {
-            cube([80,20,4], center=true);
+            cube([50,20,4], center=true);
             
             hull() {
-                translate([-47.5/2,0,15/2]) rotate([5,0,0]) cylinder(d=4+3,h=15,center=true);
-                translate([-47.5/2,6,4/2]) cylinder(d=4+3,h=4,center=true);
-                translate([-47.5/2,-6,4/2]) cylinder(d=4+3,h=4,center=true);
+                translate([-32/2,0,15/2]) rotate([3,0,0]) cylinder(d=4+3,h=15,center=true);
+                translate([-32/2,6,4/2]) cylinder(d=4+3,h=4,center=true);
+                translate([-32/2,-6,4/2]) cylinder(d=4+3,h=4,center=true);
             }
             
             hull() {
-                translate([+47.5/2,0,15/2]) rotate([3,0,0]) cylinder(d=4+3,h=15,center=true);
-                translate([+47.5/2,6,4/2]) cylinder(d=4+3,h=4,center=true);
-                translate([+47.5/2,-6,4/2]) cylinder(d=4+3,h=4,center=true);
+                translate([+32/2,0,15/2]) rotate([3,0,0]) cylinder(d=4+3,h=15,center=true);
+                translate([+32/2,6,4/2]) cylinder(d=4+3,h=4,center=true);
+                translate([+32/2,-6,4/2]) cylinder(d=4+3,h=4,center=true);
             }
         }
         
         cylinder(d=3,h=20,center=true);
-        translate([-47.5/2-10,0,0]) cylinder(d=3,h=20,center=true);
-        translate([+47.5/2+10,0,0]) cylinder(d=3,h=20,center=true);
         
-        translate([0,0,1.01])cylinder(d1=3,d2=6,h=2,center=true);
-        translate([-47.5/2-10,0,1.01]) cylinder(d1=3,d2=6,h=2,center=true);
-        translate([+47.5/2+10,0,1.01]) cylinder(d1=3,d2=6,h=2,center=true);
+        translate([0,0,1.01])cylinder(d1=3,d2=8,h=2,center=true);
         
-        translate([-47.5/2,0,5]) rotate([5,0,0]) cylinder(d=4,h=25,center=true);
-        translate([+47.5/2,0,5]) rotate([5,0,0]) cylinder(d=4,h=25,center=true);
+        translate([-32/2,0,5]) rotate([3,0,0]) cylinder(d=4,h=25,center=true);
+        translate([+32/2,0,5]) rotate([3,0,0]) cylinder(d=4,h=25,center=true);
     }
 }
 
