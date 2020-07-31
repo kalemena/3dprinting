@@ -1,12 +1,12 @@
 
 $fn=80;
 
-//translate([48,-2,100]) rotate([180,0,0]) wine_glass_holder_base();
 wine_glass_holder_top();
-//translate([0,0,60]) wine_glass_holder_finish();
 
-//translate([100-4-32,-2,50]) cylinder(d=4,h=100,center=true);
-//translate([32,-2,50]) cylinder(d=4,h=100,center=true);
+//wine_glass_holder_side();
+//translate([0,0,100]) wine_glass_holder_finish();
+//translate([-32/2,0,50]) cylinder(d=4,h=100,center=true);
+//translate([32/2,0,50]) cylinder(d=4,h=100,center=true);
 
 module wine_glass_holder_top() {
     union() {
@@ -44,7 +44,7 @@ module wine_glass_holder_top() {
     //translate([0,17,10]) cube([80,5,10]);
 }
 
-module wine_glass_holder_base() {    
+module wine_glass_holder_side() {    
     difference() {
         union() {
             cube([50,20,4], center=true);
@@ -74,15 +74,15 @@ module wine_glass_holder_base() {
 module wine_glass_holder_finish() {
     difference() {
         hull() {
-            cube([60,10,10], center=true);
-            translate([47.5/2-2,0,15]) sphere(d=10);
-            translate([-47.5/2+2,0,15]) sphere(d=10);
+            cube([42,10,10], center=true);
+            translate([32/2-2,0,15]) sphere(d=10);
+            translate([-32/2+2,0,15]) sphere(d=10);
         }
         
-        translate([-47.5/2,0,0]) cylinder(d=4,h=20,center=true);
-        translate([+47.5/2,0,0]) cylinder(d=4,h=20,center=true);
+        translate([-32/2,0,0]) cylinder(d=4,h=20,center=true);
+        translate([+32/2,0,0]) cylinder(d=4,h=20,center=true);
         
-        translate([0,0,-5]) sphere(d=30);
+        translate([0,0,-5]) sphere(d=25);
     }
     
 }
