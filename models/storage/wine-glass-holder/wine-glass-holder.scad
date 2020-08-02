@@ -2,11 +2,13 @@
 $fn=80;
 
 wine_glass_holder_top();
+translate([64,-2,55]) cylinder(d=4,h=110,center=true);
+translate([32,-2,55]) cylinder(d=4,h=110,center=true);
+translate([0,0,100]) wine_glass_holder_top();
 
 //wine_glass_holder_side();
 //translate([0,0,100]) wine_glass_holder_finish();
-//translate([-32/2,0,50]) cylinder(d=4,h=100,center=true);
-//translate([32/2,0,50]) cylinder(d=4,h=100,center=true);
+
 
 module wine_glass_holder_top() {
     union() {
