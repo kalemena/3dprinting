@@ -58,10 +58,10 @@ STL is fine if you have exact part measures you seek, but a pain if you want to 
 Nevertheless, STL often give good advice on part specifics. +
 In a wonderful world, people would provide source code, and be using open source and open format ...
 - link:https://www.openscad.org/[OpenSCAD] is suitable for programmatic parts creation with basic parts + 
-With few experience, pretty advanced figures can be built with need to learn fancy CAD UI *click-odrome*
+With few experience, pretty advanced figures can be built, without having to learn fancy CAD UI *click-odrome*
 - design/program your part with boolean 3D operations
 - render *STL* from *openSCAD*
-- open in *Cura*, fine tune specifics for your wire (PETG, PLA, etc), and render *GCode* + 
+- open in *Cura*, fine tune specifics for your plastic wire (PETG, PLA, etc), and render *GCode* + 
 Cura although gives an approximate duration and wire consumption.
 - open *GCode* in *Repetier*, plug to printer, warm up your wire, calibrate if needed when changing wire or once every 10 prints or when there was big changes in room temperature or humidity. + 
 Although Cura can plug and print directly, it seems Repetier gives more stability
@@ -79,8 +79,10 @@ Find few of my models under:
 ** link:models/desk[Desktop setup]
 ** link:models/duplo[Lego Duplo things]
 ** link:models/ender3-addon[Eder 3 addon]
+** link:models/house[House stuff]
 ** link:models/kite[Kite Wing Cross]
 ** link:models/repairs[Repairing models]
+** link:models/storage[Storage]
 ** link:models/swimming-pool-intex[Swimming Pool Things]
 
 * link:https://www.thingiverse.com/thing:7097/files[To test]
