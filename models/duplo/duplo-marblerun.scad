@@ -10,10 +10,24 @@
 // The duplo-block-lib is derived from http://www.thingiverse.com/thing:1778
 include <duplo-block-lib.scad>
 
-quality = 50; // quality: low/fast (e.g. 10) for design, high/slow (e.g. 50) for final rendering 
+quality = 100; // quality: low/fast (e.g. 10) for design, high/slow (e.g. 50) for final rendering 
 innerRadius=14*dr/16;
 
-//straightPiece(2);
+/*
+straightPiece(1);
+size1=15.7;
+translate([0,5*size1,0]) straightPiece(1);
+
+difference() {
+    translate([0,40,0]) cube([25,70,7], center=true);
+    translate([0,40,11.5]) rotate([90,0,0]) cylinder(d=28,h=70.1,center=true, $fn=quality);
+    for(i=[0:5]) {
+        transX = i%2 ? -1: 1;
+        translate([transX*3,i*10+14,0]) cube([25,2,10], center=true);
+    }
+}
+*/
+
 //straightHolePiece(3); 
 //crossingPiece();
 //endPiece();
