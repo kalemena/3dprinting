@@ -3,6 +3,9 @@
 == Parts
 
 image:parts-duplo-608zz-1x1.png[Duplo-Copter, 240,240]
+image:parts-duplo-keychain-logo.png[Lego Keychain, 240,240]
+
+image:parts-duplo-cyclone-ramp.png[Duplo marble cyclone ramp, 240,240]
 
 == Interesting
 
