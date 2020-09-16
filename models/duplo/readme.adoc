@@ -1,5 +1,9 @@
 = Duplo/Lego compatible parts
 
+Duplo block lib and many SCAD are based from Thingiverse search. +
+The lib itself was not modified much, and additional SCAD added. + 
+Below are custom things.
+
 == Parts
 
 image:parts-duplo-608zz-1x1.png[Duplo-Copter, 240,240]
