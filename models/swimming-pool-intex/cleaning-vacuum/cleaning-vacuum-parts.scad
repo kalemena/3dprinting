@@ -7,7 +7,7 @@ use <../water-hose-connector/water-hose-connector.scad>;
 //clamp();
 //vacuum_to_pole();
 
-vacuum_cleaner();
+vacuum_cleaner_32mm();
 //vacuum_cleaner_square();
 
 // ---------------------------
@@ -185,6 +185,55 @@ module vacuum_cleaner() {
         // angle 45° to floor
         for(posX=[-36:12:+36]) {
             translate([posX,5,2]) rotate([45,0,0]) cube([10,30,10], center=true);
+        }
+    }
+}
+
+module vacuum_cleaner_32mm() {
+    difference() {
+        union() {
+            // clip water hose
+            // translate([0,0,27]) waterhose_connector_male();
+            translate([0,0,27]) cylinder(d1=33,d2=31.5,h=30);
+            
+            // water hose to floor
+            hull() {
+                translate([0,0,27]) cylinder(d=33,h=1);
+                translate([floor_width/2-5,0,0]) cylinder(d=15,h=5);
+                translate([-floor_width/2+5,0,0]) cylinder(d=15,h=5);
+            }
+            
+            // base floor
+            hull() {
+                translate([floor_width/2-5,0,0]) cylinder(d=15,h=4);
+                translate([-floor_width/2+5,0,0]) cylinder(d=15,h=4);
+                translate([-15,-43,0]) cylinder(d=15,h=4);
+                translate([ 15,-43,0]) cylinder(d=15,h=4);
+            }
+            
+            // pole clip
+            translate([15-2.5,-5,0])   vacuum_clamp_connector();
+            translate([-15+2.5,-5,0])  vacuum_clamp_connector();
+            
+            //translate([0,-20,20]) cube([30,30,10], center=true);
+        }
+        
+        // pole clip hole
+        translate([0,-30,16]) rotate([0,90,0]) cylinder(d=7,h=80, center=true);
+        
+        // top hole
+        translate([0,0,27]) cylinder(d=32-6,h=40.001);
+        
+        // hole to water hose
+        hull() {
+            translate([0,0,27.01]) cylinder(d=22,h=1);
+            translate([floor_width/2-5-4,0,4]) cylinder(d=4,h=5);
+            translate([-floor_width/2+5+4,0,4]) cylinder(d=4,h=5);
+        }
+        
+        // angle 45° to floor
+        for(posX=[-36:12:+36]) {
+            translate([posX,5,1]) rotate([45,0,0]) cube([10,30,10], center=true);
         }
     }
 }
