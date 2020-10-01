@@ -20,6 +20,7 @@ duploHeight=duploRaster * 0.6;
 duploNibbleRadius = dr * (1-1/1.41421) +0.1; // = 4.686+0.1,  dr*(1-1/sqrt(2))
 duploBottomNibbleRadius = dr*(1.41421-1); //= dr * 1.41421 / 2  - duploNibbleRadius = 6.6277
 duploGapBottom = -0.05; // recommended range from -0.1 to 0.1 with lower values for tighter fit.
+bottomGapHeight = -0.05;
 gapBetweenBricks = 0.3; // real duplo probably has 0.4
 duploWall = 1.55;// For duplo compatibility this is not so important, only if smaller lego should fit.
                    // (dr/2 - duploNibbleRadius - gapBetweenBricks)/2 = 1.507

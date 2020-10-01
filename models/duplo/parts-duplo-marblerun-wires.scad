@@ -15,14 +15,14 @@ quality = 20; // quality: low/fast (e.g. 10) for design, high/slow (e.g. 50) for
 innerRadius=14*dr/16;
 
 // wires
-wireRadius=3.2/2;
+wireRadius=2;
 wireTX=7;
 wireTZ=-2;
 clipTX=1.45;
 
-// straightPieceWires(2);
-//ramp(2,4, true);
-wireClip();
+//straightPieceWires(2);
+ramp(2,4, true);
+// wireClip();
 
 module wireClip() {
  difference() {  
@@ -33,7 +33,7 @@ module wireClip() {
      translate([-wireTX,0,0]) cylinder(4,r=wireRadius*1.8,$fn = quality*2);
      
      difference() {  
-       translate([0,5,0]) cylinder(2,r=innerRadius*0.7,$fn = quality*2);
+       translate([0,5,0]) cylinder(d=1.8,r=innerRadius*0.7,$fn = quality*2);
        translate([-20,-0.5,0]) cube([40,40,10]);
      }
    }
@@ -57,15 +57,16 @@ module ramp(length=2, height=4, wires=false) {
                   cylinder( duploRaster*6, innerRadius, innerRadius,, center=true, $fn = quality*2 );     
          translate([-2*dr,length*dr+0, (length/2) * 1.5*duploHeight+0]) rotate([90+angle,0,0])
                   cube( [duploRaster*4,duploRaster*4,duploRaster*2*length] );
-         if(wires) {
-             translate([wireTX,((4-length)/2)*dr+1, duploHeight-8]) rotate([90+angle+15,0,0]) scale([1,vscale,1])
-                cylinder(duploRaster+5, r=wireRadius, $fn = quality*2);
-             translate([-wireTX,((4-length)/2)*dr+1, duploHeight-8]) rotate([90+angle+15,0,0]) scale([1,vscale,1])
-                cylinder(duploRaster+5, r=wireRadius, $fn = quality*2);
+         
+          if(wires) {
+             translate([wireTX,((4-length)/2)*dr, duploHeight-10]) rotate([90+angle+8,0,0]) scale([1,vscale,1])
+                cylinder(h=duploRaster+5, d=wireRadius, $fn = quality*2);
+             translate([-wireTX,((4-length)/2)*dr, duploHeight-10]) rotate([90+angle+8,0,0]) scale([1,vscale,1])
+                cylinder(duploRaster+5, d=wireRadius, $fn = quality*2);
              translate([wireTX,-((4-length)/2)*dr-1, duploHeight-20]) rotate([90,0,180]) scale([1,vscale,1])
-                cylinder(duploRaster, r=wireRadius, $fn = quality*2);
+                cylinder(duploRaster, d=wireRadius, $fn = quality*2);
              translate([-wireTX,-((4-length)/2)*dr-1, duploHeight-20]) rotate([90,0,180]) scale([1,vscale,1])
-                cylinder(duploRaster, r=wireRadius, $fn = quality*2);
+                cylinder(duploRaster, d=wireRadius, $fn = quality*2);
          }
       }
    }
