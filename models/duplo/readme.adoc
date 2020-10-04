@@ -6,10 +6,13 @@ Below are custom things.
 
 == Parts
 
-image:parts-duplo-608zz-1x1.png[Duplo-Copter, 240,240]
-image:parts-duplo-keychain-logo.png[Lego Keychain, 240,240]
+image:images/parts-duplo-608zz-1x1.png[Duplo-Copter, 240,240]
+image:images/parts-duplo-keychain-logo.png[Lego Keychain, 240,240]
 
-image:parts-duplo-cyclone-ramp.png[Duplo marble cyclone ramp, 240,240]
+image:images/parts-duplo-cyclone-ramp.png[Duplo marble cyclone ramp, 240,240]
+
+image:images/parts-duplo-marblerun-bridge-8.png[Duplo marble bridge, 240,240]
+image:images/parts-duplo-marblerun-pylon-10.png[Duplo marble pylon, 240,240]
 
 == Interesting
 
