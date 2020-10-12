@@ -31,7 +31,7 @@ quality = 60; // quality: low/fast (e.g. 10) for design, high/slow (e.g. 50) for
 
 // if some pieces are missing: "Edit"->"Preferences"->"Advanced"->"Turn off rendering at: " [1000000] "elements"
 
-//duplo(2,2,8,true,false);
+// duplo(2,2,1,true,false);
 
 module duplo(width,length,height,topNibbles,bottomHoles) {   
    //size definitions
@@ -116,19 +116,17 @@ module duploTopNibbles(width=2, length=2, height=1) {
   }
 }
 
-module duplonibble()
-{
+module duplonibble() {
    difference() {
       union() {
-         translate([0,0,-0.5/2]) cylinder(r=duploNibbleRadius,h=4.5-1,center=true,$fn = quality);
-         translate([0,0,4.5/2-1]) cylinder(r1=duploNibbleRadius,r2=duploNibbleRadius-0.4,h=1,$fn = quality);
+         translate([0,0,-0.5/2-0.5]) cylinder(r=duploNibbleRadius,h=1+4.5-1, center=true, $fn = quality);
+         translate([0,0,4.5/2-1]) cylinder(r1=duploNibbleRadius,r2=duploNibbleRadius-0.4, h=1, $fn = quality);
       }
-      cylinder(r=duploNibbleRadius-1.3,h=5.5,center=true,$fn = quality);
+      translate([0,0,1]) cylinder(r=duploNibbleRadius-1.3,h=3.5, center=true, $fn = quality);
    }
 }
 
-module duplobottomnibble(height)
-{
+module duplobottomnibble(height) {
    difference() {
       union(){
          cylinder(r=duploBottomNibbleRadius-firstLayerGap,h=height,center=true,$fn = quality);
