@@ -31,7 +31,7 @@ quality = 60; // quality: low/fast (e.g. 10) for design, high/slow (e.g. 50) for
 
 // if some pieces are missing: "Edit"->"Preferences"->"Advanced"->"Turn off rendering at: " [1000000] "elements"
 
-// duplo(2,2,1,true,false);
+// duplo(2,8,1,true,false);
 
 module duplo(width,length,height,topNibbles,bottomHoles) {   
    //size definitions
@@ -57,7 +57,7 @@ module duplo(width,length,height,topNibbles,bottomHoles) {
          cube([effWidth,effLength,height*duploHeight],true);
       
          //nibbles on bottom
-         for(j=[1:length]) {
+         for(j = [1:length]) {
             for (i = [1:width]) {
                // disabled
                translate([ns-(i-width*0.5)*dr,ns-(j-length*0.5)*dr,-0.1-height*duploHeight/2]) {
