@@ -2,12 +2,12 @@
 
 == Cable cleanups
 
-image:cable-support-under-desk-U.png[Shape U,320,240]
-image:cable-support-under-desk-O.png[Shape O,320,240]
-image:cable-support-under-desk-E.png[Shape E,320,240]
+image:images/cable-support-under-desk-U.png[Shape U,320,240]
+image:images/cable-support-under-desk-O.png[Shape O,320,240]
+image:images/cable-support-under-desk-E.png[Shape E,320,240]
 
-image:cable-support-under-desk-X-8.png[Shape X-8,320,240]
-image:cable-support-under-desk-X-6.png[Shape X-6,320,240]
+image:images/cable-support-under-desk-X-8.png[Shape X-8,320,240]
+image:images/cable-support-under-desk-X-6.png[Shape X-6,320,240]
 
 link:cable-support-under-desk.scad[cable-support-under-desk.scad]
 
