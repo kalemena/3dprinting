@@ -2,10 +2,10 @@
 
 == GoPro Hero 5 session mount
 
-image:ender3-gopro-hero-5-session-mount.png[GoPro Hero 5 session mount v1,320,240]
+image:images/ender3-gopro-hero-5-session-mount.png[GoPro Hero 5 session mount v1,320,240]
 
-link:ender3-gopro-hero-5-session-mount.scad[ender3-gopro-hero-5-session-mount.scad]
+link:scad/ender3-gopro-hero-5-session-mount.scad[ender3-gopro-hero-5-session-mount.scad]
 
-image:ender3-gopro-hero-5-session-mount-under-bed-v2.png[GoPro Hero 5 session mount v2,320,240]
+image:images/ender3-gopro-hero-5-session-mount-under-bed-v2.png[GoPro Hero 5 session mount v2,320,240]
 
-link:ender3-gopro-hero-5-session-mount-under-bed.scad[ender3-gopro-hero-5-session-mount-under-bed.scad]
+link:scad/ender3-gopro-hero-5-session-mount-under-bed.scad[ender3-gopro-hero-5-session-mount-under-bed.scad]
