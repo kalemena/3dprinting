@@ -1,26 +1,38 @@
 
-### OpenSCAD
+= Software
 
-```bash
+== Drawing
+
+=== OpenSCAD
+
+[source, bash]
+----
 $ sudo add-apt-repository ppa:openscad/releases
 $ sudo apt-get install openscad
-```
+----
 
 * link:http://edutechwiki.unige.ch/fr/Tutoriel_OpenSCAD[Tutoriel]
 * link:https://github.com/openscad/list-comprehension-demos[Demos]
 
-### Cura
+
+=== SDF Python
+
+link:https://github.com/fogleman/sdf[SDF Python]
+
+== Printing
+
+=== Cura
 
 Cura engine is probably best tool for slicing.
 
 * link:https://download.ultimaker.com[Ultimaker Cura]
 * link:https://github.com/Ultimaker/Cura/releases[AppImage Ultimaker Cura]
 
-### Repetier
+=== Repetier
 
 Repetier Host is nice, includes Cura (although it looks using Cura directly gives better results).
 
-### OctoPrint
+=== OctoPrint
 
 Find link here:
 
