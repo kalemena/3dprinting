@@ -6,15 +6,17 @@ image:https://images.microbadger.com/badges/version/kalemena/cura.svg[Docker Ver
 image:https://images.microbadger.com/badges/image/kalemena/cura.svg[Docker Hub, link=https://hub.docker.com/r/kalemena/cura/tags]
 endif::[]
 
+= 3D Printing
+
 Tooling &amp; Tips for 3d printing
 
-## Printer model
+== Printer model
 
 Creality Ender-3 model.
 
 image:images/ender3.jpg[Ender3,450,450]
 
-## Tips
+== Tips
 
 * link:enhancements.adoc[Enhancements]
 * link:software.adoc[Software]
@@ -22,7 +24,7 @@ image:images/ender3.jpg[Ender3,450,450]
 * link:https://teachingtechyt.github.io/calibration.html[Online tuning guide]
 * link:https://www.zirotroc.fr/ender-3-reglage-des-axes/[Rêglage des 3 axes]
 
-## Material
+== Material
 
 Up to now, I use only SUNLU wires (from Amazon), so it is not clear if other wires are better or not. +
 Sunlu wire is good in all flavors tested below.
@@ -46,7 +48,7 @@ Reduced *infill speed* to 40mm/s | *VERY GOOD FINISH*
 
 |=========================================================
 
-## How-to
+== How-to
 
 Generally, steps are as follows:
 
@@ -68,7 +70,8 @@ Although Cura can plug and print directly, it seems Repetier gives more stabilit
 - start printing
 - enjoy printed custom part
 
-## Models
+
+== Models
 
 Best place to find model is Thingiverse.
 
