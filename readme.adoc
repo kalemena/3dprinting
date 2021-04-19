@@ -70,6 +70,16 @@ Although Cura can plug and print directly, it seems Repetier gives more stabilit
 - start printing
 - enjoy printed custom part
 
+== G-Code tips
+
+* link:https://www.simplify3d.com/support/articles/3d-printing-gcode-tutorial/[G-Code tutorial]
+
+.Extrude a few (used when changing wire)
+[source,bash]
+----
+G92 E0 ; set the current filament position to E=0
+G1 E10 F800 ; extrude 10mm of filament
+----
 
 == Models
 
