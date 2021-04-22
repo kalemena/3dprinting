@@ -304,7 +304,7 @@ module block(
                                     // Posts
                                     for (ycount=[1:real_width-1]) {
                                         for (xcount=[1:real_length-1]) {
-                                            translate([(xcount-1)*stud_spacing,(ycount-1)*stud_spacing,0]) post(real_vertical_axle_holes && !skip_this_vertical_axle_hole(xcount, ycount));
+                                            translate([(xcount-1)*stud_spacing,(ycount-1)*stud_spacing,]) post(real_vertical_axle_holes && !skip_this_vertical_axle_hole(xcount, ycount));
                                         }
                                     }
 
@@ -319,7 +319,7 @@ module block(
 
                                             for (ycount=[1:real_width-1]) {
                                                 for (xcount=[1:real_length-1]) {
-                                                    translate([(xcount-1)*stud_spacing,(ycount-1)*stud_spacing,-0.5]) cylinder(r=post_diameter/2-0.1, h=real_height*block_height+0.5, $fs=cylinder_precision);
+                                                    translate([(xcount-1)*stud_spacing,(ycount-1)*stud_spacing,-0.5]) cylinder(r=post_diameter/2-0.5, h=real_height*block_height+0.5, $fs=cylinder_precision);
                                                 }
                                             }
                                         }
@@ -662,12 +662,17 @@ module block(
 
     module post(vertical_axle_hole) {
         difference() {
-            cylinder(r=post_diameter/2, h=real_height*block_height,$fs=cylinder_precision);
+            union() {
+                translate([0,0,0.5]) cylinder(r=post_diameter/2, h=real_height*block_height-0.5,$fs=cylinder_precision);
+                cylinder(r1=post_diameter/2-0.2, r2=post_diameter/2, h=0.5,$fs=cylinder_precision);
+            }
+            
             if (vertical_axle_hole==true) {
                 translate([0,0,-block_height/2])
                     axle();
             } else {
-                translate([0,0,-0.5]) cylinder(r=(post_diameter/2)-post_wall_thickness, h=real_height*block_height+1,$fs=cylinder_precision);
+                translate([0,0,-2.5]) 
+                    cylinder(r=(post_diameter/2)-post_wall_thickness, h=real_height*block_height+1,$fs=cylinder_precision);
             }
         }
     }
