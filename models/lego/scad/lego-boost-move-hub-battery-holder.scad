@@ -3,7 +3,7 @@ include <lego-block-lib.scad>
 
 // translate([-2,0,1.5]) import("lego-boost-move-hub-battery-holder-v2.stl");
 
-$fn = 50;
+$fn = 100;
 
 difference() {
      
@@ -40,7 +40,7 @@ difference() {
         }
         
         // compartiment
-        translate([0,0,1+33/2]) cube([25.5,52,34],center=true);
+        translate([0,0,0.01+1+33/2]) cube([25.5,52,34],center=true);
         
         // screw +
         translate([0,31.25,2.4]) cylinder(d1=6,d2=4,h=2,center=true);
@@ -60,6 +60,9 @@ difference() {
         
         translate([0,-19.5,12]) cylinder(d=15,h=22, center=true);
         translate([0,-19.5,12+16]) cylinder(d1=15,d2=13,h=10, center=true);
+        
+        translate([0,19.5,8+0.1]) cylinder(d=15,h=15, center=true);
+        translate([0,19.5,8+10.1]) cylinder(d1=15,d2=13,h=5, center=true);
     }
     
     // inside room
