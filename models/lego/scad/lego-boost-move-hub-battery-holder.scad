@@ -66,7 +66,7 @@ difference() {
     }
     
     // inside room
-    translate([0,0,0.01+2.5+33/2]) cube([25-2,52-3,34],center=true);
+    translate([0,0,0.01+2.5+33/2]) cube([25-3,52-4,33],center=true);
     
     // screw hole
     translate([0,31.25,0]) cylinder(d=2.35,h=15,center=true);
@@ -77,5 +77,8 @@ difference() {
     translate([0,-16,0]) cylinder(d=8,h=15,center=true);
     
     // +/-
-    translate([0,25.01,28]) cube([18,2,15],center=true);
+    translate([0,25.01,28]) cube([18,4,15],center=true);
+    
+    // Lipo
+    translate([0,-5,27.1]) cube([50,50,15], center=true);
 }
