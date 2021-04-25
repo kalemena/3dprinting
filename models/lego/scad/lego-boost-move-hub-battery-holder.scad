@@ -79,6 +79,6 @@ difference() {
     // +/-
     translate([0,25.01,28]) cube([18,4,15],center=true);
     
-    // Lipo
-    translate([0,-5,27.1]) cube([50,50,15], center=true);
+    // Lipo (cut inside to have more room for Lipo)
+    translate([0,-5,27.1]) cube([50,70,15], center=true);
 }
