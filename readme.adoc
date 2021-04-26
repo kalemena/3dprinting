@@ -91,6 +91,7 @@ Find few of my models under:
 ** link:models/covid-19[COVID-19]
 ** link:models/desk[Desktop setup]
 ** link:models/duplo[Lego Duplo things]
+** link:models/lego[Lego things]
 ** link:models/ender3-addon[Ender 3 addon]
 ** link:models/house[House stuff]
 ** link:models/kite[Kite Wing Cross]
