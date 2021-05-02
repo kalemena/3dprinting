@@ -44,20 +44,22 @@ module laptopStandTop() {
     difference() {
         hull() {
             minkowski() {
-                cylinder(d=28, h=width-rounded, center=true);
+                cylinder(d=top_diameter_ext, h=width-rounded, center=true);
                 sphere(d=rounded);
             }
-            translate([15,0,0])
+            translate([(width-rounded)*2/3,0,0])
             minkowski() {
-                cube([10,width-rounded,width-rounded], center=true);
+                cube([width-rounded-2,width-rounded-2,width-rounded], center=true);
                 sphere(d=rounded);
             }
         }
         
         cylinder(d=12.3, h=width-rounded+5.01, center=true);
         
-        translate([35,0,0]) rotate([0,90,0])
+        translate([41-8,0,0]) rotate([0,90,0])
             cylinder(d=8.3, h=50, center=true);
+        
+        translate([-14+4,0,0]) rotate([0,90,0]) cylinder(d=3.3, h=width-rounded+5.01, center=true);
     }
 }
 
