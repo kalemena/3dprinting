@@ -28,6 +28,14 @@ Cura engine is probably best tool for slicing.
 * link:https://download.ultimaker.com[Ultimaker Cura]
 * link:https://github.com/Ultimaker/Cura/releases[AppImage Ultimaker Cura]
 
+[IMPORTAN]
+====
+Massive defect is that link:https://github.com/Ultimaker/Cura/issues/5207[Cura holds of and breaks any USB devices] while open and constantly scanning for 3D printers.
+
+link:https://github.com/Ultimaker/Cura/pull/4554[Workaround ?] 
+====
+
+
 === Repetier
 
 Repetier Host is nice, includes Cura (although it looks using Cura directly gives better results).
