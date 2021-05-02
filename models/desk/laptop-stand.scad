@@ -1,8 +1,12 @@
 
 $fn=100;
 
+top_diameter_ext=24;
+
+base_diameter_ext=28;
+
 width=15;
-thick=16;
+thick=14;
 rounded=1;
 
 
@@ -11,14 +15,12 @@ module laptopStandBase() {
     difference() {
         union() {
             minkowski() {
-                cylinder(d=28, h=width-rounded, center=true);
+                cylinder(d=base_diameter_ext, h=width-rounded, center=true);
                 sphere(d=rounded);
             }
-            translate([-16,0,-(width-rounded)/2])
-                rotate([0,0,-100])
-                rotate_extrude(angle = 100, convexity = 20)
-                translate([15,0]) 
-            translate([15,0]) 
+            translate([-14,0,-(width-rounded)/2])
+                rotate([0,0,-90])
+                rotate_extrude(angle = 90, convexity = 20)
                 translate([15,0]) 
                     minkowski() {
                         square([thick-rounded,width-rounded]);
@@ -28,10 +30,13 @@ module laptopStandBase() {
         
         cylinder(d=12.3, h=width-rounded+5.01, center=true);
         
-        translate([-35,-22,0]) rotate([0,90,0])
+        translate([-14+4,-30,0]) rotate([90,0,0]) cylinder(d=3.3, h=width-rounded+5.01, center=true);
+        
+        translate([0,10,0]) rotate([90,0,0]) cylinder(d=3.3, h=width-rounded+5.01, center=true);
+        
+        translate([-39+8,-21.5,0]) rotate([0,90,0])
             cylinder(d=8.3, h=50, center=true);
     }
-
 }
 
 module laptopStandTop() {
