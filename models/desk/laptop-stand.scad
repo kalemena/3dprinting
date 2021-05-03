@@ -63,11 +63,35 @@ module laptopStandTop() {
     }
 }
 
-color([0.3,0.3,0.3])
-translate([-60,-15,(width-rounded)/2]) 
-    rotate([0,90,-10]) 
-    cylinder(d=8, h=100, center=true);
-laptopStandBase();
-translate([-125,-4,0]) 
-    rotate([0,0,-10])
-    laptopStandTop();
+module part(length) {
+
+    rotate([0,0,180])
+        laptopStandTop();
+
+    color([0.4,0.4,0.4]) {
+        translate([-length/2-(width-rounded)/2,0,(width-rounded)/2]) 
+        rotate([0,90,0]) 
+        cylinder(d=8, h=length, center=true);
+    }
+    
+    translate([-length-15,-21.5,0]) 
+        rotate([0,0,180])
+        laptopStandBase();
+}
+
+rotate([0,90,0]) {
+    part(160);
+    translate([0,0,240-15]) part(160);
+
+    translate([0,0,15])
+    rotate([0,0,-45]) {
+        mirror([0,1,0]) part(135);
+        translate([0,0,210-15]) mirror([0,1,0]) part(135);
+    }
+
+    color([0.4,0.4,0.4]) {
+        cylinder(d=12, h=240);
+        translate([-175,-20,0]) cylinder(d=12, h=240);
+        translate([-90,120,15]) cylinder(d=12, h=210);
+    }
+}
