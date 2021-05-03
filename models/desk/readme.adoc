@@ -1,5 +1,10 @@
 = Desk Tools
 
+== Laptop stand
+
+image:images/laptop-stand.png[Laptop Stand,320,240]
+link:laptop-stand.scad[laptop-stand.scad]
+
 == Cable cleanups
 
 image:images/cable-support-under-desk-U.png[Shape U,320,240]
