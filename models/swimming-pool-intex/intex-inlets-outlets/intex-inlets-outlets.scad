@@ -152,14 +152,15 @@ module plug_angle(angle) {
     
     difference() {
         union() {
-            cylinder(d=diamThread+10,h=2);
-            translate([0,0,1.95])
+            translate([0,0,-5]) cylinder(d=diamThread-5,h=5);
+            
+            translate([0,0,1.95-3])
             metric_thread(  diameter=diamThread,
                             pitch=2, 
                             length=high, 
                             internal=false);
             
-            translate([0,0,-5]) cylinder(d1=38, d2=49, h=5);
+            translate([0,0,8]) cylinder(d1=49, d2=49, h=2.5);
             
             translate([-25,0,-5])
             rotate([-90,0,0])
