@@ -139,37 +139,14 @@ module plug_32mm() {
 }
 
 module plug_65() {
-    high = 10;
-    diamThread = 39;
-    
-    difference() {
-        union() {
-            cylinder(d=diamThread+10,h=2);
-            translate([0,0,1.95])
-            metric_thread(  diameter=diamThread,
-                            pitch=2, 
-                            length=high, 
-                            internal=false);
-            
-            translate([0,0,-5]) cylinder(d1=38, d2=49, h=5);
-            
-            translate([-25,0,-5])
-            rotate([-90,0,0])
-            rotate_extrude(angle=65, convexity = 10)
-                translate([25, 0, 0]) {
-                    difference() {
-                        circle(d = 34);
-                        circle(d = 39-11);
-                    }
-                }
-        }
-        
-        translate([0,0,-9.01])
-            cylinder(d1=diamThread-10,d2=diamThread-11,h=50);
-    }
+    plug_angle(65);
 }
 
 module plug_90() {
+    plug_angle(90);
+}
+
+module plug_angle(angle) {
     high = 10;
     diamThread = 39;
     
@@ -186,7 +163,7 @@ module plug_90() {
             
             translate([-25,0,-5])
             rotate([-90,0,0])
-            rotate_extrude(angle=90, convexity = 10)
+            rotate_extrude(angle=angle, convexity = 10)
                 translate([25, 0, 0]) {
                     difference() {
                         circle(d = 34);
