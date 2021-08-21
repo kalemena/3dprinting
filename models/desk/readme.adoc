@@ -5,6 +5,11 @@
 image:images/laptop-stand.png[Laptop Stand,320,240]
 link:laptop-stand.scad[laptop-stand.scad]
 
+== VESA 100mm spacer
+
+image:images/vesa-spacer.png[VESA Spacer,320,240]
+link:vesa-spacer.scad[vesa-spacer.scad]
+
 == Cable cleanups
 
 image:images/cable-support-under-desk-U.png[Shape U,320,240]
