@@ -7,17 +7,25 @@ OutletExternalDiameter = 88.25;
 OutletThreadDiameter = 84.25; 
 OutletThreadHeight = 11; 
 OutletThreadPitch = 3; // in mm
+
 // Inlet - Base
 InletExternalDiameter = 87;
 InletThreadDiameter = 83; 
 InletThreadHeight = 11; 
 InletThreadPitch = 3; // in mm
 
+// Filter - Base diameters (thread outer diameter)
+FilterExternalDiameter = 64.75;
+FilterThreadDiameter = 60.75; 
+FilterThreadHeight = 20; 
+FilterThreadPitch = 2.5; // in mm
+
 cornerOffset=4;
 
 // ---------------------------
 //inlet_cap();
 //outlet_cap();
+//filter_cap();
 
 //inlet_adaptor();
 //outlet_adaptor();
@@ -28,12 +36,20 @@ cornerOffset=4;
 // plug_38mm();
 // plug_32mm();
 // plug_90();
-plug_65();
+//plug_65();
 
 //translate([0,0,12]) thread_bolt(12, 39);
 //translate([0,0,12+8]) rotate([0,0,15]) thread_nut(5, 40.5);
 
 // ---------------------------
+
+module filter_cap() {
+    cap(FilterExternalDiameter, 
+        FilterThreadDiameter, 
+        FilterThreadHeight, 
+        FilterThreadPitch, 
+        cornerOffset);
+}
 
 module inlet_cap() {
     cap(InletExternalDiameter, 
