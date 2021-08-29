@@ -317,3 +317,26 @@ module thread_nut(high, diamThread) {
     }
 }
 
+
+//union() {
+//    cylinder(h=2,d=55);
+//    translate([0,0,2])
+//    difference() {
+//        cylinder(h=12,d=46.5);
+//        cylinder(h=12.01,d=40);
+//    }
+//}
+
+// Filter - Base diameters (thread outer diameter)
+extDiameter = 64.75;
+threadDiam = 60.75; 
+threadH = 5; 
+threadP = 2.5; // in mm
+
+difference() {
+    cylinder(d=extDiameter, h=threadH);
+    metric_thread(diameter=threadDiam, 
+                  pitch=threadP, 
+                  length=threadH, 
+                  internal=true);
+}
