@@ -25,7 +25,7 @@ cornerOffset=4;
 // ---------------------------
 //inlet_cap();
 //outlet_cap();
-//filter_cap();
+filter_cap();
 
 //inlet_adaptor();
 //outlet_adaptor();
@@ -327,16 +327,16 @@ module thread_nut(high, diamThread) {
 //    }
 //}
 
-// Filter - Base diameters (thread outer diameter)
-extDiameter = 64.75;
-threadDiam = 60.75; 
-threadH = 5; 
-threadP = 2.5; // in mm
-
-difference() {
-    cylinder(d=extDiameter, h=threadH);
-    metric_thread(diameter=threadDiam, 
-                  pitch=threadP, 
-                  length=threadH, 
-                  internal=true);
-}
+//// Filter - Base diameters (thread outer diameter)
+//extDiameter = 64.75;
+//threadDiam = 60.75; 
+//threadH = 5; 
+//threadP = 2.5; // in mm
+//
+//difference() {
+//    cylinder(d=extDiameter, h=threadH);
+//    metric_thread(diameter=threadDiam, 
+//                  pitch=threadP, 
+//                  length=threadH, 
+//                  internal=true);
+//}
