@@ -2,31 +2,43 @@ $fn=80;
 use <threads.scad>;
 use <../water-hose-connector/water-hose-connector.scad>;
 
+// smooth corners for cap
+cornerOffset=4;
+
 // Outlet - Base diameters (thread outer diameter)
 OutletExternalDiameter = 88.25;
 OutletThreadDiameter = 84.25; 
 OutletThreadHeight = 11; 
 OutletThreadPitch = 3; // in mm
+//cap(OutletExternalDiameter, 
+//    OutletThreadDiameter, 
+//    OutletThreadHeight, 
+//    OutletThreadPitch, 
+//    cornerOffset);
 
 // Inlet - Base
 InletExternalDiameter = 87;
 InletThreadDiameter = 83; 
 InletThreadHeight = 11; 
 InletThreadPitch = 3; // in mm
+//cap(InletExternalDiameter, 
+//    InletThreadDiameter, 
+//    InletThreadHeight, 
+//    InletThreadPitch, 
+//    cornerOffset);
 
 // Filter - Base diameters (thread outer diameter)
 FilterExternalDiameter = 64.75;
 FilterThreadDiameter = 60.75; 
 FilterThreadHeight = 20; 
 FilterThreadPitch = 2.5; // in mm
-
-cornerOffset=4;
+//cap(FilterExternalDiameter, 
+//        FilterThreadDiameter, 
+//        FilterThreadHeight, 
+//        FilterThreadPitch, 
+//        cornerOffset);
 
 // ---------------------------
-//inlet_cap();
-//outlet_cap();
-filter_cap();
-
 //inlet_adaptor();
 //outlet_adaptor();
 
@@ -36,36 +48,12 @@ filter_cap();
 // plug_38mm();
 // plug_32mm();
 // plug_90();
-//plug_65();
+// plug_65();
 
 //translate([0,0,12]) thread_bolt(12, 39);
 //translate([0,0,12+8]) rotate([0,0,15]) thread_nut(5, 40.5);
 
 // ---------------------------
-
-module filter_cap() {
-    cap(FilterExternalDiameter, 
-        FilterThreadDiameter, 
-        FilterThreadHeight, 
-        FilterThreadPitch, 
-        cornerOffset);
-}
-
-module inlet_cap() {
-    cap(InletExternalDiameter, 
-        InletThreadDiameter, 
-        InletThreadHeight, 
-        InletThreadPitch, 
-        cornerOffset);
-}
-
-module outlet_cap() {
-    cap(OutletExternalDiameter, 
-        OutletThreadDiameter, 
-        OutletThreadHeight, 
-        OutletThreadPitch, 
-        cornerOffset);
-}
 
 module inlet_adaptor() { 
     adaptor(40,
@@ -317,26 +305,3 @@ module thread_nut(high, diamThread) {
     }
 }
 
-
-//union() {
-//    cylinder(h=2,d=55);
-//    translate([0,0,2])
-//    difference() {
-//        cylinder(h=12,d=46.5);
-//        cylinder(h=12.01,d=40);
-//    }
-//}
-
-//// Filter - Base diameters (thread outer diameter)
-//extDiameter = 64.75;
-//threadDiam = 60.75; 
-//threadH = 5; 
-//threadP = 2.5; // in mm
-//
-//difference() {
-//    cylinder(d=extDiameter, h=threadH);
-//    metric_thread(diameter=threadDiam, 
-//                  pitch=threadP, 
-//                  length=threadH, 
-//                  internal=true);
-//}

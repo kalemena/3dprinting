@@ -19,6 +19,8 @@ link:cover-clip/cover-clip.scad[Cover Clip SCAD]
 
 == Inlets / Outlets - Cap
 
+image:intex-inlets-outlets/intex-inlets-outlets-filter-cap.png[Intex Filter cap, 320,240]
+
 image:intex-inlets-outlets/intex-inlet-cap-bottom.png[Intex inlet cap, 320,240]
 image:intex-inlets-outlets/intex-inlet-cap-top.png[Intex inlet cap, 320,240]
 
