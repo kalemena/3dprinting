@@ -65,9 +65,7 @@ With few experience, pretty advanced figures can be built, without having to lea
 - render *STL* from *openSCAD*
 - open in *Cura*, fine tune specifics for your plastic wire (PETG, PLA, etc), and render *GCode* + 
 Cura although gives an approximate duration and wire consumption.
-- open *GCode* in *Repetier*, plug to printer, warm up your wire, calibrate if needed when changing wire or once every 10 prints or when there was big changes in room temperature or humidity. + 
-Although Cura can plug and print directly, it seems Repetier gives more stability
-- start printing
+- start printing to USB plugged printer
 - enjoy printed custom part
 
 == G-Code tips
