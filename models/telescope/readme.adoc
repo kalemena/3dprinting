@@ -11,3 +11,7 @@
 * link:https://www.thingiverse.com/thing:4167783/files[OpenAstroTech Things]
 * link:https://www.reddit.com/r/OpenAstroTech/comments/gc4pmr/all_current_guides/[OpenAstroTracker Guides]
 * link:https://www.reddit.com/r/OpenAstroTech/comments/gc4pmr/all_current_guides/[Astrophotography with the OAT]
+
+.PiCam
+* link:https://www.thingiverse.com/thing:4913787[PiCam]
+* link:https://github.com/ccrisan/motioneye/wiki/Installation[Motion Eye]
