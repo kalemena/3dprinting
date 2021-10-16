@@ -5,3 +5,9 @@
 .Pikon
 * link:https://pikonic.com/[PiKon]
 * link:https://www.thingiverse.com/thing:2200862[PiKon Things]
+
+.OpenAstroTech
+* link:https://shop.openastrotech.com/[OpenAstroTech]
+* link:https://www.thingiverse.com/thing:4167783/files[OpenAstroTech Things]
+* link:https://www.reddit.com/r/OpenAstroTech/comments/gc4pmr/all_current_guides/[OpenAstroTracker Guides]
+* link:https://www.reddit.com/r/OpenAstroTech/comments/gc4pmr/all_current_guides/[Astrophotography with the OAT]
