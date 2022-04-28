@@ -70,7 +70,7 @@ Cura although gives an approximate duration and wire consumption.
 [source,bash]
 ----
 G92 E0 ; set the current filament position to E=0
-G1 E10 F800 ; extrude 10mm of filament
+G1 E50 F200 ; extrude 50mm of filament à speed 200
 ----
 
 == Models
