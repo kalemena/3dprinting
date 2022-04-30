@@ -65,6 +65,7 @@ Cura although gives an approximate duration and wire consumption.
 == G-Code tips
 
 * link:https://www.simplify3d.com/support/articles/3d-printing-gcode-tutorial/[G-Code tutorial]
+* link:https://marlinfw.org/docs/gcode/G000-G001.html[Marlin G-Code explanation]
 
 .Extrude a few (used when changing wire)
 [source,bash]
