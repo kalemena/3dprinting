@@ -39,9 +39,9 @@ FilterThreadPitch = 2.5; // in mm
 //        cornerOffset);
 
 // Solar System - Base diameters (thread outer diameter)
-SolarExternalDiameter = 57.75;
-SolarThreadDiameter = 53.75; 
-SolarThreadHeight = 20; 
+SolarExternalDiameter = 60.75;
+SolarThreadDiameter = 56.75; 
+SolarThreadHeight = 17; 
 SolarThreadPitch = 2.5; // in mm
 cap(SolarExternalDiameter, 
         SolarThreadDiameter, 
