@@ -1,1 +1,8 @@
 models/thingiverse
+
+# Docs
+*.private
+build
+.asciidoctor
+**/assets/*.png
+assets-*
