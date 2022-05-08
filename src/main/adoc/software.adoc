@@ -1,9 +1,9 @@
+:toc:
+:hardbreaks:
 
-= Software
+=== Drawing
 
-== Drawing
-
-=== OpenSCAD
+==== OpenSCAD
 
 [source, bash]
 ----
@@ -14,33 +14,31 @@ $ sudo apt-get install openscad
 * link:http://edutechwiki.unige.ch/fr/Tutoriel_OpenSCAD[Tutoriel]
 * link:https://github.com/openscad/list-comprehension-demos[Demos]
 
-
-=== SDF Python
+==== SDF Python
 
 link:https://github.com/fogleman/sdf[SDF Python]
 
-== Printing
+=== Printing
 
-=== Cura
+==== Cura
 
 Cura engine is probably best tool for slicing.
 
 * link:https://download.ultimaker.com[Ultimaker Cura]
 * link:https://github.com/Ultimaker/Cura/releases[AppImage Ultimaker Cura]
 
-[IMPORTAN]
+[IMPORTANT]
 ====
 Massive defect is that link:https://github.com/Ultimaker/Cura/issues/5207[Cura holds of and breaks any USB devices] while open and constantly scanning for 3D printers.
 
 link:https://github.com/Ultimaker/Cura/pull/4554[Workaround ?] 
 ====
 
-
-=== Repetier
+==== Repetier
 
 Repetier Host is nice, includes Cura (although it looks using Cura directly gives better results).
 
-=== OctoPrint
+==== OctoPrint
 
 Find link here:
 
