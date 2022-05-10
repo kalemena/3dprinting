@@ -3,8 +3,9 @@
 :encoding: utf-8
 :idprefix:
 :numbered:
-:rootdir: /project/src/main/adoc
-:imagesdir: {rootdir}/images
+:rootdir: /project
+:docdir: {rootdir}/src/main/adoc
+:imagesdir: {docdir}/images
 :giturl: https://github.com/kalemena/3dprinting/tree/master
 :binariesdir: https://github.com/kalemena/3dprinting/raw/master/src/main/adoc/binaries
 :assetsdir: https://github.com/kalemena/3dprinting/raw/master/src/main/adoc/assets
@@ -17,7 +18,7 @@
 :icon-set: octicon
 //:stylesheet: {rootdir}/themes/asciidoctor.css
 :title-page: TiDhome
-:title-logo-image: {rootdir}/images/favicon.png
+:title-logo-image: {docdir}/images/favicon.png
 //:favicon: {rootdir}/images/favicon.png
 //:front-cover-image: image:/src/main/adoc/images/favicon.png[]
 :pagenums:

@@ -84,23 +84,9 @@ G92 E0 ; set the current filament position to E=0
 G1 E50 F200 ; extrude 50mm of filament at speed 200mm/min
 ----
 
-== Models
+:leveloffset: +1
 
-Best place to find model is Thingiverse.
+include::../../../models/readme.adoc[models]
 
-Find few of my models under:
-
-* link:models[sub-folder models]
-** link:models/covid-19[COVID-19]
-** link:models/desk[Desktop setup]
-** link:models/duplo[Lego Duplo things]
-** link:models/lego[Lego things]
-** link:models/ender3-addon[Ender 3 addon]
-** link:models/house[House stuff]
-** link:models/kite[Kite Wing Cross]
-** link:models/repairs[Repairing models]
-** link:models/storage[Storage]
-** link:models/swimming-pool-intex[Swimming Pool Things]
-
-* link:https://www.thingiverse.com/thing:7097/files[To test]
+:leveloffset: -1
 
