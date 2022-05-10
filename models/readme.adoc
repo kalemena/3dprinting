@@ -1,6 +1,32 @@
+= Models
 
-= Drill
+Best place to find model is Thingiverse.
 
+Find few of my models under:
+
+:leveloffset: +1
+
+// * link:models[sub-folder models]
+// ** link:models/covid-19[COVID-19]
+// ** link:models/desk[Desktop setup]
+// ** link:models/duplo[Lego Duplo things]
+// ** link:models/lego[Lego things]
+// ** link:models/ender3-addon[Ender 3 addon]
+// ** link:models/house[House stuff]
+// ** link:models/kite[Kite Wing Cross]
+// ** link:models/repairs[Repairing models]
+// ** link:models/storage[Storage]
+// ** link:models/swimming-pool-intex[Swimming Pool Things]
+
+// * link:https://www.thingiverse.com/thing:7097/files[To test]
+
+include::covid-19/readme.adoc[]
+
+:leveloffset: -1
+
+== Others
+
+.Drill
 * link:https://www.thingiverse.com/thing:1119032[vacuum cleaner drill aid]
 * link:https://www.thingiverse.com/thing:2757933[Drill Dust Collector]
 * link:https://www.thingiverse.com/thing:3023372[Drill dust collector]
@@ -10,24 +36,22 @@
 * link:https://www.thingiverse.com/thing:3177276[Collet Drill Stop]
 * link:https://www.thingiverse.com/thing:2000340[Drill Mixer Attachment]
 
-= Tooling
-
+.Tooling
 link:https://www.thingiverse.com/thing:2957550[Corner Brackets]
 
-= Marble run
-
+.Marble run
 link:https://www.thingiverse.com/thing:3484759[Marble run]
 
-= RC Cars
-
+.RC Cars
 link:https://www.thingiverse.com/thing:1358552[Mecanum wheels]
 
-= Meccano Junior
-
+.Meccano Junior
 link:https://www.thingiverse.com/thing:2367964[Meccano Jr parts]
 
-= GoPro Mount
+.GoPro Mount
 
-image:ender3-addon/ender3-gopro-hero-5-session-mount.png[]
+:leveloffset: +1
 
-See link:ender3-addon/ender3-gopro-hero-5-session-mount.scad[OpenSCAD] or link:ender3-addon/ender3-gopro-hero-5-session-mount.stl[STL]
+include::ender3-addon/readme.adoc[]
+
+:leveloffset: -1
