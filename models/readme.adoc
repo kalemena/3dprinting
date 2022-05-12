@@ -6,8 +6,6 @@ Find few of my models under:
 
 :leveloffset: +1
 
-// * link:models[sub-folder models]
-// ** link:models/covid-19[COVID-19]
 // ** link:models/desk[Desktop setup]
 // ** link:models/duplo[Lego Duplo things]
 // ** link:models/lego[Lego things]
@@ -21,6 +19,8 @@ Find few of my models under:
 // * link:https://www.thingiverse.com/thing:7097/files[To test]
 
 include::covid-19/readme.adoc[]
+
+include::desk/readme.adoc[]
 
 :leveloffset: -1
 

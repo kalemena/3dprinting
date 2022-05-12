@@ -2,22 +2,19 @@
 
 == Laptop stand
 
-image:images/laptop-stand.png[Laptop Stand,320,240]
-link:laptop-stand.scad[laptop-stand.scad]
+image:{rootdir}/models/desk/images/laptop-stand.png[Laptop Stand,320,240]
+link:{giturl}/models/desk/laptop-stand.scad[laptop-stand.scad]
 
 == VESA 100mm spacer
 
-image:images/vesa-spacer.png[VESA Spacer,320,240]
-link:vesa-spacer.scad[vesa-spacer.scad]
+image:{rootdir}/models/desk/images/vesa-spacer.png[VESA Spacer,320,240]
+link:{giturl}/models/desk/vesa-spacer.scad[vesa-spacer.scad]
 
 == Cable cleanups
 
-image:images/cable-support-under-desk-U.png[Shape U,320,240]
-image:images/cable-support-under-desk-O.png[Shape O,320,240]
-image:images/cable-support-under-desk-E.png[Shape E,320,240]
+image:{rootdir}/models/desk/images/cable-support-under-desk-U.png[Shape U,320,240] image:{rootdir}/models/desk/images/cable-support-under-desk-O.png[Shape O,320,240] image:{rootdir}/models/desk/images/cable-support-under-desk-E.png[Shape E,320,240]
 
-image:images/cable-support-under-desk-X-8.png[Shape X-8,320,240]
-image:images/cable-support-under-desk-X-6.png[Shape X-6,320,240]
+image:{rootdir}/models/desk/images/cable-support-under-desk-X-8.png[Shape X-8,320,240] image:{rootdir}/models/desk/images/cable-support-under-desk-X-6.png[Shape X-6,320,240]
 
-link:cable-support-under-desk.scad[cable-support-under-desk.scad]
+link:{giturl}/models/desk/cable-support-under-desk.scad[cable-support-under-desk.scad]
 
