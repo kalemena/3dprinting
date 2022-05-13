@@ -6,8 +6,6 @@ Find few of my models under:
 
 :leveloffset: +1
 
-// ** link:models/desk[Desktop setup]
-// ** link:models/duplo[Lego Duplo things]
 // ** link:models/lego[Lego things]
 // ** link:models/ender3-addon[Ender 3 addon]
 // ** link:models/house[House stuff]
@@ -21,6 +19,8 @@ Find few of my models under:
 include::covid-19/readme.adoc[]
 
 include::desk/readme.adoc[]
+
+include::duplo/readme.adoc[Lego Duplo things]
 
 :leveloffset: -1
 
