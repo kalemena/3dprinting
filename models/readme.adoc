@@ -8,7 +8,6 @@ Find few of my models under:
 
 // ** link:models/lego[Lego things]
 // ** link:models/ender3-addon[Ender 3 addon]
-// ** link:models/house[House stuff]
 // ** link:models/kite[Kite Wing Cross]
 // ** link:models/repairs[Repairing models]
 // ** link:models/storage[Storage]
@@ -21,6 +20,8 @@ include::covid-19/readme.adoc[]
 include::desk/readme.adoc[]
 
 include::duplo/readme.adoc[Lego Duplo things]
+
+include::house/readme.adoc[House stuff]
 
 :leveloffset: -1
 
