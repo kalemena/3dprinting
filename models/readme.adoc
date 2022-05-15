@@ -21,6 +21,8 @@ include::desk/readme.adoc[]
 
 include::duplo/readme.adoc[Lego Duplo things]
 
+include::ender3-addon/readme.adoc[]
+
 include::house/readme.adoc[House stuff]
 
 :leveloffset: -1
@@ -49,10 +51,3 @@ link:https://www.thingiverse.com/thing:1358552[Mecanum wheels]
 .Meccano Junior
 link:https://www.thingiverse.com/thing:2367964[Meccano Jr parts]
 
-.GoPro Mount
-
-:leveloffset: +1
-
-include::ender3-addon/readme.adoc[]
-
-:leveloffset: -1
