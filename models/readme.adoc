@@ -6,7 +6,6 @@ Find few of my models under:
 
 :leveloffset: +1
 
-// ** link:models/lego[Lego things]
 // ** link:models/repairs[Repairing models]
 // ** link:models/storage[Storage]
 // ** link:models/swimming-pool-intex[Swimming Pool Things]
@@ -24,6 +23,8 @@ include::ender3-addon/readme.adoc[]
 include::house/readme.adoc[House stuff]
 
 include::kite/readme.adoc[Kite Wing Cross]
+
+include::lego/readme.adoc[Lego things]
 
 :leveloffset: -1
 
