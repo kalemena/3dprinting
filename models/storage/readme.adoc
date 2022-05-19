@@ -3,7 +3,6 @@
 
 == wine-glass-holder
 
-image:wine-glass-holder/wine-glass-holder-top.png[Wine glass holder, 320, 240]
-image:wine-glass-holder/wine-glass-holder-side.png[Wine glass holder, 320, 240]
+image:{rootdir}/models/storage/wine-glass-holder/wine-glass-holder-top.png[Wine glass holder, 320, 240] image:{rootdir}/models/storage/wine-glass-holder/wine-glass-holder-side.png[Wine glass holder, 320, 240]
 
-link:wine-glass-holder/wine-glass-holder.scad[Wine glass holder parts]
+link:{giturl}/models/storage/wine-glass-holder/wine-glass-holder.scad[Wine glass holder parts]
