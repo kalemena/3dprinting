@@ -6,8 +6,6 @@ Find few of my models under:
 
 :leveloffset: +1
 
-// ** link:models/swimming-pool-intex[Swimming Pool Things]
-
 // * link:https://www.thingiverse.com/thing:7097/files[To test]
 
 include::covid-19/readme.adoc[]
@@ -27,6 +25,8 @@ include::lego/readme.adoc[Lego things]
 include::repairs/readme.adoc[Repairing models]
 
 include::storage/readme.adoc[Storage]
+
+include::swimming-pool-intex/readme.adoc[Swimming Pool Things]
 
 :leveloffset: -1
 
