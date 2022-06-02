@@ -17,9 +17,7 @@ link:{giturl}/models/swimming-pool-intex/cover-clip/cover-clip.scad[Cover Clip S
 
 == Inlets / Outlets - Cap
 
-image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets-filter-cap.png[Intex Filter cap, 320,240]
-
-image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-cap-bottom.png[Intex inlet cap, 320,240] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-cap-top.png[Intex inlet cap, 320,240]
+image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets-filter-cap.png[Intex Filter cap, 320,240] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-cap-bottom.png[Intex inlet cap, 320,240] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-cap-top.png[Intex inlet cap, 320,240]
 
 image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-adaptor-bottom.png[Intex inlet adaptor, 320,240] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-adaptor-top.png[Intex inlet adaptor, 320,240]
 
