@@ -4,16 +4,10 @@ Duplo block lib and many SCAD are based from Thingiverse search. +
 The lib itself was not modified much, and additional SCAD added. + 
 Below are custom things.
 
-== Parts
+.Parts
+image:{rootdir}/models/duplo/images/parts-duplo-608zz-1x1.png[Duplo-Copter, 240,240, link="{giturl}/models/duplo/scad"] image:{rootdir}/models/duplo/images/parts-duplo-keychain-logo.png[Lego Keychain, 240,240, link="{giturl}/models/duplo/scad"]
 
-image:{rootdir}/models/duplo/images/parts-duplo-608zz-1x1.png[Duplo-Copter, 240,240] image:{rootdir}/models/duplo/images/parts-duplo-keychain-logo.png[Lego Keychain, 240,240]
+image:{rootdir}/models/duplo/images/parts-duplo-cyclone-ramp.png[Duplo marble cyclone ramp, 240,240, link="{giturl}/models/duplo/scad"] image:{rootdir}/models/duplo/images/parts-duplo-marblerun-bridge-8.png[Duplo marble bridge, 240,240, link="{giturl}/models/duplo/scad"] image:{rootdir}/models/duplo/images/parts-duplo-marblerun-pylon-10.png[Duplo marble pylon, 240,240, link="{giturl}/models/duplo/scad"]
 
-image:{rootdir}/models/duplo/images/parts-duplo-cyclone-ramp.png[Duplo marble cyclone ramp, 240,240]
-
-image:{rootdir}/models/duplo/images/parts-duplo-marblerun-bridge-8.png[Duplo marble bridge, 240,240] image:{rootdir}/models/duplo/images/parts-duplo-marblerun-pylon-10.png[Duplo marble pylon, 240,240]
-
-link:{giturl}/models/duplo/scad[Duplo SCAD]
-
-== Interesting
-
-link:https://www.thingiverse.com/thing:2333547[Duplo compatible crane]
+.Interesting
+* link:https://www.thingiverse.com/thing:2333547[Duplo compatible crane]
