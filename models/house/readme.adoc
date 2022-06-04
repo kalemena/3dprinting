@@ -1,9 +1,6 @@
 = House stuff
 
-== Pole 7m
+.Pole 7m
+image:{rootdir}/models/house/images/adaptor-7m-pole-clip.png[Adpator clip for 7m pole,320,240,link="{giturl}/models/house/adaptor-7m-pole.scad"] image:{rootdir}/models/house/images/adaptor-7m-pole-top.png[Adpator mount for 7m pole,320,240,link="{giturl}/models/house/adaptor-7m-pole.scad"]
 
 This is an adaptor between a 3.6m sprayer pole and a 3.6m swimming pool pole, making the full pol at about 7m !
-
-image:{rootdir}/models/house/images/adaptor-7m-pole-clip.png[Adpator clip for 7m pole,320,240] image:{rootdir}/models/house/images/adaptor-7m-pole-top.png[Adpator mount for 7m pole,320,240]
-
-link:{giturl}/models/house/adaptor-7m-pole.scad[Adpator for 7m pole.scad]
