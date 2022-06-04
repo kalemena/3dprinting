@@ -1,11 +1,4 @@
 = Ender 3 parts
 
-== GoPro Hero 5 session mount
-
-image:{rootdir}/models/ender3-addon/images/ender3-gopro-hero-5-session-mount.png[GoPro Hero 5 session mount v1,320,240]
-
-link:{giturl}/models/ender3-addon/scad/ender3-gopro-hero-5-session-mount.scad[ender3-gopro-hero-5-session-mount.scad]
-
-image:{rootdir}/models/ender3-addon/images/ender3-gopro-hero-5-session-mount-under-bed-v2.png[GoPro Hero 5 session mount v2,320,240]
-
-link:{giturl}/models/ender3-addon/scad/ender3-gopro-hero-5-session-mount-under-bed.scad[ender3-gopro-hero-5-session-mount-under-bed.scad]
+.GoPro Hero 5 session mount
+image:{rootdir}/models/ender3-addon/images/ender3-gopro-hero-5-session-mount.png[GoPro Hero 5 session mount v1,320,240, link="{giturl}/models/ender3-addon/scad/ender3-gopro-hero-5-session-mount.scad"] image:{rootdir}/models/ender3-addon/images/ender3-gopro-hero-5-session-mount-under-bed-v2.png[GoPro Hero 5 session mount v2,320,240, link="{giturl}/models/ender3-addon/scad/ender3-gopro-hero-5-session-mount-under-bed.scad"]
