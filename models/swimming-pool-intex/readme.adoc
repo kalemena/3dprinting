@@ -5,29 +5,23 @@
 
 === Vacuum
 
-image:{rootdir}/models/swimming-pool-intex/cleaning-vacuum/intex-stand-connection-clamp.png[Connection Clamp, 320, 240] image:{rootdir}/models/swimming-pool-intex/cleaning-vacuum/cleaning-vacuum.png[Vacuum, 320, 240] image:{rootdir}/models/swimming-pool-intex/cleaning-vacuum/cleaning-vacuum-square.png[Vacuum, 320, 240]
-
-link:{giturl}/models/swimming-pool-intex/cleaning-vacuum/cleaning-vacuum-parts.scad[Cleaning Vacuum parts]
+image:{rootdir}/models/swimming-pool-intex/cleaning-vacuum/intex-stand-connection-clamp.png[Connection Clamp, 320, 240,link="{giturl}/models/swimming-pool-intex/cleaning-vacuum/cleaning-vacuum-parts.scad"] image:{rootdir}/models/swimming-pool-intex/cleaning-vacuum/cleaning-vacuum.png[Vacuum, 320, 240,link="{giturl}/models/swimming-pool-intex/cleaning-vacuum/cleaning-vacuum-parts.scad"] image:{rootdir}/models/swimming-pool-intex/cleaning-vacuum/cleaning-vacuum-square.png[Vacuum, 320, 240,link="{giturl}/models/swimming-pool-intex/cleaning-vacuum/cleaning-vacuum-parts.scad"]
 
 == Cover
 
-image:{rootdir}/models/swimming-pool-intex/cover-clip/cover-clip.png[Cover Clip, 320, 240]
-
-link:{giturl}/models/swimming-pool-intex/cover-clip/cover-clip.scad[Cover Clip SCAD]
+image:{rootdir}/models/swimming-pool-intex/cover-clip/cover-clip.png[Cover Clip, 320, 240,link="{giturl}/models/swimming-pool-intex/cover-clip/cover-clip.scad"]
 
 == Inlets / Outlets - Cap
 
-image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets-filter-cap.png[Intex Filter cap, 320,240] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-cap-bottom.png[Intex inlet cap, 320,240] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-cap-top.png[Intex inlet cap, 320,240]
+image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets-filter-cap.png[Intex Filter cap, 320,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad"] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-cap-bottom.png[Intex inlet cap, 320,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad"] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-cap-top.png[Intex inlet cap, 320,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad"]
 
-image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-adaptor-bottom.png[Intex inlet adaptor, 320,240] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-adaptor-top.png[Intex inlet adaptor, 320,240]
+image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-adaptor-bottom.png[Intex inlet adaptor, 320,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad"] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-adaptor-top.png[Intex inlet adaptor, 320,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad"]
 
-image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-adaptor-hose-plug-bottom.png[Intex inlet adaptor to hose, 320,240] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-adaptor-hose-plug-top.png[Intex inlet adaptor to hose, 320,240]
+image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-adaptor-hose-plug-bottom.png[Intex inlet adaptor to hose, 320,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad"] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-adaptor-hose-plug-top.png[Intex inlet adaptor to hose, 320,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad"]
 
-image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-parts-hose.jpg[Printed Parts, 350,240] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-adaptor-hose.jpg[Mounted Parts, 320,240]
+image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-parts-hose.jpg[Printed Parts, 350,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad"] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-adaptor-hose.jpg[Mounted Parts, 320,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad"]
 
-image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-outlet-adaptor-65.png[Intex Outlet with angle 65, 320,240] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-outlet-adaptor-90.png[Intex Outlet with angle 90, 320,240] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets//intex-inlet-plug-38mm.png[Intex Inlet/Outlet 38mm plug, 320,240]
-
-link:{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad[Intex inlets/outlets]
+image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-outlet-adaptor-65.png[Intex Outlet with angle 65, 320,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad"] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-outlet-adaptor-90.png[Intex Outlet with angle 90, 320,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad"] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets//intex-inlet-plug-38mm.png[Intex Inlet/Outlet 38mm plug, 320,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad"]
 
 == Resources
 
