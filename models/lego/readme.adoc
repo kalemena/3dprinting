@@ -21,5 +21,4 @@ Mid:  3D model
 Right:printed model, with LiPo in place
 ====
 
-image:{rootdir}/models/lego/images/lego-boost-move-hub.png[Lego Boost Move Hub Battery Holder]
-link:{giturl}/models/lego/lego-boost-move-hub-battery-holder.scad[Lego Boost Move Hub Battery Holder SCAD]
+image:{rootdir}/models/lego/images/lego-boost-move-hub.png[Lego Boost Move Hub Battery Holder,link="{giturl}/models/lego/lego-boost-move-hub-battery-holder.scad"]
