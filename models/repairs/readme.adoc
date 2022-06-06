@@ -3,17 +3,17 @@
 
 == Rack Hinge
 
-image:{rootdir}/models/repairs/rack-hinge/rack-hinge-parts.png[Rack Hinge repair, 350, 280]
-
-link:{giturl}/models/repairs/rack-hinge/rack-hinge-parts.scad[rack-hinge-parts.scad]
+image:{rootdir}/models/repairs/rack-hinge/rack-hinge-parts.png[Rack Hinge repair, 350, 280,link="{giturl}/models/repairs/rack-hinge/rack-hinge-parts.scad"]
 
 == Kitchen sink
 
-image:{rootdir}/models/repairs/kitchen/kitchen-fix-sink-plug.png[Kitchen sink plug repair, 350, 240]
-
-link:{giturl}/models/repairs/kitchen/kitchen-fix-sink-plug.scad[kitchen-fix-sink-plug.scad]
+image:{rootdir}/models/repairs/kitchen/kitchen-fix-sink-plug.png[Kitchen sink plug repair, 350, 240,link="{giturl}/models/repairs/kitchen/kitchen-fix-sink-plug.scad"]
 
 == Fish Tank Things
+
+image:{rootdir}/models/repairs/fishtank/neon-clip.png[FishTank Neon Reflector Clip, 350, 280,link="{giturl}/models/repairs/fishtank/neon-clip.scad"] image:{rootdir}/models/repairs/fishtank/neon-clip-print.png[FishTank Neon Reflector Clip, 350, 280,link="{giturl}/models/repairs/fishtank/neon-clip.scad"]
+
+
 
 image:{rootdir}/models/repairs/fishtank/neon-clip.png[FishTank Neon Reflector Clip, 350, 280] image:{rootdir}/models/repairs/fishtank/neon-clip-print.png[FishTank Neon Reflector Clip, 350, 280]
 
