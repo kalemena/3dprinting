@@ -15,12 +15,12 @@ module plate(text) {
         translate([-6,0,-2]) cylinder(h=5,d=3.5);
         translate([76,0,-2]) cylinder(h=5,d=3.5);
         
-        translate([0,-2.5,1]) linear_extrude(height = 1) text(text, size = 8);
+        translate([-1,-3,1]) linear_extrude(height = 1) text(text, size = 8);
     }
 
 }
 
-plate("EAU de VILLE");
+// plate("EAU de VILLE");
 
 translate([0,50,0]) 
     plate("EAU de PLUIE");
