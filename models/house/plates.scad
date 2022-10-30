@@ -20,7 +20,7 @@ module plate(text) {
 
 }
 
-// plate("EAU de VILLE");
+plate("EAU de VILLE");
 
 translate([0,50,0]) 
     plate("EAU de PLUIE");
