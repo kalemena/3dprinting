@@ -84,6 +84,11 @@ G92 E0 ; set the current filament position to E=0
 G1 E50 F200 ; extrude 50mm of filament at speed 200mm/min
 ----
 
+== 3D Printing
+
+include::photogrammetry.adoc[]
+
+
 :leveloffset: +1
 
 include::../../../models/readme.adoc[models]
