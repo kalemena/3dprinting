@@ -28,6 +28,8 @@ include::storage/readme.adoc[Storage]
 
 include::swimming-pool-intex/readme.adoc[Swimming Pool Things]
 
+include::xiaomi-aqara-cr123/readme.adoc[Xiaomi Aqara on CR123A]
+
 :leveloffset: -1
 
 == Others

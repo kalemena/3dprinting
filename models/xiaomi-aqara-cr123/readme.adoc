@@ -1,0 +1,10 @@
+= Xiaomi Aqara
+
+[IMPORTANT]
+====
+Xiaomi Aqara Zigbee Sensors are good sensors.
+
+Minimized size factor has drawback to use CR2450 or CR2032 has battaries.
+These batteries have short lifespan (~3-12 months).
+====
+
