@@ -6,5 +6,15 @@ Xiaomi Aqara Zigbee Sensors are good sensors.
 
 Minimized size factor has drawback to use CR2450 or CR2032 has battaries.
 These batteries have short lifespan (~3-12 months).
-====
 
+Changing batteries every short is not good for earth, and ends up costly!
+
+CR123A is a 3.3v battery:
+- sized 1/2 AA battery, 
+- with x5-10 times energy vs CR2450, so should last more than year
+- with low autodrain, 
+- has a rechargeable flavor, 
+- costs usualy same price vs CR2450/CR2032
+
+CR123A is a good option to save planet/money while not making the sensor too big.
+====
