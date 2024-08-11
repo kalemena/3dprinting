@@ -19,5 +19,10 @@ CR123A is a 3.3v battery:
 CR123A is a good option to save planet/money while not making the sensor too big.
 ====
 
+.Design
+The CR123A patch can be printed in PLA or PETG.
+It includes a nut to plug a custom wall mount. 
+
 .Xiaomi Aqara Motion Sensor on CR123A
-image:{rootdir}/models/xiaomi-aqara-cr123/xiaomi-aqara-cr123-motion-sensor.png[Xiaomi Aqara Motion Sensor on CR123A,320,240,link="{giturl}/models/xiaomi-aqara-cr123/xiaomi-aqara-cr123-motion-sensor.scad"]
+image:{rootdir}/models/xiaomi-aqara-cr123/xiaomi-aqara-cr123-motion-sensor.png[Xiaomi Aqara Motion Sensor on CR123A,320,240,link="{giturl}/models/xiaomi-aqara-cr123/xiaomi-aqara-cr123-motion-sensor.scad"] image:{rootdir}/models/xiaomi-aqara-cr123/xiaomi-aqara-cr123-motion-sensor-pic.jpg[Xiaomi Aqara Motion Sensor on CR123A,320,240,link="{giturl}/models/xiaomi-aqara-cr123/xiaomi-aqara-cr123-motion-sensor.scad"]
+
