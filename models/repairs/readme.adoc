@@ -13,8 +13,3 @@ image:{rootdir}/models/repairs/kitchen/kitchen-fix-sink-plug.png[Kitchen sink pl
 
 image:{rootdir}/models/repairs/fishtank/neon-clip.png[FishTank Neon Reflector Clip, 350, 280,link="{giturl}/models/repairs/fishtank/neon-clip.scad"] image:{rootdir}/models/repairs/fishtank/neon-clip-print.png[FishTank Neon Reflector Clip, 350, 280,link="{giturl}/models/repairs/fishtank/neon-clip.scad"]
 
-
-
-image:{rootdir}/models/repairs/fishtank/neon-clip.png[FishTank Neon Reflector Clip, 350, 280] image:{rootdir}/models/repairs/fishtank/neon-clip-print.png[FishTank Neon Reflector Clip, 350, 280]
-
-link:{giturl}/models/repairs/fishtank/neon-clip.scad[neon-clip.scad]
