@@ -42,10 +42,3 @@ Here are few ressources which inspired for above designs:
 *** link:https://www.thingiverse.com/thing:2430487[Outlet adapter (scad)]
 *** link:https://www.thingiverse.com/thing:2425707[Outlet bender (scad)]
 
-* Heating:
-** link:https://www.bricozone.be/t/chauffage-solaire-artisanal.40148/[Heating forum]
-** link:https://www.azialo.com/53-chauffage-solaire-intex-6941057402031.html[Produit # Tapis solaire]
-** link:https://www.youtube.com/watch?v=IkDO8QjJ394[Produit # Tapis solaire]
-** link:https://fr.aliexpress.com/item/33060174388.html[Tuyau noir]
-** link:https://www.amazon.fr/12m-32mm-flottant-sections-pr%C3%A9form%C3%A9es/dp/B00LA7GJR0[Tuyau noir]
-** link:https://www.manomano.fr/p/25m-tuyau-de-bassin-spirale-19-mm-3-4-noir-tuyau-daspiration-koi-bassin-3468245[Tuyau noir]
