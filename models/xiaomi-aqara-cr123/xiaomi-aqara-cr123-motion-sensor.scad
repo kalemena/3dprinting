@@ -20,24 +20,25 @@ module xiaomiAqaraMotion() {
         
         // battery positive
         translate([3,0,cr123H-5+1.99]) {
-            hull() {
-                cylinder(d=6, h=1.8);
-                translate([0,cr123D/2,0]) cylinder(d=3, h=1.8);
-            }
-            hull() {
-                cylinder(d=6, h=1.8);
-                translate([0,-cr123D/2,0]) cylinder(d=3, h=1.8);
-            }
-            hull() {
-                cylinder(d=6, h=1.8);
-                translate([-cr123D/2,0,0]) cylinder(d=3, h=1.8);
+            for(rotZ=[90:90:270]) {
+                hull() {
+                    cylinder(d=6, h=1.8);
+                    rotate([0,0,rotZ])
+                        translate([cr123D/2,0,0]) 
+                            cylinder(d=3, h=1.8);
+                }   
+                
             }
         }
         
         // wire
-        translate([3,cr123D/2,-2]) cylinder(d=3, h=cr123H);
-        translate([-cr123D/2+3,0,-2]) cylinder(d=3, h=cr123H);
-        translate([3,-cr123D/2,-2]) cylinder(d=3, h=cr123H);
+        for(rotZ=[90:90:270]) {
+            translate([3,0,-2])
+                    rotate([0,0,rotZ])
+                        translate([cr123D/2,0,0])
+                            cylinder(d=3, h=cr123H);
+        }
+        
     }
 }
 
