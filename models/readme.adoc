@@ -30,6 +30,8 @@ include::swimming-pool-intex/readme.adoc[Swimming Pool Things]
 
 include::xiaomi-aqara-cr123/readme.adoc[Xiaomi Aqara on CR123A]
 
+include::cats/readme.adoc[Cat things]
+
 :leveloffset: -1
 
 == Others
