@@ -13,3 +13,6 @@ image:{rootdir}/models/repairs/kitchen/kitchen-fix-sink-plug.png[Kitchen sink pl
 
 image:{rootdir}/models/repairs/fishtank/neon-clip.png[FishTank Neon Reflector Clip, 350, 280,link="{giturl}/models/repairs/fishtank/neon-clip.scad"] image:{rootdir}/models/repairs/fishtank/neon-clip-print.png[FishTank Neon Reflector Clip, 350, 280,link="{giturl}/models/repairs/fishtank/neon-clip.scad"]
 
+== Garden
+
+image:{rootdir}/models/repairs/garden/sprayerHook.png[Garden Sprayer Hook, 350, 240,link="{giturl}/models/repairs/garden/sprayerHook.scad"]
