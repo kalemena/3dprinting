@@ -16,3 +16,7 @@ image:{rootdir}/models/repairs/fishtank/neon-clip.png[FishTank Neon Reflector Cl
 == Garden
 
 image:{rootdir}/models/repairs/garden/sprayerHook.png[Garden Sprayer Hook, 350, 240,link="{giturl}/models/repairs/garden/sprayerHook.scad"]
+
+== Watch
+
+image:{rootdir}/models/repairs/watch-band.png[Watch Band, 350, 240,link="{giturl}/models/repairs/watch-band.scad"]
