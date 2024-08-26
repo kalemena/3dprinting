@@ -8,13 +8,15 @@ Find few of my models under:
 
 // * link:https://www.thingiverse.com/thing:7097/files[To test]
 
-include::covid-19/readme.adoc[]
+include::cats/readme.adoc[Cat things]
 
-include::desk/readme.adoc[]
+include::covid-19/readme.adoc[COVID 19 things]
+
+include::desk/readme.adoc[Desktop things]
 
 include::duplo/readme.adoc[Lego Duplo things]
 
-include::ender3-addon/readme.adoc[]
+include::ender3-addon/readme.adoc[Ender 3 Addons]
 
 include::house/readme.adoc[House stuff]
 
@@ -22,15 +24,17 @@ include::kite/readme.adoc[Kite Wing Cross]
 
 include::lego/readme.adoc[Lego things]
 
-include::repairs/readme.adoc[Repairing models]
+// repairs ?
 
-include::storage/readme.adoc[Storage]
+// robot ?
+
+include::storage/readme.adoc[Storage things]
 
 include::swimming-pool-intex/readme.adoc[Swimming Pool Things]
 
 include::xiaomi-aqara-cr123/readme.adoc[Xiaomi Aqara on CR123A]
 
-include::cats/readme.adoc[Cat things]
+include::repairs/readme.adoc[Repairing models]
 
 :leveloffset: -1
 
