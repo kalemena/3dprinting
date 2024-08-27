@@ -1,21 +1,21 @@
 
 = Repairing stuff
 
-== Rack Hinge
-
-image:{rootdir}/models/repairs/rack-hinge/rack-hinge-parts.png[Rack Hinge repair, 350, 280,link="{giturl}/models/repairs/rack-hinge/rack-hinge-parts.scad"]
-
-== Kitchen sink
-
-image:{rootdir}/models/repairs/kitchen/kitchen-fix-sink-plug.png[Kitchen sink plug repair, 350, 240,link="{giturl}/models/repairs/kitchen/kitchen-fix-sink-plug.scad"]
-
 == Fish Tank Things
 
 image:{rootdir}/models/repairs/fishtank/neon-clip.png[FishTank Neon Reflector Clip, 350, 280,link="{giturl}/models/repairs/fishtank/neon-clip.scad"] image:{rootdir}/models/repairs/fishtank/neon-clip-print.png[FishTank Neon Reflector Clip, 350, 280,link="{giturl}/models/repairs/fishtank/neon-clip.scad"]
 
 == Garden
 
-image:{rootdir}/models/repairs/garden/sprayerHook.png[Garden Sprayer Hook, 350, 240,link="{giturl}/models/repairs/garden/sprayerHook.scad"]
+image:{rootdir}/models/repairs/garden/sprayerHook.png[Garden Sprayer Hook, 350, 240,link="{giturl}/models/repairs/garden/sprayerHook.scad"] image:{rootdir}/models/repairs/garden/sprayerHook-result.jpg[Garden Sprayer Hook, 240, 350,link="{giturl}/models/repairs/garden/sprayerHook.scad"]
+
+== Kitchen sink
+
+image:{rootdir}/models/repairs/kitchen/kitchen-fix-sink-plug.png[Kitchen sink plug repair, 350, 240,link="{giturl}/models/repairs/kitchen/kitchen-fix-sink-plug.scad"]
+
+== Rack Hinge
+
+image:{rootdir}/models/repairs/rack-hinge/rack-hinge-parts.png[Rack Hinge repair, 350, 280,link="{giturl}/models/repairs/rack-hinge/rack-hinge-parts.scad"]
 
 == Watch
 
