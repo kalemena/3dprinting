@@ -2,9 +2,30 @@ THIS_FILE := $(lastword $(MAKEFILE_LIST))
 
 SHELL := /bin/bash
 
-.PHONY: 
+OPENSCAD := $(which openscad)
 
-all: 
+
+.SUFFIXES: .stl .scad .png
+
+.PHONY: all clean
+
+.POSIX:
+
+
+#################
+# BUILDING SCAD
+#################
+
+%.stl:
+	@echo $(basename $@).scad -> $@
+	openscad --render -o $@ $(basename $@).scad
+
+%.png:
+	@echo $(basename $@).scad -> $@
+	openscad --preview --imgsize 2000,2000 -o $@ $(basename $@).scad
+
+clean:
+	rm -f $(OBJS_STL) $(OBJS_PNG)
 
 ###########################
 # BUILDING & PUBLISHING DOC
