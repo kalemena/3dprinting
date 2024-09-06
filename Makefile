@@ -4,6 +4,10 @@ SHELL := /bin/bash
 
 OPENSCAD := $(which openscad)
 
+OBJS_SCAD=./models/cats/cat-tree/models-cat-tree.scad \
+	./models/covid-19/keychain-covid/keychain-covid.scad
+OBJS_PNG=$(OBJS_SCAD:.scad=.png)
+OBJS_STL=$(OBJS_SCAD:.scad=.stl)
 
 .SUFFIXES: .stl .scad .png
 
@@ -11,6 +15,7 @@ OPENSCAD := $(which openscad)
 
 .POSIX:
 
+all: $(OBJS_STL) $(OBJS_PNG)
 
 #################
 # BUILDING SCAD
