@@ -1,5 +1,7 @@
 = Cats
 
+== Tree
+
 [TIP]
 ====
 This is a set of cat models.
@@ -10,3 +12,7 @@ Models are not to 3D print, but may contain parts to print.
 image:{rootdir}/models/cats/cat-tree/models-cat-tree-1.png[Cat Tree Model 1,400,300, link="{giturl}/models/cats/cat-tree/models-cat-tree.scad"]
 
 image:{rootdir}/models/cats/cat-tree/models-cat-tree-2.png[Cat Tree Model 2,400,400, link="{giturl}/models/cats/cat-tree/models-cat-tree.scad"]
+
+== Games
+
+image:{rootdir}/models/cats/game-tube-01.png[Cat Game 01,400,300, link="{giturl}/models/cats/game-tube-01.scad"]
