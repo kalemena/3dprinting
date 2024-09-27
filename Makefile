@@ -5,7 +5,8 @@ SHELL := /bin/bash
 OPENSCAD := $(which openscad)
 
 OBJS_SCAD=./models/cats/cat-tree/models-cat-tree.scad \
-	./models/covid-19/keychain-covid/keychain-covid.scad
+	./models/covid-19/keychain-covid/keychain-covid.scad \
+	./models/cats/game-tube-01.scad
 OBJS_PNG=$(OBJS_SCAD:.scad=.png)
 OBJS_STL=$(OBJS_SCAD:.scad=.stl)
 
@@ -27,7 +28,7 @@ all: $(OBJS_STL) $(OBJS_PNG)
 
 %.png:
 	@echo $(basename $@).scad -> $@
-	openscad --preview --imgsize 2000,2000 -o $@ $(basename $@).scad
+	openscad --render --colorscheme="Tomorrow" --imgsize 2000,2000 -o $@ $(basename $@).scad
 
 clean:
 	rm -f $(OBJS_STL) $(OBJS_PNG)
