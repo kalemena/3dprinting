@@ -6,7 +6,10 @@ image:{rootdir}/models/house/images/adaptor-7m-pole-clip.png[Adpator clip for 7m
 This is an adaptor between a 3.6m sprayer pole and a 3.6m swimming pool pole, making the full pol at about 7m !
 
 .Water
-image:{rootdir}/models/house/images/plates.png[Water plates,320,240,link="{giturl}/models/house/plates.scad"] image:{rootdir}/models/house/images/plates.png[water plates,320,240,link="{giturl}/models/house/plates.scad"]
+image:{rootdir}/models/house/images/plates.png[Water plates,320,240,link="{giturl}/models/house/plates.scad"]
+
+.Soap Holder
+image:{rootdir}/models/house/soap-holder.png[Soap Holder,320,240,link="{giturl}/models/house/soap-holder.scad"]
 
 .Car devices
 * link:https://www.thingiverse.com/thing:1767964[IEC 62196-2 Type 2 Plug (scad)]
