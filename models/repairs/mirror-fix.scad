@@ -13,7 +13,7 @@ module mirror_fix() {
         translate([0,0,width-1.5])
             cube([171,121,width], center=true);
         
-        cube([171-6,121-6,width], center=true);
+        cube([171-6,121-6,width*2], center=true);
     }    
 }
 
