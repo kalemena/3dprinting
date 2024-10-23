@@ -1,15 +1,15 @@
 $fn = 100;
 
-soap_diameter=75;
+soap_diameter=85;
 soap_high=15;
 
 module soap_holder() {    
     difference() {
         cylinder(d=soap_diameter + 3*2, h=soap_high+2);
-        translate([0,0,11.01]) 
+        translate([0,0,17.01]) 
             minkowski() {
-                cylinder(d=soap_diameter-20, h=soap_high);
-                sphere(d=20);
+                cylinder(d=soap_diameter-30, h=soap_high);
+                sphere(d=30);
             }
         translate([0,0,20]) {
             for(rotZ=[0:72:360]) {
@@ -27,4 +27,4 @@ module soap_fix() {
 }
 
 soap_holder();
-rotate([0,180,120]) soap_fix();
+// rotate([0,180,120]) soap_fix();
