@@ -1,11 +1,11 @@
 $fn=100;
 
-L=34;
+L=33.5;
 l=31.5;
 h=65;
 width=2;
 
-minkowski=2;
+minkowski=4;
 
 difference() {
 
@@ -43,5 +43,12 @@ difference() {
     translate([L/2,0,-h/2+3]) rotate([90,0,0]) cylinder(d=3, h=50, center=true);
     translate([0,-l/2,-h/2+3]) rotate([0,90,0]) cylinder(d=3, h=50, center=true);
     translate([0,l/2,-h/2+3]) rotate([0,90,0]) cylinder(d=3, h=50, center=true);
+
+    rotate([0,0,45]) {
+        translate([-(L+l)/3,0,-h/2+3]) rotate([90,0,0]) cylinder(d=3, h=50, center=true);
+        translate([(L+l)/3,0,-h/2+3]) rotate([90,0,0]) cylinder(d=3, h=50, center=true);
+        translate([0,-(L+l)/3,-h/2+3]) rotate([0,90,0]) cylinder(d=3, h=50, center=true);
+        translate([0,(L+l)/3,-h/2+3]) rotate([0,90,0]) cylinder(d=3, h=50, center=true);
+    }
 
 }
