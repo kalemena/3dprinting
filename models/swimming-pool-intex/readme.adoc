@@ -29,6 +29,10 @@ image:{rootdir}/models/swimming-pool-intex/cover-clip/cover-clip.png[Cover Clip,
 
 == Inlets / Outlets - Cap
 
+TIP: Pre-filter screw cap
+
+image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-prefilter-top.png[Intex Pre-Filter Screw cap, 320,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-prefilter-top.scad"]
+
 TIP: Caps for Inlet/Outlet
 
 image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets-filter-cap.png[Intex Filter cap, 320,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad"] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-cap-bottom.png[Intex inlet cap, 320,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad"] image:{rootdir}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlet-cap-top.png[Intex inlet cap, 320,240,link="{giturl}/models/swimming-pool-intex/intex-inlets-outlets/intex-inlets-outlets.scad"]
